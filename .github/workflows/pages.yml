@@ -12,30 +12,9 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Import prepared source archive
-        shell: bash
-        run: |
-          if [ -f bootstrap-content.zip ]; then
-            python3 - <<'PY'
-          import pathlib, zipfile
-          root = pathlib.Path.cwd().resolve()
-          with zipfile.ZipFile('bootstrap-content.zip') as archive:
-              for entry in archive.infolist():
-                  target = (root / entry.filename).resolve()
-                  if not target.is_relative_to(root) or entry.filename.startswith(('.git/', '.github/')):
-                      raise ValueError('Unexpected archive path')
-              archive.extractall(root)
-          PY
-            git rm bootstrap-content.zip
-            git add .
-            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Import standalone demo application and learning content'
-            git push origin HEAD:main
-          fi
       - uses: actions/setup-node@v4
         with:
           node-version: '22.23.2'
