@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "cards": [
+    {
+      "id": "boarding-pass",
+      "front": "boarding pass",
+      "back": "karta pokładowa",
+      "example": "Please show your boarding pass."
+    },
+    {
+      "id": "reservation",
+      "front": "reservation",
+      "back": "rezerwacja",
+      "example": "I have a reservation."
+    },
+    {
+      "id": "station",
+      "front": "train station",
+      "back": "dworzec kolejowy",
+      "example": "Where is the train station?"
+    },
+    {
+      "id": "check-in",
+      "front": "check in",
+      "back": "zameldować się",
+      "example": "We need to check in at the hotel."
+    },
+    {
+      "id": "luggage",
+      "front": "luggage",
+      "back": "bagaż",
+      "example": "My luggage is heavy."
+    },
+    {
+      "id": "chop",
+      "front": "chop",
+      "back": "siekać",
+      "example": "Chop the onions."
+    },
+    {
+      "id": "stir",
+      "front": "stir",
+      "back": "mieszać",
+      "example": "Stir the soup before serving it."
+    },
+    {
+      "id": "oven",
+      "front": "oven",
+      "back": "piekarnik",
+      "example": "Put the cake in the oven."
+    },
+    {
+      "id": "knife",
+      "front": "knife",
+      "back": "nóż",
+      "example": "Use a sharp knife."
+    },
+    {
+      "id": "recipe",
+      "front": "recipe",
+      "back": "przepis kulinarny",
+      "example": "This recipe is easy to follow."
+    },
+    {
+      "id": "warm-up",
+      "front": "warm up",
+      "back": "rozgrzać się",
+      "example": "Warm up before your workout."
+    },
+    {
+      "id": "helmet",
+      "front": "helmet",
+      "back": "kask",
+      "example": "Wear a helmet when cycling."
+    },
+    {
+      "id": "goal",
+      "front": "goal",
+      "back": "gol",
+      "example": "Our team scored a goal."
+    },
+    {
+      "id": "workout",
+      "front": "workout",
+      "back": "trening",
+      "example": "That was a great workout."
+    },
+    {
+      "id": "team",
+      "front": "team",
+      "back": "drużyna",
+      "example": "Our team won the match."
+    }
+  ]
+}

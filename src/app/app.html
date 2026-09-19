@@ -1,0 +1,23 @@
+<ion-app><div class="app-shell">
+  <header class="app-header"><a routerLink="/activities" class="brand">little<span>step.</span></a><button class="demo-badge" (click)="demoOpen.set(true)" aria-label="Informacje o wersji demo">DEMO<span>ograniczona zawartość</span></button><button class="icon-button" (click)="theme.toggle()" [attr.aria-label]="theme.dark() ? 'Włącz jasny motyw' : 'Włącz ciemny motyw'"><app-icon [name]="theme.dark() ? 'sunny-outline' : 'moon-outline'" /></button></header>
+  <ion-router-outlet />
+  @if (!playing()) { <nav aria-label="Główna nawigacja">
+    <button [class.active]="url() === '/activities' || url() === '/topics' || url() === '/idioms' || url().startsWith('/word-games')" (click)="open('/activities')"><app-icon name="grid-outline" />Aktywności</button>
+    <button [class.active]="url() === '/character'" (click)="open('/character')"><app-icon name="shield-outline" />Postać</button>
+    <button [class.active]="url() === '/cards'" (click)="open('/cards')"><app-icon name="layers-outline" />Fiszki</button>
+  </nav> }
+</div></ion-app>
+
+
+<ion-modal [isOpen]="demoOpen()" (didDismiss)="demoOpen.set(false); resetConfirm.set(false); resetError.set('')" aria-labelledby="demo-title">
+  <ng-template><ion-content><section class="page">
+    <div class="row"><h1 id="demo-title">Poznaj Little step</h1><button class="icon-button" (click)="demoOpen.set(false)" aria-label="Zamknij informacje o demo"><app-icon name="close-outline" /></button></div>
+    <p>Korzystasz z demonstracyjnej, okrojonej wersji Little step. Znajdziesz tu wybrane gry, tematy, idiomy i fiszki. Liczba materiałów została ograniczona na potrzeby prezentacji projektu.</p>
+    <p>Rozwój postaci jest niedostępny w demo.</p>
+    <p>Postęp idiomów, wyniki gier słownych i rekord Battle zapisują się tylko w tej przeglądarce. Odświeżenie strony kończy aktywną rundę. Oceny zwykłych fiszek dotyczą bieżącej wizyty.</p>
+    <button class="button" (click)="demoOpen.set(false)">Wracam do aplikacji</button>
+    @if (!resetConfirm()) { <button class="button secondary" (click)="resetConfirm.set(true)">Zacznij demo od nowa</button> }
+    @else { <section class="panel" role="group" aria-label="Potwierdzenie resetu"><h2>Usunąć zapisane wyniki?</h2><p>Usuniemy postęp idiomów, zapisane fiszki idiomowe, wyniki gier i rekord Battle z tej przeglądarki.</p><button class="button" (click)="resetDemo()">Usuń wyniki i zacznij od nowa</button><button class="button secondary" (click)="resetConfirm.set(false)">Anuluj</button></section> }
+    @if (resetError()) { <p role="alert">{{ resetError() }}</p> }
+  </section></ion-content></ng-template>
+</ion-modal>

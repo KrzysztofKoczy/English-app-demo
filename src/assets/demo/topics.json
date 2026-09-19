@@ -1,0 +1,1106 @@
+{
+  "version": 1,
+  "topics": [
+    {
+      "id": "travel",
+      "title": "Podróże",
+      "description": "Lotnisko, hotel, transport i odkrywanie świata.",
+      "questions": [
+        {
+          "id": "travel-001",
+          "level": "A2",
+          "sentence": "Please show your ___ before you get on the plane.",
+          "options": [
+            "shopping list",
+            "boarding pass",
+            "hotel key",
+            "restaurant menu",
+            "train timetable"
+          ],
+          "correctOptionIndex": 1,
+          "explanationPl": "Boarding pass to karta pokładowa, którą okazujemy przed wejściem do samolotu.",
+          "translationPl": "Pokaż kartę pokładową, zanim wejdziesz do samolotu.",
+          "tags": [
+            "airport"
+          ]
+        },
+        {
+          "id": "travel-002",
+          "level": "A2",
+          "sentence": "We need to ___ at the hotel before 10 p.m.",
+          "options": [
+            "check in",
+            "cook",
+            "exercise",
+            "compete",
+            "borrow"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Check in oznacza zameldować się w hotelu.",
+          "translationPl": "Musimy zameldować się w hotelu przed 22:00.",
+          "tags": [
+            "hotel"
+          ]
+        },
+        {
+          "id": "travel-003",
+          "level": "A2",
+          "sentence": "The train leaves from ___ 4.",
+          "options": [
+            "platform",
+            "passport",
+            "recipe",
+            "locker",
+            "pitch"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Platform to peron, z którego odjeżdża pociąg.",
+          "translationPl": "Pociąg odjeżdża z peronu 4.",
+          "tags": [
+            "transport"
+          ]
+        },
+        {
+          "id": "travel-004",
+          "level": "A2",
+          "sentence": "Could you tell me how to get to the ___?",
+          "options": [
+            "museum",
+            "frying pan",
+            "helmet",
+            "ingredient",
+            "coach"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Museum jest miejscem, do którego naturalnie można pytać o drogę.",
+          "translationPl": "Czy możesz mi powiedzieć, jak dostać się do muzeum?",
+          "tags": [
+            "directions"
+          ]
+        },
+        {
+          "id": "travel-005",
+          "level": "A2",
+          "sentence": "I need to collect my suitcase at the baggage ___.",
+          "options": [
+            "claim",
+            "court",
+            "oven",
+            "desk lamp",
+            "goal"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Baggage claim to miejsce odbioru bagażu na lotnisku.",
+          "translationPl": "Muszę odebrać walizkę przy odbiorze bagażu.",
+          "tags": [
+            "airport"
+          ]
+        },
+        {
+          "id": "travel-006",
+          "level": "B1",
+          "sentence": "Our flight was ___ because of heavy fog.",
+          "options": [
+            "delayed",
+            "boiled",
+            "scored",
+            "packed",
+            "stirred"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Delayed oznacza opóźniony i pasuje do lotu.",
+          "translationPl": "Nasz lot był opóźniony z powodu gęstej mgły.",
+          "tags": [
+            "airport"
+          ]
+        },
+        {
+          "id": "travel-007",
+          "level": "A2",
+          "sentence": "You need a valid ___ to travel to many countries.",
+          "options": [
+            "passport",
+            "whisk",
+            "racket",
+            "apron",
+            "ladle"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Passport to paszport.",
+          "translationPl": "Potrzebujesz ważnego paszportu, aby podróżować do wielu krajów.",
+          "tags": [
+            "documents"
+          ]
+        },
+        {
+          "id": "travel-008",
+          "level": "A2",
+          "sentence": "We booked a double ___ for two nights.",
+          "options": [
+            "room",
+            "lane",
+            "pan",
+            "team",
+            "dish"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Double room to pokój dwuosobowy.",
+          "translationPl": "Zarezerwowaliśmy pokój dwuosobowy na dwie noce.",
+          "tags": [
+            "hotel"
+          ]
+        },
+        {
+          "id": "travel-009",
+          "level": "B1",
+          "sentence": "The hotel is within walking ___ of the old town.",
+          "options": [
+            "distance",
+            "score",
+            "flavour",
+            "recipe",
+            "match"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Walking distance oznacza odległość możliwą do pokonania pieszo.",
+          "translationPl": "Hotel znajduje się w odległości spaceru od starego miasta.",
+          "tags": [
+            "hotel"
+          ]
+        },
+        {
+          "id": "travel-010",
+          "level": "A2",
+          "sentence": "Turn left at the traffic ___.",
+          "options": [
+            "lights",
+            "fork",
+            "boots",
+            "ticket",
+            "bench"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Traffic lights to sygnalizacja świetlna.",
+          "translationPl": "Skręć w lewo przy światłach.",
+          "tags": [
+            "directions"
+          ]
+        },
+        {
+          "id": "travel-011",
+          "level": "B1",
+          "sentence": "We missed our ___ and had to wait for the next train.",
+          "options": [
+            "connection",
+            "ingredient",
+            "opponent",
+            "recipe",
+            "locker"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Connection to połączenie przesiadkowe.",
+          "translationPl": "Spóźniliśmy się na połączenie i musieliśmy czekać na następny pociąg.",
+          "tags": [
+            "transport"
+          ]
+        },
+        {
+          "id": "travel-012",
+          "level": "A2",
+          "sentence": "Is breakfast ___ in the price of the room?",
+          "options": [
+            "included",
+            "trained",
+            "fried",
+            "drawn",
+            "scored"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Included oznacza wliczony w cenę.",
+          "translationPl": "Czy śniadanie jest wliczone w cenę pokoju?",
+          "tags": [
+            "hotel"
+          ]
+        },
+        {
+          "id": "travel-013",
+          "level": "B1",
+          "sentence": "We decided to rent a car to ___ the island.",
+          "options": [
+            "explore",
+            "whisk",
+            "score",
+            "slice",
+            "coach"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Explore oznacza zwiedzać lub odkrywać miejsce.",
+          "translationPl": "Postanowiliśmy wynająć samochód, żeby zwiedzić wyspę.",
+          "tags": [
+            "travel"
+          ]
+        },
+        {
+          "id": "travel-014",
+          "level": "A2",
+          "sentence": "Which ___ goes to the city centre?",
+          "options": [
+            "bus",
+            "bowl",
+            "glove",
+            "knife",
+            "goal"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Bus jest środkiem transportu do centrum miasta.",
+          "translationPl": "Który autobus jedzie do centrum miasta?",
+          "tags": [
+            "transport"
+          ]
+        },
+        {
+          "id": "travel-015",
+          "level": "B1",
+          "sentence": "Our hotel room had a beautiful ___ of the sea.",
+          "options": [
+            "view",
+            "score",
+            "heat",
+            "taste",
+            "match"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "A view of the sea oznacza widok na morze.",
+          "translationPl": "Nasz pokój hotelowy miał piękny widok na morze.",
+          "tags": [
+            "hotel"
+          ]
+        },
+        {
+          "id": "travel-016",
+          "level": "A2",
+          "sentence": "We bought a return ___ to London.",
+          "options": [
+            "ticket",
+            "plate",
+            "racket",
+            "spoon",
+            "pitch"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Return ticket oznacza bilet w obie strony.",
+          "translationPl": "Kupiliśmy bilet w obie strony do Londynu.",
+          "tags": [
+            "transport"
+          ]
+        },
+        {
+          "id": "travel-017",
+          "level": "B1",
+          "sentence": "Please fasten your seat ___ before take-off.",
+          "options": [
+            "belt",
+            "menu",
+            "gate",
+            "board",
+            "whisk"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Seat belt to pas bezpieczeństwa.",
+          "translationPl": "Proszę zapiąć pas bezpieczeństwa przed startem.",
+          "tags": [
+            "airport"
+          ]
+        },
+        {
+          "id": "travel-018",
+          "level": "A2",
+          "sentence": "Our plane departs from gate ___.",
+          "options": [
+            "twelve",
+            "oven",
+            "medium",
+            "boiled",
+            "coach"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Gate na lotnisku ma numer; twelve jest jedyną pasującą odpowiedzią.",
+          "translationPl": "Nasz samolot odlatuje z bramki numer dwanaście.",
+          "tags": [
+            "airport"
+          ]
+        },
+        {
+          "id": "travel-019",
+          "level": "B1",
+          "sentence": "The receptionist gave us a map and recommended a sightseeing ___.",
+          "options": [
+            "route",
+            "recipe",
+            "score",
+            "racket",
+            "sauce"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Sightseeing route to trasa zwiedzania.",
+          "translationPl": "Recepcjonista dał nam mapę i polecił trasę zwiedzania.",
+          "tags": [
+            "sightseeing"
+          ]
+        },
+        {
+          "id": "travel-020",
+          "level": "A2",
+          "sentence": "Excuse me, is this seat ___?",
+          "options": [
+            "free",
+            "fried",
+            "fit",
+            "sharp",
+            "sweet"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Free w tym kontekście oznacza wolne miejsce.",
+          "translationPl": "Przepraszam, czy to miejsce jest wolne?",
+          "tags": [
+            "transport"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "title": "Kuchnia",
+      "description": "Składniki, przybory, gotowanie i przepisy.",
+      "questions": [
+        {
+          "id": "kitchen-001",
+          "level": "A2",
+          "sentence": "Use a sharp ___ to cut the vegetables.",
+          "options": [
+            "knife",
+            "helmet",
+            "ticket",
+            "racket",
+            "passport"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Knife to nóż.",
+          "translationPl": "Użyj ostrego noża, żeby pokroić warzywa.",
+          "tags": [
+            "utensils"
+          ]
+        },
+        {
+          "id": "kitchen-002",
+          "level": "A2",
+          "sentence": "Please ___ the soup before serving it.",
+          "options": [
+            "stir",
+            "score",
+            "book",
+            "check in",
+            "train"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Stir oznacza mieszać.",
+          "translationPl": "Proszę zamieszaj zupę przed podaniem.",
+          "tags": [
+            "cooking"
+          ]
+        },
+        {
+          "id": "kitchen-003",
+          "level": "A2",
+          "sentence": "We need two eggs and some flour for the ___.",
+          "options": [
+            "recipe",
+            "platform",
+            "match",
+            "passport",
+            "route"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Recipe to przepis kulinarny.",
+          "translationPl": "Potrzebujemy dwóch jajek i trochę mąki do przepisu.",
+          "tags": [
+            "recipes"
+          ]
+        },
+        {
+          "id": "kitchen-004",
+          "level": "A2",
+          "sentence": "Put the cake in the ___ for 30 minutes.",
+          "options": [
+            "oven",
+            "goal",
+            "airport",
+            "locker",
+            "stadium"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Oven to piekarnik.",
+          "translationPl": "Włóż ciasto do piekarnika na 30 minut.",
+          "tags": [
+            "appliances"
+          ]
+        },
+        {
+          "id": "kitchen-005",
+          "level": "A2",
+          "sentence": "Could you pass me a ___ to eat the soup?",
+          "options": [
+            "spoon",
+            "racket",
+            "ticket",
+            "helmet",
+            "map"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Spoon to łyżka.",
+          "translationPl": "Czy możesz podać mi łyżkę do zupy?",
+          "tags": [
+            "utensils"
+          ]
+        },
+        {
+          "id": "kitchen-006",
+          "level": "B1",
+          "sentence": "Chop the onion into small ___.",
+          "options": [
+            "pieces",
+            "matches",
+            "platforms",
+            "passes",
+            "routes"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Chop into small pieces oznacza pokroić na małe kawałki.",
+          "translationPl": "Pokrój cebulę na małe kawałki.",
+          "tags": [
+            "cooking"
+          ]
+        },
+        {
+          "id": "kitchen-007",
+          "level": "A2",
+          "sentence": "The water is ___. You can add the pasta now.",
+          "options": [
+            "boiling",
+            "winning",
+            "boarding",
+            "checking",
+            "training"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Boiling oznacza wrzący.",
+          "translationPl": "Woda wrze. Możesz teraz dodać makaron.",
+          "tags": [
+            "cooking"
+          ]
+        },
+        {
+          "id": "kitchen-008",
+          "level": "A2",
+          "sentence": "Keep the milk in the ___.",
+          "options": [
+            "fridge",
+            "stadium",
+            "airport",
+            "court",
+            "garage"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Fridge to lodówka.",
+          "translationPl": "Trzymaj mleko w lodówce.",
+          "tags": [
+            "appliances"
+          ]
+        },
+        {
+          "id": "kitchen-009",
+          "level": "B1",
+          "sentence": "Add a ___ of salt to the sauce.",
+          "options": [
+            "pinch",
+            "goal",
+            "ticket",
+            "flight",
+            "round"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "A pinch of salt to szczypta soli.",
+          "translationPl": "Dodaj szczyptę soli do sosu.",
+          "tags": [
+            "ingredients"
+          ]
+        },
+        {
+          "id": "kitchen-010",
+          "level": "A2",
+          "sentence": "We need to ___ the potatoes before cooking them.",
+          "options": [
+            "peel",
+            "score",
+            "book",
+            "serve",
+            "compete"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Peel oznacza obrać.",
+          "translationPl": "Musimy obrać ziemniaki przed gotowaniem.",
+          "tags": [
+            "cooking"
+          ]
+        },
+        {
+          "id": "kitchen-011",
+          "level": "B1",
+          "sentence": "The sauce is too thick. Add a little ___.",
+          "options": [
+            "water",
+            "helmet",
+            "passport",
+            "ticket",
+            "racket"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Dodanie wody może rozrzedzić zbyt gęsty sos.",
+          "translationPl": "Sos jest zbyt gęsty. Dodaj trochę wody.",
+          "tags": [
+            "cooking"
+          ]
+        },
+        {
+          "id": "kitchen-012",
+          "level": "A2",
+          "sentence": "Please put the dirty plates in the ___.",
+          "options": [
+            "dishwasher",
+            "locker",
+            "stadium",
+            "platform",
+            "airport"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Dishwasher to zmywarka.",
+          "translationPl": "Proszę włóż brudne talerze do zmywarki.",
+          "tags": [
+            "appliances"
+          ]
+        },
+        {
+          "id": "kitchen-013",
+          "level": "B1",
+          "sentence": "Beat the eggs with a ___.",
+          "options": [
+            "whisk",
+            "racket",
+            "map",
+            "ticket",
+            "boot"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Whisk to trzepaczka.",
+          "translationPl": "Ubij jajka trzepaczką.",
+          "tags": [
+            "utensils"
+          ]
+        },
+        {
+          "id": "kitchen-014",
+          "level": "A2",
+          "sentence": "This soup tastes too ___. Did you add too much salt?",
+          "options": [
+            "salty",
+            "fast",
+            "late",
+            "wide",
+            "strong"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Salty oznacza słony.",
+          "translationPl": "Ta zupa jest za słona. Czy dodałeś za dużo soli?",
+          "tags": [
+            "taste"
+          ]
+        },
+        {
+          "id": "kitchen-015",
+          "level": "B1",
+          "sentence": "Let the meat ___ for ten minutes before cutting it.",
+          "options": [
+            "rest",
+            "score",
+            "travel",
+            "book",
+            "check in"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Mięso po obróbce często powinno odpocząć przed krojeniem.",
+          "translationPl": "Pozwól mięsu odpocząć przez dziesięć minut przed krojeniem.",
+          "tags": [
+            "cooking"
+          ]
+        },
+        {
+          "id": "kitchen-016",
+          "level": "A2",
+          "sentence": "We fried the eggs in a frying ___.",
+          "options": [
+            "pan",
+            "goal",
+            "gate",
+            "lane",
+            "room"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Frying pan to patelnia.",
+          "translationPl": "Usmażyliśmy jajka na patelni.",
+          "tags": [
+            "utensils"
+          ]
+        },
+        {
+          "id": "kitchen-017",
+          "level": "B1",
+          "sentence": "The main ___ in this salad are tomatoes, cucumber and cheese.",
+          "options": [
+            "ingredients",
+            "opponents",
+            "connections",
+            "tickets",
+            "routes"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Ingredients to składniki.",
+          "translationPl": "Główne składniki tej sałatki to pomidory, ogórek i ser.",
+          "tags": [
+            "ingredients"
+          ]
+        },
+        {
+          "id": "kitchen-018",
+          "level": "A2",
+          "sentence": "Could you ___ the bread into six slices?",
+          "options": [
+            "cut",
+            "score",
+            "book",
+            "train",
+            "throw"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Cut into slices oznacza pokroić na kromki.",
+          "translationPl": "Czy możesz pokroić chleb na sześć kromek?",
+          "tags": [
+            "cooking"
+          ]
+        },
+        {
+          "id": "kitchen-019",
+          "level": "B1",
+          "sentence": "Cook the rice over low ___.",
+          "options": [
+            "heat",
+            "score",
+            "price",
+            "distance",
+            "speed"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Cook over low heat oznacza gotować na małym ogniu.",
+          "translationPl": "Gotuj ryż na małym ogniu.",
+          "tags": [
+            "cooking"
+          ]
+        },
+        {
+          "id": "kitchen-020",
+          "level": "A2",
+          "sentence": "We serve salad in a large ___.",
+          "options": [
+            "bowl",
+            "helmet",
+            "gate",
+            "platform",
+            "boot"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Bowl to miska.",
+          "translationPl": "Podajemy sałatkę w dużej misce.",
+          "tags": [
+            "utensils"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sport",
+      "title": "Sport",
+      "description": "Trening, sprzęt, dyscypliny i zawody.",
+      "questions": [
+        {
+          "id": "sport-001",
+          "level": "A2",
+          "sentence": "You should wear a ___ when you ride a bike.",
+          "options": [
+            "helmet",
+            "passport",
+            "apron",
+            "boarding pass",
+            "spoon"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Helmet to kask.",
+          "translationPl": "Powinieneś nosić kask podczas jazdy na rowerze.",
+          "tags": [
+            "equipment"
+          ]
+        },
+        {
+          "id": "sport-002",
+          "level": "A2",
+          "sentence": "Our team scored the winning ___.",
+          "options": [
+            "goal",
+            "recipe",
+            "ticket",
+            "room",
+            "platform"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Goal to gol.",
+          "translationPl": "Nasza drużyna zdobyła zwycięskiego gola.",
+          "tags": [
+            "football"
+          ]
+        },
+        {
+          "id": "sport-003",
+          "level": "A2",
+          "sentence": "Tennis players use a ___.",
+          "options": [
+            "racket",
+            "ladle",
+            "passport",
+            "whisk",
+            "map"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Racket to rakieta tenisowa.",
+          "translationPl": "Tenisiści używają rakiety.",
+          "tags": [
+            "tennis"
+          ]
+        },
+        {
+          "id": "sport-004",
+          "level": "A2",
+          "sentence": "The players are warming ___ before the match.",
+          "options": [
+            "up",
+            "in",
+            "over",
+            "away",
+            "through"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Warm up to rozgrzewać się.",
+          "translationPl": "Zawodnicy rozgrzewają się przed meczem.",
+          "tags": [
+            "training"
+          ]
+        },
+        {
+          "id": "sport-005",
+          "level": "B1",
+          "sentence": "The race starts at the starting ___.",
+          "options": [
+            "line",
+            "oven",
+            "gate",
+            "recipe",
+            "desk"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Starting line to linia startu.",
+          "translationPl": "Wyścig zaczyna się na linii startu.",
+          "tags": [
+            "running"
+          ]
+        },
+        {
+          "id": "sport-006",
+          "level": "A2",
+          "sentence": "Our coach told us to ___ harder this week.",
+          "options": [
+            "train",
+            "boil",
+            "book",
+            "slice",
+            "check in"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Train oznacza trenować.",
+          "translationPl": "Nasz trener powiedział nam, żebyśmy trenowali ciężej w tym tygodniu.",
+          "tags": [
+            "training"
+          ]
+        },
+        {
+          "id": "sport-007",
+          "level": "B1",
+          "sentence": "She broke the national ___ in the 100 metres.",
+          "options": [
+            "record",
+            "recipe",
+            "route",
+            "ticket",
+            "ingredient"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Break a record oznacza pobić rekord.",
+          "translationPl": "Pobiła rekord kraju w biegu na 100 metrów.",
+          "tags": [
+            "athletics"
+          ]
+        },
+        {
+          "id": "sport-008",
+          "level": "A2",
+          "sentence": "The football match ended in a ___.",
+          "options": [
+            "draw",
+            "pan",
+            "flight",
+            "room",
+            "dish"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Draw w sporcie oznacza remis.",
+          "translationPl": "Mecz piłkarski zakończył się remisem.",
+          "tags": [
+            "football"
+          ]
+        },
+        {
+          "id": "sport-009",
+          "level": "B1",
+          "sentence": "You need good ___ to run a marathon.",
+          "options": [
+            "endurance",
+            "menu",
+            "passport",
+            "platform",
+            "recipe"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Endurance oznacza wytrzymałość.",
+          "translationPl": "Potrzebujesz dobrej wytrzymałości, żeby przebiec maraton.",
+          "tags": [
+            "running"
+          ]
+        },
+        {
+          "id": "sport-010",
+          "level": "A2",
+          "sentence": "The basketball player threw the ball into the ___.",
+          "options": [
+            "basket",
+            "oven",
+            "locker",
+            "bowl",
+            "gate"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Basket to kosz.",
+          "translationPl": "Koszykarz rzucił piłkę do kosza.",
+          "tags": [
+            "basketball"
+          ]
+        },
+        {
+          "id": "sport-011",
+          "level": "B1",
+          "sentence": "The referee gave the player a yellow ___.",
+          "options": [
+            "card",
+            "ticket",
+            "recipe",
+            "map",
+            "plate"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Yellow card to żółta kartka.",
+          "translationPl": "Sędzia pokazał zawodnikowi żółtą kartkę.",
+          "tags": [
+            "football"
+          ]
+        },
+        {
+          "id": "sport-012",
+          "level": "A2",
+          "sentence": "We play volleyball on a ___.",
+          "options": [
+            "court",
+            "kitchen",
+            "platform",
+            "airport",
+            "garage"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Court to boisko.",
+          "translationPl": "Gramy w siatkówkę na boisku.",
+          "tags": [
+            "volleyball"
+          ]
+        },
+        {
+          "id": "sport-013",
+          "level": "B1",
+          "sentence": "He injured his ankle during a training ___.",
+          "options": [
+            "session",
+            "recipe",
+            "connection",
+            "flight",
+            "ingredient"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Training session to sesja treningowa.",
+          "translationPl": "Uszkodził kostkę podczas treningu.",
+          "tags": [
+            "training"
+          ]
+        },
+        {
+          "id": "sport-014",
+          "level": "A2",
+          "sentence": "The swimmer won a gold ___.",
+          "options": [
+            "medal",
+            "spoon",
+            "ticket",
+            "room",
+            "gate"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Gold medal to złoty medal.",
+          "translationPl": "Pływak zdobył złoty medal.",
+          "tags": [
+            "competition"
+          ]
+        },
+        {
+          "id": "sport-015",
+          "level": "B1",
+          "sentence": "The team has qualified for the next ___.",
+          "options": [
+            "round",
+            "pan",
+            "hotel",
+            "recipe",
+            "platform"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Round to runda zawodów.",
+          "translationPl": "Drużyna zakwalifikowała się do następnej rundy.",
+          "tags": [
+            "competition"
+          ]
+        },
+        {
+          "id": "sport-016",
+          "level": "A2",
+          "sentence": "Don't forget to ___ after your workout.",
+          "options": [
+            "stretch",
+            "book",
+            "peel",
+            "check in",
+            "score"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Stretch oznacza rozciągać się.",
+          "translationPl": "Nie zapomnij się rozciągnąć po treningu.",
+          "tags": [
+            "training"
+          ]
+        },
+        {
+          "id": "sport-017",
+          "level": "B1",
+          "sentence": "The two teams are competing for the ___.",
+          "options": [
+            "championship",
+            "passport",
+            "boarding pass",
+            "recipe",
+            "ingredient"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Championship to mistrzostwo.",
+          "translationPl": "Obie drużyny walczą o mistrzostwo.",
+          "tags": [
+            "competition"
+          ]
+        },
+        {
+          "id": "sport-018",
+          "level": "A2",
+          "sentence": "He wears football ___ on the pitch.",
+          "options": [
+            "boots",
+            "whisks",
+            "tickets",
+            "bowls",
+            "keys"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Football boots to korki piłkarskie.",
+          "translationPl": "Na boisku nosi korki piłkarskie.",
+          "tags": [
+            "equipment"
+          ]
+        },
+        {
+          "id": "sport-019",
+          "level": "B1",
+          "sentence": "The goalkeeper made an excellent ___.",
+          "options": [
+            "save",
+            "recipe",
+            "route",
+            "booking",
+            "slice"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "A save to obrona bramkarza.",
+          "translationPl": "Bramkarz zaliczył świetną obronę.",
+          "tags": [
+            "football"
+          ]
+        },
+        {
+          "id": "sport-020",
+          "level": "A2",
+          "sentence": "We go to the gym three times a ___.",
+          "options": [
+            "week",
+            "goal",
+            "plate",
+            "gate",
+            "ticket"
+          ],
+          "correctOptionIndex": 0,
+          "explanationPl": "Three times a week oznacza trzy razy w tygodniu.",
+          "translationPl": "Chodzimy na siłownię trzy razy w tygodniu.",
+          "tags": [
+            "fitness"
+          ]
+        }
+      ]
+    }
+  ]
+}

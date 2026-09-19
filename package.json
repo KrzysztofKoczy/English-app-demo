@@ -1,0 +1,34 @@
+{
+  "name": "english-app-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "ng serve --host localhost --port 4201",
+    "build": "ng build",
+    "cap:sync": "npm run build && cap sync",
+    "test:idioms": "tsc -p tsconfig.idioms-tests.json && node --test tests/idioms.test.cjs",
+    "test:word-games": "tsc -p tsconfig.word-games-tests.json && node --test tests/word-games.test.cjs && node tools/validate-word-games.mjs",
+    "test:audit": "tsc -p tsconfig.audit-tests.json && node --test tests/audit.test.cjs",
+    "validate:content": "tsc -p tsconfig.audit-tests.json && node tools/validate-content.mjs",
+    "test:e2e": "node tools/audit-browser.mjs"
+  },
+  "dependencies": {
+    "@angular/common": "22.1.6",
+    "@angular/compiler": "22.1.6",
+    "@angular/core": "22.1.6",
+    "@angular/forms": "22.1.6",
+    "@angular/platform-browser": "22.1.6",
+    "@angular/router": "22.1.6",
+    "@capacitor/core": "8.5.1",
+    "@ionic/angular": "9.0.3",
+    "rxjs": "~7.8.2",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@angular/build": "22.1.7",
+    "@angular/cli": "22.1.7",
+    "@angular/compiler-cli": "22.1.6",
+    "@capacitor/cli": "8.5.1",
+    "typescript": "~6.0.0"
+  }
+}

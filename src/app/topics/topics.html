@@ -1,0 +1,7 @@
+<ion-content><main class="page">
+  <a class="back-link" routerLink="/activities"><app-icon name="arrow-back-outline" /> Aktywności</a><h1>Twój świat<br>po angielsku.</h1><p class="intro">Wybierz temat i przećwicz przydatne zwroty.</p>
+  <div class="activity-grid">@for (topic of topics(); track topic.id) { <button class="activity-tile" (click)="games.start(topic.id)" [disabled]="games.request.busy()"><span class="tile-icon"><app-icon [name]="topic.icon" /></span><h2>{{ topic.title }}</h2><p>{{ topic.description }}</p><span class="tile-bottom">5 pytań z puli {{ topic.questionCount }} <app-icon name="arrow-forward-outline" /></span></button> }</div>
+  <app-request-notice [busy]="request.busy() || games.request.busy()" [error]="request.error() || games.request.error()" />
+  @if (more() || request.error()) { <button class="button secondary" (click)="load()" [disabled]="request.busy()">{{ request.error() ? 'Spróbuj ponownie' : 'Więcej tematów' }}</button> }
+  @if (!request.busy() && !request.error() && !topics().length) { <p>Tematy pojawią się wkrótce.</p> }
+</main></ion-content>

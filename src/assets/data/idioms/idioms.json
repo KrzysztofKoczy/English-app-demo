@@ -1,0 +1,553 @@
+{
+  "version": 1,
+  "idioms": [
+    {
+      "id": "break-the-ice",
+      "idiom": "break the ice",
+      "meaningPl": "przełamać pierwsze lody",
+      "definitionEn": "to make people feel more relaxed when they first meet or start talking",
+      "level": "B1",
+      "frequency": "very_common",
+      "category": "relationships",
+      "tags": [
+        "conversation",
+        "social"
+      ],
+      "literalMeaningPl": "przełamać lód",
+      "examples": [
+        {
+          "sentence": "Our teacher started a short game to break the ice.",
+          "translationPl": "Nasz nauczyciel rozpoczął krótką grę, żeby przełamać pierwsze lody."
+        },
+        {
+          "sentence": "A friendly question can help break the ice.",
+          "translationPl": "Przyjazne pytanie może pomóc przełamać pierwsze lody."
+        }
+      ],
+      "usageNotePl": "Używane, gdy chcemy zmniejszyć skrępowanie na początku spotkania lub rozmowy.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "call-it-a-day",
+      "idiom": "call it a day",
+      "meaningPl": "zakończyć pracę na dziś",
+      "definitionEn": "to stop working on something for the rest of the day",
+      "level": "B1",
+      "frequency": "very_common",
+      "category": "work",
+      "tags": [
+        "work",
+        "routine"
+      ],
+      "literalMeaningPl": "nazwać to dniem",
+      "examples": [
+        {
+          "sentence": "We've finished the report, so let's call it a day.",
+          "translationPl": "Skończyliśmy raport, więc zakończmy pracę na dziś."
+        },
+        {
+          "sentence": "I'm tired. I think I'll call it a day.",
+          "translationPl": "Jestem zmęczony. Chyba zakończę na dziś."
+        }
+      ],
+      "usageNotePl": "Częste w pracy i podczas wykonywania dłuższych zadań.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "hit-the-road",
+      "idiom": "hit the road",
+      "meaningPl": "wyruszyć w drogę",
+      "definitionEn": "to leave a place and start a journey",
+      "level": "B1",
+      "frequency": "common",
+      "category": "travel",
+      "tags": [
+        "travel",
+        "journey"
+      ],
+      "literalMeaningPl": "uderzyć w drogę",
+      "examples": [
+        {
+          "sentence": "We should hit the road before traffic gets heavy.",
+          "translationPl": "Powinniśmy wyruszyć w drogę, zanim zrobią się korki."
+        },
+        {
+          "sentence": "Let's hit the road early tomorrow morning.",
+          "translationPl": "Wyruszmy jutro wcześnie rano."
+        }
+      ],
+      "usageNotePl": "Nieformalne określenie rozpoczęcia podróży.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "spill-the-beans",
+      "idiom": "spill the beans",
+      "meaningPl": "wygadać sekret",
+      "definitionEn": "to reveal secret information, often accidentally",
+      "level": "B1",
+      "frequency": "common",
+      "category": "communication",
+      "tags": [
+        "secret",
+        "conversation"
+      ],
+      "literalMeaningPl": "wysypać fasolę",
+      "examples": [
+        {
+          "sentence": "Who spilled the beans about the surprise party?",
+          "translationPl": "Kto wygadał się o przyjęciu niespodziance?"
+        },
+        {
+          "sentence": "Don't spill the beans before Friday.",
+          "translationPl": "Nie wygadaj sekretu przed piątkiem."
+        }
+      ],
+      "usageNotePl": "Używane głównie w nieformalnych rozmowach o ujawnieniu tajemnicy.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "piece-of-cake",
+      "idiom": "a piece of cake",
+      "meaningPl": "bułka z masłem; coś bardzo łatwego",
+      "definitionEn": "something that is very easy to do",
+      "level": "A2",
+      "frequency": "very_common",
+      "category": "daily-life",
+      "tags": [
+        "easy",
+        "success"
+      ],
+      "literalMeaningPl": "kawałek ciasta",
+      "examples": [
+        {
+          "sentence": "The test was a piece of cake.",
+          "translationPl": "Test był bułką z masłem."
+        },
+        {
+          "sentence": "Once you learn the rules, this game is a piece of cake.",
+          "translationPl": "Gdy poznasz zasady, ta gra jest bardzo łatwa."
+        }
+      ],
+      "usageNotePl": "Bardzo popularne nieformalne określenie łatwego zadania.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "under-the-weather",
+      "idiom": "under the weather",
+      "meaningPl": "czuć się niewyraźnie; źle się czuć",
+      "definitionEn": "to feel slightly ill or not as well as usual",
+      "level": "B1",
+      "frequency": "common",
+      "category": "emotions",
+      "tags": [
+        "health",
+        "feeling"
+      ],
+      "literalMeaningPl": "pod pogodą",
+      "examples": [
+        {
+          "sentence": "I'm feeling a bit under the weather today.",
+          "translationPl": "Czuję się dziś trochę niewyraźnie."
+        },
+        {
+          "sentence": "She stayed home because she was under the weather.",
+          "translationPl": "Została w domu, bo źle się czuła."
+        }
+      ],
+      "usageNotePl": "Nieformalne i łagodne określenie złego samopoczucia.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "cost-an-arm-and-a-leg",
+      "idiom": "cost an arm and a leg",
+      "meaningPl": "kosztować fortunę",
+      "definitionEn": "to be extremely expensive",
+      "level": "B1",
+      "frequency": "common",
+      "category": "money",
+      "tags": [
+        "money",
+        "expensive"
+      ],
+      "literalMeaningPl": "kosztować rękę i nogę",
+      "examples": [
+        {
+          "sentence": "That new laptop costs an arm and a leg.",
+          "translationPl": "Ten nowy laptop kosztuje fortunę."
+        },
+        {
+          "sentence": "We found a nice hotel that didn't cost an arm and a leg.",
+          "translationPl": "Znaleźliśmy ładny hotel, który nie kosztował fortuny."
+        }
+      ],
+      "usageNotePl": "Nieformalne podkreślenie bardzo wysokiej ceny.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "once-in-a-blue-moon",
+      "idiom": "once in a blue moon",
+      "meaningPl": "bardzo rzadko",
+      "definitionEn": "very rarely",
+      "level": "B1",
+      "frequency": "common",
+      "category": "daily-life",
+      "tags": [
+        "frequency",
+        "routine"
+      ],
+      "literalMeaningPl": "raz na niebieski księżyc",
+      "examples": [
+        {
+          "sentence": "I eat fast food once in a blue moon.",
+          "translationPl": "Jem fast food bardzo rzadko."
+        },
+        {
+          "sentence": "We only see each other once in a blue moon.",
+          "translationPl": "Widzimy się bardzo rzadko."
+        }
+      ],
+      "usageNotePl": "Odnosi się do czegoś, co wydarza się wyjątkowo rzadko.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "get-the-ball-rolling",
+      "idiom": "get the ball rolling",
+      "meaningPl": "rozpocząć działanie; ruszyć z czymś",
+      "definitionEn": "to start an activity or process",
+      "level": "B2",
+      "frequency": "common",
+      "category": "work",
+      "tags": [
+        "work",
+        "start",
+        "project"
+      ],
+      "literalMeaningPl": "wprawić piłkę w ruch",
+      "examples": [
+        {
+          "sentence": "Let's get the ball rolling with a short planning session.",
+          "translationPl": "Zacznijmy od krótkiej sesji planowania."
+        },
+        {
+          "sentence": "I'll send the first email to get the ball rolling.",
+          "translationPl": "Wyślę pierwszego maila, żeby ruszyć z tematem."
+        }
+      ],
+      "usageNotePl": "Częste w pracy i projektach, gdy mowa o rozpoczęciu procesu.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "on-the-same-page",
+      "idiom": "be on the same page",
+      "meaningPl": "mieć takie samo rozumienie sytuacji",
+      "definitionEn": "to have the same understanding or opinion about something",
+      "level": "B2",
+      "frequency": "very_common",
+      "category": "work",
+      "tags": [
+        "agreement",
+        "communication",
+        "teamwork"
+      ],
+      "literalMeaningPl": "być na tej samej stronie",
+      "examples": [
+        {
+          "sentence": "Let's make sure we're all on the same page before we start.",
+          "translationPl": "Upewnijmy się, że wszyscy rozumiemy to tak samo, zanim zaczniemy."
+        },
+        {
+          "sentence": "The meeting helped the team get on the same page.",
+          "translationPl": "Spotkanie pomogło zespołowi uzgodnić wspólne rozumienie."
+        }
+      ],
+      "usageNotePl": "Bardzo częste w środowisku pracy i współpracy zespołowej.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "go-the-extra-mile",
+      "idiom": "go the extra mile",
+      "meaningPl": "zrobić więcej, niż się od nas oczekuje",
+      "definitionEn": "to make more effort than is expected",
+      "level": "B2",
+      "frequency": "common",
+      "category": "work",
+      "tags": [
+        "effort",
+        "work",
+        "help"
+      ],
+      "literalMeaningPl": "przejść dodatkową milę",
+      "examples": [
+        {
+          "sentence": "She always goes the extra mile for her customers.",
+          "translationPl": "Ona zawsze robi dla swoich klientów więcej, niż się od niej oczekuje."
+        },
+        {
+          "sentence": "We went the extra mile to finish the project on time.",
+          "translationPl": "Włożyliśmy dodatkowy wysiłek, żeby skończyć projekt na czas."
+        }
+      ],
+      "usageNotePl": "Używane, gdy ktoś wkłada ponadstandardowy wysiłek.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "keep-an-eye-on",
+      "idiom": "keep an eye on",
+      "meaningPl": "mieć coś lub kogoś na oku",
+      "definitionEn": "to watch or look after someone or something carefully",
+      "level": "B1",
+      "frequency": "very_common",
+      "category": "daily-life",
+      "tags": [
+        "watch",
+        "care",
+        "attention"
+      ],
+      "literalMeaningPl": "trzymać oko na czymś",
+      "examples": [
+        {
+          "sentence": "Can you keep an eye on my bag for a minute?",
+          "translationPl": "Możesz przez chwilę mieć oko na moją torbę?"
+        },
+        {
+          "sentence": "Keep an eye on the soup so it doesn't burn.",
+          "translationPl": "Pilnuj zupy, żeby się nie przypaliła."
+        }
+      ],
+      "usageNotePl": "Bardzo przydatne w codziennych sytuacjach.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "out-of-the-blue",
+      "idiom": "out of the blue",
+      "meaningPl": "niespodziewanie; zupełnie z zaskoczenia",
+      "definitionEn": "suddenly and unexpectedly",
+      "level": "B2",
+      "frequency": "common",
+      "category": "emotions",
+      "tags": [
+        "surprise",
+        "unexpected"
+      ],
+      "literalMeaningPl": "z błękitu",
+      "examples": [
+        {
+          "sentence": "She called me out of the blue after five years.",
+          "translationPl": "Zadzwoniła do mnie niespodziewanie po pięciu latach."
+        },
+        {
+          "sentence": "The job offer came out of the blue.",
+          "translationPl": "Oferta pracy pojawiła się zupełnie niespodziewanie."
+        }
+      ],
+      "usageNotePl": "O wydarzeniu, którego nikt się nie spodziewał.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "miss-the-boat",
+      "idiom": "miss the boat",
+      "meaningPl": "przegapić okazję",
+      "definitionEn": "to lose an opportunity by being too late",
+      "level": "B2",
+      "frequency": "common",
+      "category": "daily-life",
+      "tags": [
+        "opportunity",
+        "late"
+      ],
+      "literalMeaningPl": "spóźnić się na łódź",
+      "examples": [
+        {
+          "sentence": "I wanted the cheaper tickets, but I missed the boat.",
+          "translationPl": "Chciałem tańsze bilety, ale przegapiłem okazję."
+        },
+        {
+          "sentence": "Apply today so you don't miss the boat.",
+          "translationPl": "Aplikuj dziś, żeby nie przegapić okazji."
+        }
+      ],
+      "usageNotePl": "Dotyczy utraconej szansy, zwykle z powodu zwlekania.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "learn-the-ropes",
+      "idiom": "learn the ropes",
+      "meaningPl": "poznać zasady działania; wdrożyć się",
+      "definitionEn": "to learn how a job or activity is done",
+      "level": "B2",
+      "frequency": "common",
+      "category": "work",
+      "tags": [
+        "learning",
+        "work",
+        "onboarding"
+      ],
+      "literalMeaningPl": "nauczyć się lin",
+      "examples": [
+        {
+          "sentence": "It took me a few weeks to learn the ropes at my new job.",
+          "translationPl": "Potrzebowałem kilku tygodni, żeby wdrożyć się w nowej pracy."
+        },
+        {
+          "sentence": "Ask Marta to help you learn the ropes.",
+          "translationPl": "Poproś Martę, żeby pomogła ci poznać zasady działania."
+        }
+      ],
+      "usageNotePl": "Często używane przy rozpoczynaniu nowej pracy lub roli.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "pull-someones-leg",
+      "idiom": "pull someone's leg",
+      "meaningPl": "nabierać kogoś; żartować sobie z kogoś",
+      "definitionEn": "to tell someone something untrue as a joke",
+      "level": "B1",
+      "frequency": "common",
+      "category": "relationships",
+      "tags": [
+        "joke",
+        "social"
+      ],
+      "literalMeaningPl": "ciągnąć kogoś za nogę",
+      "examples": [
+        {
+          "sentence": "Relax, I'm just pulling your leg.",
+          "translationPl": "Spokojnie, tylko cię nabieram."
+        },
+        {
+          "sentence": "He said he had won the lottery, but he was pulling my leg.",
+          "translationPl": "Powiedział, że wygrał na loterii, ale tylko mnie nabierał."
+        }
+      ],
+      "usageNotePl": "Nieformalne i zwykle żartobliwe.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "hit-the-nail-on-the-head",
+      "idiom": "hit the nail on the head",
+      "meaningPl": "trafić w sedno",
+      "definitionEn": "to describe exactly what is causing a situation or problem",
+      "level": "B2",
+      "frequency": "common",
+      "category": "communication",
+      "tags": [
+        "accuracy",
+        "opinion",
+        "problem"
+      ],
+      "literalMeaningPl": "trafić młotkiem w główkę gwoździa",
+      "examples": [
+        {
+          "sentence": "You hit the nail on the head when you said the process was too complicated.",
+          "translationPl": "Trafiłeś w sedno, mówiąc, że proces był zbyt skomplikowany."
+        },
+        {
+          "sentence": "Her comment really hit the nail on the head.",
+          "translationPl": "Jej komentarz naprawdę trafił w sedno."
+        }
+      ],
+      "usageNotePl": "Używane, gdy czyjaś diagnoza lub uwaga jest bardzo trafna.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "a-blessing-in-disguise",
+      "idiom": "a blessing in disguise",
+      "meaningPl": "szczęście w nieszczęściu",
+      "definitionEn": "something that seems bad at first but later has a good result",
+      "level": "B2",
+      "frequency": "common",
+      "category": "emotions",
+      "tags": [
+        "positive",
+        "unexpected",
+        "result"
+      ],
+      "literalMeaningPl": "błogosławieństwo w przebraniu",
+      "examples": [
+        {
+          "sentence": "Losing that job turned out to be a blessing in disguise.",
+          "translationPl": "Utrata tamtej pracy okazała się szczęściem w nieszczęściu."
+        },
+        {
+          "sentence": "The delay was a blessing in disguise because we avoided the storm.",
+          "translationPl": "Opóźnienie okazało się szczęściem w nieszczęściu, bo uniknęliśmy burzy."
+        }
+      ],
+      "usageNotePl": "O negatywnym wydarzeniu, które ostatecznie przynosi pozytywny skutek.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "get-out-of-hand",
+      "idiom": "get out of hand",
+      "meaningPl": "wymknąć się spod kontroli",
+      "definitionEn": "to become difficult or impossible to control",
+      "level": "B2",
+      "frequency": "common",
+      "category": "daily-life",
+      "tags": [
+        "control",
+        "problem"
+      ],
+      "literalMeaningPl": "wydostać się z ręki",
+      "examples": [
+        {
+          "sentence": "The argument quickly got out of hand.",
+          "translationPl": "Kłótnia szybko wymknęła się spod kontroli."
+        },
+        {
+          "sentence": "We need to act before the costs get out of hand.",
+          "translationPl": "Musimy działać, zanim koszty wymkną się spod kontroli."
+        }
+      ],
+      "usageNotePl": "Może dotyczyć sytuacji, kosztów, zachowania lub problemów.",
+      "sources": [],
+      "active": true
+    },
+    {
+      "id": "back-to-square-one",
+      "idiom": "back to square one",
+      "meaningPl": "wrócić do punktu wyjścia",
+      "definitionEn": "to return to the beginning because an attempt failed",
+      "level": "B2",
+      "frequency": "common",
+      "category": "work",
+      "tags": [
+        "failure",
+        "restart",
+        "project"
+      ],
+      "literalMeaningPl": "z powrotem na pole numer jeden",
+      "examples": [
+        {
+          "sentence": "The client rejected the idea, so we're back to square one.",
+          "translationPl": "Klient odrzucił pomysł, więc wracamy do punktu wyjścia."
+        },
+        {
+          "sentence": "When the test failed, we had to go back to square one.",
+          "translationPl": "Kiedy test się nie udał, musieliśmy wrócić do punktu wyjścia."
+        }
+      ],
+      "usageNotePl": "Używane, gdy trzeba zacząć ponownie od początku.",
+      "sources": [],
+      "active": true
+    }
+  ]
+}

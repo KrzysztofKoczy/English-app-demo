@@ -1,0 +1,5 @@
+<a class="back-link" routerLink="/word-games">← Gry słowne</a>
+<h1>{{ title() }}</h1>
+<app-request-notice [busy]="content.status() === 'loading'" [error]="content.error()" />
+@if (content.status() === 'error') { <button class="button secondary" (click)="retry.emit()">Spróbuj ponownie</button> }
+@if (progress.unavailable()) { <p class="error-message" role="status">Nie udało się bezpiecznie zapisać lub odczytać postępu (np. zmienił go inny widok). Chronimy poprzedni zapis; nowe wyniki pozostają w pamięci aplikacji.</p> }

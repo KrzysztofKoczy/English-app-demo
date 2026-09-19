@@ -1,0 +1,14 @@
+.lives { display: flex; align-items: center; gap: 6px; color: var(--danger); font-size: 13px; }
+.question { font-size: clamp(25px, 5vw, 32px); line-height: 1.5; margin: 30px 0; letter-spacing: -.5px; }
+.answers { display: grid; gap: 10px; }
+.answer { display: flex; align-items: center; gap: 16px; min-height: 54px; padding: 13px 16px; background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 14px; text-align: left; }
+.answer span { color: var(--muted); font-size: 12px; }
+.answer app-icon { margin-left: auto; }
+.answer.correct { border: 2px solid var(--success); background: var(--success-surface); }
+.answer.wrong { border: 2px solid var(--danger); }
+.answer:disabled { opacity: 1; cursor: default; }
+.feedback { border-radius: 18px; background: var(--soft); padding: 18px; margin-top: 20px; }
+.feedback p { margin-bottom: 0; }
+.result { text-align: center; padding-top: 32px; }
+.result .medallion { margin: auto; }
+.xp { display: block; font-size: 48px; color: var(--accent-text); margin-top: 28px; }

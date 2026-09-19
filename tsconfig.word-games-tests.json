@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "rootDir": "src/app",
+    "outDir": ".cache/word-game-tests",
+    "types": [],
+    "declaration": false
+  },
+  "include": [
+    "src/app/word-games/word-game-models.ts",
+    "src/app/word-games/word-game-engine.ts",
+    "src/app/word-games/word-game-storage.ts"
+  ]
+}

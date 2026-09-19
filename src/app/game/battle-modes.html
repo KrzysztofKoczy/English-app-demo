@@ -1,0 +1,11 @@
+<ion-content><main class="page">
+  <a class="back-link" routerLink="/activities">← Aktywności</a>
+  <span class="eyebrow mode-label">WYBIERZ TRYB</span>
+  <h1>Battle of Words</h1>
+  <p>Trzy życia. Coraz trudniejsze pytania. Jak daleko dotrzesz?</p>
+  <section class="panel"><span class="eyebrow">TWÓJ REKORD</span><h2>{{ record.best() ? 'Pytanie ' + record.best() : 'Czas na pierwszy rekord' }}</h2><p class="small">Najwyższy numer osiągniętego pytania. Zapisujemy tylko najlepszy wynik w tej przeglądarce.</p></section>
+  <button class="button" (click)="games.start('battle')" [disabled]="games.request.busy()">Ćwicz</button>
+  <p class="small">W demo czeka 30 pytań w trzech etapach trudności. Po każdych 10 pytaniach przechodzisz dalej. Błąd kosztuje życie. Gra kończy się po utracie trzech żyć lub ukończeniu całej próbki.</p>
+  @if (record.storageUnavailable()) { <p class="error-message">Zapis rekordu jest niedostępny w tej przeglądarce. Wynik pozostanie tylko w pamięci aplikacji.</p> }
+  <app-request-notice [busy]="games.request.busy()" [error]="games.request.error()" />
+</main></ion-content>

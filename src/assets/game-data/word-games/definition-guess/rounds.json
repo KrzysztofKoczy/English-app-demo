@@ -1,0 +1,1057 @@
+{
+  "schemaVersion": "1.0.0",
+  "game": "definition_guess",
+  "roundCount": 10,
+  "rounds": [
+    {
+      "id": "DG-001",
+      "level": 1,
+      "cefr": "A1",
+      "topic": "animals",
+      "questionsPerRound": 6,
+      "questions": [
+        {
+          "id": "DG-001-Q01",
+          "wordId": "word_cat",
+          "optionWordIds": [
+            "word_cat",
+            "word_dog",
+            "word_horse",
+            "word_tiger"
+          ],
+          "correctWordId": "word_cat",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-001-Q02",
+          "wordId": "word_dog",
+          "optionWordIds": [
+            "word_horse",
+            "word_dog",
+            "word_tiger",
+            "word_sheep"
+          ],
+          "correctWordId": "word_dog",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-001-Q03",
+          "wordId": "word_horse",
+          "optionWordIds": [
+            "word_tiger",
+            "word_sheep",
+            "word_horse",
+            "word_rabbit"
+          ],
+          "correctWordId": "word_horse",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-001-Q04",
+          "wordId": "word_tiger",
+          "optionWordIds": [
+            "word_sheep",
+            "word_rabbit",
+            "word_monkey",
+            "word_tiger"
+          ],
+          "correctWordId": "word_tiger",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-001-Q05",
+          "wordId": "word_sheep",
+          "optionWordIds": [
+            "word_sheep",
+            "word_rabbit",
+            "word_monkey",
+            "word_dolphin"
+          ],
+          "correctWordId": "word_sheep",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-001-Q06",
+          "wordId": "word_rabbit",
+          "optionWordIds": [
+            "word_monkey",
+            "word_rabbit",
+            "word_dolphin",
+            "word_eagle"
+          ],
+          "correctWordId": "word_rabbit",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DG-002",
+      "level": 2,
+      "cefr": "A1",
+      "topic": "animals",
+      "questionsPerRound": 6,
+      "questions": [
+        {
+          "id": "DG-002-Q01",
+          "wordId": "word_sheep",
+          "optionWordIds": [
+            "word_rabbit",
+            "word_sheep",
+            "word_monkey",
+            "word_dolphin"
+          ],
+          "correctWordId": "word_sheep",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-002-Q02",
+          "wordId": "word_rabbit",
+          "optionWordIds": [
+            "word_monkey",
+            "word_dolphin",
+            "word_rabbit",
+            "word_eagle"
+          ],
+          "correctWordId": "word_rabbit",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-002-Q03",
+          "wordId": "word_monkey",
+          "optionWordIds": [
+            "word_dolphin",
+            "word_eagle",
+            "word_panda",
+            "word_monkey"
+          ],
+          "correctWordId": "word_monkey",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-002-Q04",
+          "wordId": "word_dolphin",
+          "optionWordIds": [
+            "word_dolphin",
+            "word_eagle",
+            "word_panda",
+            "word_cat"
+          ],
+          "correctWordId": "word_dolphin",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-002-Q05",
+          "wordId": "word_eagle",
+          "optionWordIds": [
+            "word_panda",
+            "word_eagle",
+            "word_cat",
+            "word_dog"
+          ],
+          "correctWordId": "word_eagle",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-002-Q06",
+          "wordId": "word_panda",
+          "optionWordIds": [
+            "word_cat",
+            "word_dog",
+            "word_panda",
+            "word_horse"
+          ],
+          "correctWordId": "word_panda",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DG-003",
+      "level": 3,
+      "cefr": "A1",
+      "topic": "food",
+      "questionsPerRound": 6,
+      "questions": [
+        {
+          "id": "DG-003-Q01",
+          "wordId": "word_apple",
+          "optionWordIds": [
+            "word_bread",
+            "word_cheese",
+            "word_apple",
+            "word_rice"
+          ],
+          "correctWordId": "word_apple",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-003-Q02",
+          "wordId": "word_bread",
+          "optionWordIds": [
+            "word_cheese",
+            "word_rice",
+            "word_soup",
+            "word_bread"
+          ],
+          "correctWordId": "word_bread",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-003-Q03",
+          "wordId": "word_cheese",
+          "optionWordIds": [
+            "word_cheese",
+            "word_rice",
+            "word_soup",
+            "word_carrot"
+          ],
+          "correctWordId": "word_cheese",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-003-Q04",
+          "wordId": "word_rice",
+          "optionWordIds": [
+            "word_soup",
+            "word_rice",
+            "word_carrot",
+            "word_banana"
+          ],
+          "correctWordId": "word_rice",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-003-Q05",
+          "wordId": "word_soup",
+          "optionWordIds": [
+            "word_carrot",
+            "word_banana",
+            "word_soup",
+            "word_lemon"
+          ],
+          "correctWordId": "word_soup",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-003-Q06",
+          "wordId": "word_carrot",
+          "optionWordIds": [
+            "word_banana",
+            "word_lemon",
+            "word_honey",
+            "word_carrot"
+          ],
+          "correctWordId": "word_carrot",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DG-004",
+      "level": 4,
+      "cefr": "A1",
+      "topic": "food",
+      "questionsPerRound": 6,
+      "questions": [
+        {
+          "id": "DG-004-Q01",
+          "wordId": "word_soup",
+          "optionWordIds": [
+            "word_carrot",
+            "word_banana",
+            "word_lemon",
+            "word_soup"
+          ],
+          "correctWordId": "word_soup",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-004-Q02",
+          "wordId": "word_carrot",
+          "optionWordIds": [
+            "word_carrot",
+            "word_banana",
+            "word_lemon",
+            "word_honey"
+          ],
+          "correctWordId": "word_carrot",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-004-Q03",
+          "wordId": "word_banana",
+          "optionWordIds": [
+            "word_lemon",
+            "word_banana",
+            "word_honey",
+            "word_pepper"
+          ],
+          "correctWordId": "word_banana",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-004-Q04",
+          "wordId": "word_lemon",
+          "optionWordIds": [
+            "word_honey",
+            "word_pepper",
+            "word_lemon",
+            "word_apple"
+          ],
+          "correctWordId": "word_lemon",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-004-Q05",
+          "wordId": "word_honey",
+          "optionWordIds": [
+            "word_pepper",
+            "word_apple",
+            "word_bread",
+            "word_honey"
+          ],
+          "correctWordId": "word_honey",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-004-Q06",
+          "wordId": "word_pepper",
+          "optionWordIds": [
+            "word_pepper",
+            "word_apple",
+            "word_bread",
+            "word_cheese"
+          ],
+          "correctWordId": "word_pepper",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DG-005",
+      "level": 5,
+      "cefr": "A1",
+      "topic": "home",
+      "questionsPerRound": 6,
+      "questions": [
+        {
+          "id": "DG-005-Q01",
+          "wordId": "word_chair",
+          "optionWordIds": [
+            "word_chair",
+            "word_table",
+            "word_window",
+            "word_door"
+          ],
+          "correctWordId": "word_chair",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-005-Q02",
+          "wordId": "word_table",
+          "optionWordIds": [
+            "word_window",
+            "word_table",
+            "word_door",
+            "word_kitchen"
+          ],
+          "correctWordId": "word_table",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-005-Q03",
+          "wordId": "word_window",
+          "optionWordIds": [
+            "word_door",
+            "word_kitchen",
+            "word_window",
+            "word_bedroom"
+          ],
+          "correctWordId": "word_window",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-005-Q04",
+          "wordId": "word_door",
+          "optionWordIds": [
+            "word_kitchen",
+            "word_bedroom",
+            "word_mirror",
+            "word_door"
+          ],
+          "correctWordId": "word_door",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-005-Q05",
+          "wordId": "word_kitchen",
+          "optionWordIds": [
+            "word_kitchen",
+            "word_bedroom",
+            "word_mirror",
+            "word_blanket"
+          ],
+          "correctWordId": "word_kitchen",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-005-Q06",
+          "wordId": "word_bedroom",
+          "optionWordIds": [
+            "word_mirror",
+            "word_bedroom",
+            "word_blanket",
+            "word_shelf"
+          ],
+          "correctWordId": "word_bedroom",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DG-006",
+      "level": 6,
+      "cefr": "A2",
+      "topic": "home",
+      "questionsPerRound": 6,
+      "questions": [
+        {
+          "id": "DG-006-Q01",
+          "wordId": "word_kitchen",
+          "optionWordIds": [
+            "word_bedroom",
+            "word_kitchen",
+            "word_mirror",
+            "word_blanket"
+          ],
+          "correctWordId": "word_kitchen",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-006-Q02",
+          "wordId": "word_bedroom",
+          "optionWordIds": [
+            "word_mirror",
+            "word_blanket",
+            "word_bedroom",
+            "word_shelf"
+          ],
+          "correctWordId": "word_bedroom",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-006-Q03",
+          "wordId": "word_mirror",
+          "optionWordIds": [
+            "word_blanket",
+            "word_shelf",
+            "word_pillow",
+            "word_mirror"
+          ],
+          "correctWordId": "word_mirror",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-006-Q04",
+          "wordId": "word_blanket",
+          "optionWordIds": [
+            "word_blanket",
+            "word_shelf",
+            "word_pillow",
+            "word_chair"
+          ],
+          "correctWordId": "word_blanket",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-006-Q05",
+          "wordId": "word_shelf",
+          "optionWordIds": [
+            "word_pillow",
+            "word_shelf",
+            "word_chair",
+            "word_table"
+          ],
+          "correctWordId": "word_shelf",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-006-Q06",
+          "wordId": "word_pillow",
+          "optionWordIds": [
+            "word_chair",
+            "word_table",
+            "word_pillow",
+            "word_window"
+          ],
+          "correctWordId": "word_pillow",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DG-007",
+      "level": 7,
+      "cefr": "A2",
+      "topic": "travel",
+      "questionsPerRound": 6,
+      "questions": [
+        {
+          "id": "DG-007-Q01",
+          "wordId": "word_train",
+          "optionWordIds": [
+            "word_hotel",
+            "word_ticket",
+            "word_train",
+            "word_airport"
+          ],
+          "correctWordId": "word_train",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-007-Q02",
+          "wordId": "word_hotel",
+          "optionWordIds": [
+            "word_ticket",
+            "word_airport",
+            "word_suitcase",
+            "word_hotel"
+          ],
+          "correctWordId": "word_hotel",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-007-Q03",
+          "wordId": "word_ticket",
+          "optionWordIds": [
+            "word_ticket",
+            "word_airport",
+            "word_suitcase",
+            "word_passport"
+          ],
+          "correctWordId": "word_ticket",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-007-Q04",
+          "wordId": "word_airport",
+          "optionWordIds": [
+            "word_suitcase",
+            "word_airport",
+            "word_passport",
+            "word_journey"
+          ],
+          "correctWordId": "word_airport",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-007-Q05",
+          "wordId": "word_suitcase",
+          "optionWordIds": [
+            "word_passport",
+            "word_journey",
+            "word_suitcase",
+            "word_station"
+          ],
+          "correctWordId": "word_suitcase",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-007-Q06",
+          "wordId": "word_passport",
+          "optionWordIds": [
+            "word_journey",
+            "word_station",
+            "word_beach",
+            "word_passport"
+          ],
+          "correctWordId": "word_passport",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DG-008",
+      "level": 8,
+      "cefr": "A2",
+      "topic": "travel",
+      "questionsPerRound": 6,
+      "questions": [
+        {
+          "id": "DG-008-Q01",
+          "wordId": "word_suitcase",
+          "optionWordIds": [
+            "word_passport",
+            "word_journey",
+            "word_station",
+            "word_suitcase"
+          ],
+          "correctWordId": "word_suitcase",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-008-Q02",
+          "wordId": "word_passport",
+          "optionWordIds": [
+            "word_passport",
+            "word_journey",
+            "word_station",
+            "word_beach"
+          ],
+          "correctWordId": "word_passport",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-008-Q03",
+          "wordId": "word_journey",
+          "optionWordIds": [
+            "word_station",
+            "word_journey",
+            "word_beach",
+            "word_map"
+          ],
+          "correctWordId": "word_journey",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-008-Q04",
+          "wordId": "word_station",
+          "optionWordIds": [
+            "word_beach",
+            "word_map",
+            "word_station",
+            "word_train"
+          ],
+          "correctWordId": "word_station",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-008-Q05",
+          "wordId": "word_beach",
+          "optionWordIds": [
+            "word_map",
+            "word_train",
+            "word_hotel",
+            "word_beach"
+          ],
+          "correctWordId": "word_beach",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-008-Q06",
+          "wordId": "word_map",
+          "optionWordIds": [
+            "word_map",
+            "word_train",
+            "word_hotel",
+            "word_ticket"
+          ],
+          "correctWordId": "word_map",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DG-009",
+      "level": 9,
+      "cefr": "A2",
+      "topic": "work",
+      "questionsPerRound": 6,
+      "questions": [
+        {
+          "id": "DG-009-Q01",
+          "wordId": "word_nurse",
+          "optionWordIds": [
+            "word_nurse",
+            "word_teacher",
+            "word_driver",
+            "word_chef"
+          ],
+          "correctWordId": "word_nurse",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-009-Q02",
+          "wordId": "word_teacher",
+          "optionWordIds": [
+            "word_driver",
+            "word_teacher",
+            "word_chef",
+            "word_farmer"
+          ],
+          "correctWordId": "word_teacher",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-009-Q03",
+          "wordId": "word_driver",
+          "optionWordIds": [
+            "word_chef",
+            "word_farmer",
+            "word_driver",
+            "word_mechanic"
+          ],
+          "correctWordId": "word_driver",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-009-Q04",
+          "wordId": "word_chef",
+          "optionWordIds": [
+            "word_farmer",
+            "word_mechanic",
+            "word_architect",
+            "word_chef"
+          ],
+          "correctWordId": "word_chef",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-009-Q05",
+          "wordId": "word_farmer",
+          "optionWordIds": [
+            "word_farmer",
+            "word_mechanic",
+            "word_architect",
+            "word_journalist"
+          ],
+          "correctWordId": "word_farmer",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-009-Q06",
+          "wordId": "word_mechanic",
+          "optionWordIds": [
+            "word_architect",
+            "word_mechanic",
+            "word_journalist",
+            "word_accountant"
+          ],
+          "correctWordId": "word_mechanic",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DG-010",
+      "level": 10,
+      "cefr": "A2",
+      "topic": "nature",
+      "questionsPerRound": 6,
+      "questions": [
+        {
+          "id": "DG-010-Q01",
+          "wordId": "word_plant",
+          "optionWordIds": [
+            "word_river",
+            "word_plant",
+            "word_forest",
+            "word_mountain"
+          ],
+          "correctWordId": "word_plant",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-010-Q02",
+          "wordId": "word_river",
+          "optionWordIds": [
+            "word_forest",
+            "word_mountain",
+            "word_river",
+            "word_island"
+          ],
+          "correctWordId": "word_river",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-010-Q03",
+          "wordId": "word_forest",
+          "optionWordIds": [
+            "word_mountain",
+            "word_island",
+            "word_cloud",
+            "word_forest"
+          ],
+          "correctWordId": "word_forest",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-010-Q04",
+          "wordId": "word_mountain",
+          "optionWordIds": [
+            "word_mountain",
+            "word_island",
+            "word_cloud",
+            "word_flower"
+          ],
+          "correctWordId": "word_mountain",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-010-Q05",
+          "wordId": "word_island",
+          "optionWordIds": [
+            "word_cloud",
+            "word_island",
+            "word_flower",
+            "word_stone"
+          ],
+          "correctWordId": "word_island",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        },
+        {
+          "id": "DG-010-Q06",
+          "wordId": "word_cloud",
+          "optionWordIds": [
+            "word_flower",
+            "word_stone",
+            "word_cloud",
+            "word_field"
+          ],
+          "correctWordId": "word_cloud",
+          "hints": [
+            "first_letter",
+            "word_length",
+            "translation_pl"
+          ]
+        }
+      ]
+    }
+  ]
+}

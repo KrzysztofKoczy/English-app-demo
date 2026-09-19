@@ -1,0 +1,91 @@
+<ion-content><main class="page">
+  <a class="back-link" routerLink="/activities"><app-icon name="arrow-back-outline" /> Aktywności</a>
+  @if (state.progress.storageWarning()) { <p class="error-message" role="status">{{ state.progress.storageWarning() }}</p> }
+  @if (state.busy()) { <p role="status">Wczytywanie idiomów…</p> }
+  @if (state.error()) { <p class="error-message" role="alert">{{ state.error() }}</p><button class="button secondary" (click)="state.load()">Spróbuj ponownie</button> }
+  @if (state.content()) {
+    @if (!state.session()) {
+      <span class="eyebrow">MAŁY KROK. NATURALNY ANGIELSKI.</span>
+      <h1>Idiomy w praktyce.</h1><p class="intro">Poznaj znaczenie, zobacz przykład i sprawdź się w krótkich ćwiczeniach.</p>
+      <form class="panel" (submit)="$event.preventDefault(); start()">
+        <label for="idiom-count">Liczba idiomów</label>
+        <select id="idiom-count" [formField]="settingsForm.count"><option value="3">3 · szybka prezentacja</option><option value="5">5</option><option value="10">10</option><option value="20">20</option></select>
+        <label for="idiom-category">Temat</label>
+        <select id="idiom-category" [formField]="settingsForm.category">
+          @for (category of state.categories(); track category.id) { <option [value]="category.id">{{ category.label }}</option> }
+        </select>
+        <p class="small" aria-live="polite">Dostępne idiomy: {{ available() }}. W tej sesji: {{ actualCount() }}.</p>
+        @if (available() === 0) { <p>Nie ma jeszcze materiałów w tej kategorii. Wybierz inny temat lub Mix.</p> }
+        @else if (actualCount() < +settings().count) { <p class="small">Zestaw przykładowy jest mniejszy od wybranego limitu. Poznasz wszystkie dostępne idiomy, bez powtórzeń.</p> }
+        <button class="button" type="submit" [disabled]="!actualCount()">Rozpocznij naukę</button>
+      </form>
+      <p class="session-note">Postęp i zapisane fiszki pozostają w tej przeglądarce. Po odświeżeniu możesz rozpocząć nową sesję.</p>
+      @if (state.content()?.note; as note) { <p class="small muted">{{ note }}</p> }
+    } @else if (state.session(); as session) {
+      @switch (session.stage) {
+        @case ('learning') {
+          @if (state.currentIdiom(); as idiom) {
+            <div class="row"><span class="eyebrow">POZNAJ IDIOM</span><span>{{ session.learningIndex + 1 }} / {{ session.idiomIds.length }}</span></div>
+            <div class="progress" role="progressbar" aria-label="Postęp nauki" [attr.aria-valuenow]="session.learningIndex + 1" aria-valuemin="0" [attr.aria-valuemax]="session.idiomIds.length"><span [style.width.%]="(session.learningIndex + 1) / session.idiomIds.length * 100"></span></div>
+            <article class="panel learning-card">
+              <h1 lang="en">{{ idiom.idiom }}</h1><h2>{{ idiom.meaningPl }}</h2><p lang="en">{{ idiom.definitionEn }}</p>
+              @for (example of idiom.examples; track $index) { <blockquote><p lang="en">{{ example.sentence }}</p><p>{{ example.translationPl }}</p></blockquote> }
+              @if (idiom.literalMeaningPl) { <p class="small"><strong>Dosłownie:</strong> {{ idiom.literalMeaningPl }}</p> }
+              @if (idiom.usageNotePl) { <p class="small">{{ idiom.usageNotePl }}</p> }
+              <button class="source-button" (click)="sourcesOpen.set(true)">Informacje o źródłach</button>
+            </article>
+            <button class="button secondary" (click)="state.saveCurrent()" [disabled]="state.progress.progress()[idiom.id]?.savedToFlashcards">{{ state.progress.progress()[idiom.id]?.savedToFlashcards ? 'Zapisano do fiszek' : 'Dodaj do fiszek' }}</button>
+            <div class="two"><button class="button secondary" (click)="state.assess(false)">Nie znam</button><button class="button" (click)="state.assess(true)">Znam</button></div>
+            <p class="small muted">To Twoja samoocena. Opanowanie idiomu sprawdzisz w ćwiczeniach.</p>
+          }
+        }
+        @case ('exercises') {
+          @if (state.currentExercise(); as exercise) {
+            <div class="row"><span class="eyebrow">{{ exerciseLabels[exercise.type] }}</span><span>{{ session.exerciseIndex + 1 }} / {{ session.exerciseIds.length }}</span></div>
+            <h1 class="question" lang="en">{{ exercise.question }}</h1>
+            <div class="answers">@for (option of exercise.options; track $index) {
+              <button class="answer" lang="en" [disabled]="!!state.feedback()" [class.correct]="state.feedback() && exercise.correctOptionIndex === $index" [class.wrong]="state.feedback()?.selected === $index && !state.feedback()?.correct" (click)="state.answer($index)"><span>{{ $index + 1 }}</span>{{ option }}</button>
+            }</div>
+            @if (state.feedback(); as feedback) {
+              <section class="feedback" role="status"><strong>{{ feedback.correct ? 'Dobra odpowiedź!' : 'Tym razem inna odpowiedź.' }}</strong><p>Poprawna odpowiedź: <span lang="en">{{ exercise.options[exercise.correctOptionIndex] }}</span></p></section>
+              <button class="button" (click)="state.nextExercise()">{{ session.exerciseIndex + 1 === session.exerciseIds.length ? 'Zobacz podsumowanie' : 'Następne pytanie' }}</button>
+            }
+          }
+        }
+        @case ('summary') {
+          <h1>Mały krok za Tobą.</h1>
+          <section class="panel"><h2>Podsumowanie sesji</h2><dl class="summary">
+            <dt>Idiomy w sesji</dt><dd>{{ session.idiomIds.length }}</dd>
+            <dt>Poprawne odpowiedzi</dt><dd>{{ state.correct() }}</dd>
+            <dt>Błędne odpowiedzi</dt><dd>{{ state.incorrect() }}</dd>
+            <dt>Idiomy zapisane do fiszek</dt><dd>{{ state.saved() }}</dd>
+          </dl></section>
+          <h2 class="section-title">Warto powtórzyć</h2>
+          @if (state.difficult().length) { <ul>@for (idiom of state.difficult(); track idiom.id) { <li><span lang="en">{{ idiom.idiom }}</span> — {{ idiom.meaningPl }}</li> }</ul> }
+          @else { <p>W tej sesji nie wskazano trudnych idiomów.</p> }
+          @if (state.withoutExercises().length) {
+            <p class="small">Brak ćwiczeń w zestawie przykładowym dla:</p><ul>@for (idiom of state.withoutExercises(); track idiom.id) { <li lang="en">{{ idiom.idiom }}</li> }</ul>
+            <p class="small">Te idiomy nie zostały sprawdzone ćwiczeniami.</p>
+          }
+          <button class="button" (click)="state.repeatDifficult()" [disabled]="!state.difficult().length">Powtórz trudne</button>
+          <a class="button secondary" routerLink="/activities" (click)="state.reset()">Zakończ</a>
+          <a class="back-link" routerLink="/cards" [queryParams]="{ deck: 'idioms' }">Przejdź do fiszek</a>
+        }
+      }
+    }
+  }
+</main></ion-content>
+<ion-modal [isOpen]="sourcesOpen()" (didDismiss)="sourcesOpen.set(false)" aria-labelledby="idiom-sources-title">
+  <ng-template><ion-content><section class="page">
+    <div class="row"><h2 id="idiom-sources-title">Źródła idiomu</h2><button class="icon-button" (click)="sourcesOpen.set(false)" aria-label="Zamknij źródła"><app-icon name="close-outline" /></button></div>
+    @if (state.currentIdiom(); as idiom) {
+      <p lang="en">{{ idiom.idiom }}</p>
+      @for (source of idiom.sources; track $index) {
+        <article class="panel source"><h3>{{ source.name }}</h3><p>Zakres źródła: {{ supports(source.supports) }}</p>
+          <p>{{ source.verified ? 'Zweryfikowane' : 'Niezweryfikowane — wymaga sprawdzenia' }}</p>
+          @if (safeUrl(source.url); as url) { <a [href]="url" target="_blank" rel="noopener noreferrer">Otwórz źródło (nowa karta)</a> }
+        </article>
+      } @empty { <p>Przykłady przygotowano na potrzeby aplikacji. Źródła słownikowe nie zostały jeszcze zweryfikowane.</p> }
+    }
+  </section></ion-content></ng-template>
+</ion-modal>

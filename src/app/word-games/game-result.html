@@ -1,0 +1,10 @@
+<section class="panel result" aria-label="Wynik rundy">
+  <span class="eyebrow">RUNDA UKOŃCZONA</span><h2>Twój wynik: {{ result().score }}{{ result().game === 'definition_guess' ? ' / 6' : ' pkt' }}</h2>
+  <p>Błędy: {{ result().mistakes }} · Podpowiedzi: {{ result().hintsUsed }}</p>
+  @if (result().difficultWordIds.length) {
+    <h2>Warto powtórzyć</h2><ul>@for (id of result().difficultWordIds; track id) { <li><strong>{{ content.word(id).word }}</strong> — {{ content.word(id).translationsPl.join(', ') }}</li> }</ul>
+  } @else { <p>Świetna praca — wszystkie słowa opanowane w tej rundzie.</p> }
+  <button class="button" (click)="levels.emit()">Wybierz kolejny poziom</button>
+  <button class="button secondary" (click)="again.emit()">Zagraj ponownie</button>
+  <a class="back-link" routerLink="/word-games">Zakończ</a>
+</section>

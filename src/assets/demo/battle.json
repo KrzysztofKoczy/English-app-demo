@@ -1,0 +1,425 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "L01-001",
+      "sentence": "She ___ from Poland.",
+      "options": [
+        "is",
+        "are",
+        "am",
+        "have",
+        "do"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Po zaimku she używamy czasownika to be w trzeciej osobie liczby pojedynczej — is.",
+      "level": "1"
+    },
+    {
+      "id": "L01-002",
+      "sentence": "I ___ a student.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be",
+        "have"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Po zaimku I zawsze używamy am.",
+      "level": "1"
+    },
+    {
+      "id": "L01-003",
+      "sentence": "He ___ a teacher.",
+      "options": [
+        "is",
+        "am",
+        "are",
+        "has",
+        "do"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Po zaimku he używamy is.",
+      "level": "1"
+    },
+    {
+      "id": "L01-004",
+      "sentence": "We ___ friends.",
+      "options": [
+        "are",
+        "is",
+        "am",
+        "have",
+        "do"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Po zaimku we używamy are.",
+      "level": "1"
+    },
+    {
+      "id": "L01-005",
+      "sentence": "They ___ in London.",
+      "options": [
+        "are",
+        "is",
+        "am",
+        "has",
+        "have"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Po zaimku they używamy are.",
+      "level": "1"
+    },
+    {
+      "id": "L01-006",
+      "sentence": "It ___ a cat.",
+      "options": [
+        "is",
+        "are",
+        "am",
+        "has",
+        "be"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Po zaimku it używamy is.",
+      "level": "1"
+    },
+    {
+      "id": "L01-007",
+      "sentence": "The book ___ on the table.",
+      "options": [
+        "is",
+        "are",
+        "am",
+        "be",
+        "have"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "The book jest w liczbie pojedynczej, więc używamy is.",
+      "level": "1"
+    },
+    {
+      "id": "L01-008",
+      "sentence": "My mother ___ a doctor.",
+      "options": [
+        "is",
+        "are",
+        "am",
+        "be",
+        "has"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Mother jest w trzeciej osobie liczby pojedynczej (she), więc używamy is.",
+      "level": "1"
+    },
+    {
+      "id": "L01-009",
+      "sentence": "You ___ very kind.",
+      "options": [
+        "are",
+        "is",
+        "am",
+        "be",
+        "have"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Po zaimku you (ty, wy) używamy are.",
+      "level": "1"
+    },
+    {
+      "id": "L01-010",
+      "sentence": "The children ___ happy.",
+      "options": [
+        "are",
+        "is",
+        "am",
+        "be",
+        "has"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Children (dzieci) to liczba mnoga, więc używamy are.",
+      "level": "1"
+    },
+    {
+      "id": "L02-001",
+      "sentence": "___ I late?",
+      "options": [
+        "Am",
+        "Is",
+        "Are",
+        "Have",
+        "Do"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "W pytaniu z I używamy am przed podmiotem: Am I...?",
+      "level": "2"
+    },
+    {
+      "id": "L02-002",
+      "sentence": "___ you ready?",
+      "options": [
+        "Are",
+        "Is",
+        "Am",
+        "Have",
+        "Do"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "W pytaniu z you używamy are: Are you...?",
+      "level": "2"
+    },
+    {
+      "id": "L02-003",
+      "sentence": "___ he tired?",
+      "options": [
+        "Is",
+        "Are",
+        "Am",
+        "Have",
+        "Do"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "W pytaniu z he używamy is: Is he...?",
+      "level": "2"
+    },
+    {
+      "id": "L02-004",
+      "sentence": "___ she happy?",
+      "options": [
+        "Is",
+        "Are",
+        "Am",
+        "Have",
+        "Do"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "W pytaniu z she używamy is: Is she...?",
+      "level": "2"
+    },
+    {
+      "id": "L02-005",
+      "sentence": "___ it cold?",
+      "options": [
+        "Is",
+        "Are",
+        "Am",
+        "Have",
+        "Do"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "W pytaniu z it używamy is: Is it...?",
+      "level": "2"
+    },
+    {
+      "id": "L02-006",
+      "sentence": "___ we early?",
+      "options": [
+        "Are",
+        "Is",
+        "Am",
+        "Have",
+        "Do"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "W pytaniu z we używamy are: Are we...?",
+      "level": "2"
+    },
+    {
+      "id": "L02-007",
+      "sentence": "___ they busy?",
+      "options": [
+        "Are",
+        "Is",
+        "Am",
+        "Have",
+        "Do"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "W pytaniu z they używamy are: Are they...?",
+      "level": "2"
+    },
+    {
+      "id": "L02-008",
+      "sentence": "___ you at home?",
+      "options": [
+        "Are",
+        "Is",
+        "Am",
+        "Have",
+        "Do"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Po you w pytaniu używamy are.",
+      "level": "2"
+    },
+    {
+      "id": "L02-009",
+      "sentence": "___ I wrong?",
+      "options": [
+        "Am",
+        "Is",
+        "Are",
+        "Have",
+        "Do"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Z I używamy tylko am, także w pytaniach.",
+      "level": "2"
+    },
+    {
+      "id": "L02-010",
+      "sentence": "___ he okay?",
+      "options": [
+        "Is",
+        "Are",
+        "Am",
+        "Have",
+        "Do"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Po he w pytaniu używamy is.",
+      "level": "2"
+    },
+    {
+      "id": "L04-001",
+      "sentence": "I have ___ apple.",
+      "options": [
+        "an",
+        "a",
+        "the",
+        "some",
+        "any"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Przed samogłoską (a, e, i, o, u) używamy an.",
+      "level": "4"
+    },
+    {
+      "id": "L04-002",
+      "sentence": "She bought ___ book.",
+      "options": [
+        "a",
+        "an",
+        "some",
+        "any",
+        "the"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Przed spółgłoską używamy a.",
+      "level": "4"
+    },
+    {
+      "id": "L04-003",
+      "sentence": "He is ___ engineer.",
+      "options": [
+        "an",
+        "a",
+        "some",
+        "any",
+        "the"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Engineer zaczyna się od samogłoski, więc używamy an.",
+      "level": "4"
+    },
+    {
+      "id": "L04-004",
+      "sentence": "We saw ___ dog in the park.",
+      "options": [
+        "a",
+        "an",
+        "some",
+        "any",
+        "the"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Dog zaczyna się od spółgłoski, więc używamy a.",
+      "level": "4"
+    },
+    {
+      "id": "L04-005",
+      "sentence": "It is ___ old house.",
+      "options": [
+        "an",
+        "a",
+        "some",
+        "any",
+        "the"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Old zaczyna się od samogłoski, więc używamy an.",
+      "level": "4"
+    },
+    {
+      "id": "L04-006",
+      "sentence": "She has ___ umbrella.",
+      "options": [
+        "an",
+        "a",
+        "some",
+        "any",
+        "the"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Umbrella zaczyna się od samogłoski, więc an.",
+      "level": "4"
+    },
+    {
+      "id": "L04-007",
+      "sentence": "He is ___ teacher.",
+      "options": [
+        "a",
+        "an",
+        "some",
+        "any",
+        "the"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Teacher zaczyna się od spółgłoski, więc a.",
+      "level": "4"
+    },
+    {
+      "id": "L04-008",
+      "sentence": "I need ___ hour.",
+      "options": [
+        "an",
+        "a",
+        "some",
+        "any",
+        "the"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Hour wymawiamy z niemym h, więc zaczyna się od samogłoski → an.",
+      "level": "4"
+    },
+    {
+      "id": "L04-009",
+      "sentence": "She ate ___ orange.",
+      "options": [
+        "an",
+        "a",
+        "some",
+        "any",
+        "the"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Orange zaczyna się od samogłoski, więc an.",
+      "level": "4"
+    },
+    {
+      "id": "L04-010",
+      "sentence": "He drives ___ car.",
+      "options": [
+        "a",
+        "an",
+        "some",
+        "any",
+        "the"
+      ],
+      "correctOptionIndex": 0,
+      "explanationPl": "Car zaczyna się od spółgłoski, więc a.",
+      "level": "4"
+    }
+  ]
+}

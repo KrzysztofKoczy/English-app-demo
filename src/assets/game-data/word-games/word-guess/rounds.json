@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0.0",
+  "game": "word_guess",
+  "roundCount": 10,
+  "rounds": [
+    {
+      "id": "WG-001",
+      "level": 1,
+      "cefr": "A1",
+      "targetWordId": "word_horse",
+      "wordLength": 5,
+      "maxAttempts": 5,
+      "hintOrder": [
+        "topic",
+        "part_of_speech",
+        "translation_pl"
+      ],
+      "acceptedWordsListId": "accepted-five-letter-v1"
+    },
+    {
+      "id": "WG-002",
+      "level": 2,
+      "cefr": "A1",
+      "targetWordId": "word_apple",
+      "wordLength": 5,
+      "maxAttempts": 5,
+      "hintOrder": [
+        "topic",
+        "part_of_speech",
+        "translation_pl"
+      ],
+      "acceptedWordsListId": "accepted-five-letter-v1"
+    },
+    {
+      "id": "WG-003",
+      "level": 3,
+      "cefr": "A1",
+      "targetWordId": "word_bread",
+      "wordLength": 5,
+      "maxAttempts": 5,
+      "hintOrder": [
+        "topic",
+        "part_of_speech",
+        "translation_pl"
+      ],
+      "acceptedWordsListId": "accepted-five-letter-v1"
+    },
+    {
+      "id": "WG-004",
+      "level": 4,
+      "cefr": "A1",
+      "targetWordId": "word_chair",
+      "wordLength": 5,
+      "maxAttempts": 5,
+      "hintOrder": [
+        "topic",
+        "part_of_speech",
+        "translation_pl"
+      ],
+      "acceptedWordsListId": "accepted-five-letter-v1"
+    },
+    {
+      "id": "WG-005",
+      "level": 5,
+      "cefr": "A1",
+      "targetWordId": "word_table",
+      "wordLength": 5,
+      "maxAttempts": 5,
+      "hintOrder": [
+        "topic",
+        "part_of_speech",
+        "translation_pl"
+      ],
+      "acceptedWordsListId": "accepted-five-letter-v1"
+    },
+    {
+      "id": "WG-006",
+      "level": 6,
+      "cefr": "A1",
+      "targetWordId": "word_train",
+      "wordLength": 5,
+      "maxAttempts": 5,
+      "hintOrder": [
+        "topic",
+        "part_of_speech",
+        "translation_pl"
+      ],
+      "acceptedWordsListId": "accepted-five-letter-v1"
+    },
+    {
+      "id": "WG-007",
+      "level": 7,
+      "cefr": "A1",
+      "targetWordId": "word_hotel",
+      "wordLength": 5,
+      "maxAttempts": 5,
+      "hintOrder": [
+        "topic",
+        "part_of_speech",
+        "translation_pl"
+      ],
+      "acceptedWordsListId": "accepted-five-letter-v1"
+    },
+    {
+      "id": "WG-008",
+      "level": 8,
+      "cefr": "A1",
+      "targetWordId": "word_plant",
+      "wordLength": 5,
+      "maxAttempts": 5,
+      "hintOrder": [
+        "topic",
+        "part_of_speech",
+        "translation_pl"
+      ],
+      "acceptedWordsListId": "accepted-five-letter-v1"
+    },
+    {
+      "id": "WG-009",
+      "level": 9,
+      "cefr": "A1",
+      "targetWordId": "word_river",
+      "wordLength": 5,
+      "maxAttempts": 5,
+      "hintOrder": [
+        "topic",
+        "part_of_speech",
+        "translation_pl"
+      ],
+      "acceptedWordsListId": "accepted-five-letter-v1"
+    },
+    {
+      "id": "WG-010",
+      "level": 10,
+      "cefr": "A1",
+      "targetWordId": "word_nurse",
+      "wordLength": 5,
+      "maxAttempts": 5,
+      "hintOrder": [
+        "topic",
+        "part_of_speech",
+        "translation_pl"
+      ],
+      "acceptedWordsListId": "accepted-five-letter-v1"
+    }
+  ]
+}

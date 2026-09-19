@@ -1,0 +1,23 @@
+UWAGI DO REDAKCJI / WERYFIKACJI
+
+Pakiet:
+- 20 idiomów,
+- 60 ćwiczeń idiomowych (3 na idiom),
+- 60 pytań tematycznych (20 Travel, 20 Kitchen, 20 Sport).
+
+`level` i `frequency` przy idiomach są oznaczeniami redakcyjnymi do demo. Przed traktowaniem ich jako danych źródłowych należy je zweryfikować w wybranym słowniku lub korpusie.
+
+`sources` celowo pozostawiono puste. Nie przypisano źródeł bez ręcznej weryfikacji konkretnego hasła i konkretnego URL.
+
+Zdania przykładowe oraz treści ćwiczeń są autorskie, przygotowane na potrzeby aplikacji.
+
+Poziomy A2/B1 pytań tematycznych są redakcyjne i nie są oficjalną klasyfikacją Cambridge/CEFR.
+
+Walidacja techniczna wykonana:
+- unikalne ID,
+- poprawne `idiomId`,
+- 4 odpowiedzi w ćwiczeniach idiomowych,
+- 5 odpowiedzi w pytaniach tematycznych,
+- poprawne `correctOptionIndex`,
+- `________` w gap-fill,
+- `___` w pytaniach tematycznych.

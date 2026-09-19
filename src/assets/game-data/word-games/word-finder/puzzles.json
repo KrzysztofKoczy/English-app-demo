@@ -1,0 +1,847 @@
+{
+  "schemaVersion": "1.0.0",
+  "game": "word_finder",
+  "puzzleCount": 10,
+  "puzzles": [
+    {
+      "id": "WF-001",
+      "level": 1,
+      "cefr": "A1",
+      "difficulty": 1,
+      "letters": [
+        "C",
+        "A",
+        "T"
+      ],
+      "requiredWordIds": [
+        "word_cat",
+        "word_act",
+        "word_at"
+      ],
+      "bonusWordIds": [],
+      "board": {
+        "rows": 3,
+        "columns": 3,
+        "cells": [
+          [
+            "C",
+            "A",
+            "T"
+          ],
+          [
+            null,
+            "C",
+            null
+          ],
+          [
+            null,
+            "T",
+            null
+          ]
+        ],
+        "placements": [
+          {
+            "wordId": "word_cat",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "horizontal"
+          },
+          {
+            "wordId": "word_act",
+            "startRow": 0,
+            "startColumn": 1,
+            "direction": "vertical"
+          },
+          {
+            "wordId": "word_at",
+            "startRow": 0,
+            "startColumn": 1,
+            "direction": "horizontal"
+          }
+        ]
+      },
+      "hints": {
+        "max": 2,
+        "types": [
+          "reveal_translation",
+          "reveal_letter"
+        ]
+      }
+    },
+    {
+      "id": "WF-002",
+      "level": 2,
+      "cefr": "A1",
+      "difficulty": 1,
+      "letters": [
+        "D",
+        "O",
+        "G"
+      ],
+      "requiredWordIds": [
+        "word_dog",
+        "word_go",
+        "word_do"
+      ],
+      "bonusWordIds": [],
+      "board": {
+        "rows": 2,
+        "columns": 3,
+        "cells": [
+          [
+            "D",
+            "O",
+            "G"
+          ],
+          [
+            "O",
+            null,
+            "O"
+          ]
+        ],
+        "placements": [
+          {
+            "wordId": "word_dog",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "horizontal"
+          },
+          {
+            "wordId": "word_go",
+            "startRow": 0,
+            "startColumn": 2,
+            "direction": "vertical"
+          },
+          {
+            "wordId": "word_do",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "vertical"
+          }
+        ]
+      },
+      "hints": {
+        "max": 2,
+        "types": [
+          "reveal_translation",
+          "reveal_letter"
+        ]
+      }
+    },
+    {
+      "id": "WF-003",
+      "level": 3,
+      "cefr": "A1",
+      "difficulty": 1,
+      "letters": [
+        "E",
+        "A",
+        "T"
+      ],
+      "requiredWordIds": [
+        "word_eat",
+        "word_tea",
+        "word_at"
+      ],
+      "bonusWordIds": [],
+      "board": {
+        "rows": 3,
+        "columns": 3,
+        "cells": [
+          [
+            "E",
+            "A",
+            "T"
+          ],
+          [
+            null,
+            "T",
+            "E"
+          ],
+          [
+            null,
+            null,
+            "A"
+          ]
+        ],
+        "placements": [
+          {
+            "wordId": "word_eat",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "horizontal"
+          },
+          {
+            "wordId": "word_tea",
+            "startRow": 0,
+            "startColumn": 2,
+            "direction": "vertical"
+          },
+          {
+            "wordId": "word_at",
+            "startRow": 0,
+            "startColumn": 1,
+            "direction": "vertical"
+          }
+        ]
+      },
+      "hints": {
+        "max": 2,
+        "types": [
+          "reveal_translation",
+          "reveal_letter"
+        ]
+      }
+    },
+    {
+      "id": "WF-004",
+      "level": 4,
+      "cefr": "A1",
+      "difficulty": 2,
+      "letters": [
+        "S",
+        "T",
+        "O",
+        "P"
+      ],
+      "requiredWordIds": [
+        "word_stop",
+        "word_post",
+        "word_pot",
+        "word_top"
+      ],
+      "bonusWordIds": [],
+      "board": {
+        "rows": 4,
+        "columns": 6,
+        "cells": [
+          [
+            "S",
+            "T",
+            "O",
+            "P",
+            "O",
+            "T"
+          ],
+          [
+            null,
+            "O",
+            null,
+            "O",
+            null,
+            null
+          ],
+          [
+            null,
+            "P",
+            null,
+            "S",
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            "T",
+            null,
+            null
+          ]
+        ],
+        "placements": [
+          {
+            "wordId": "word_stop",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "horizontal"
+          },
+          {
+            "wordId": "word_post",
+            "startRow": 0,
+            "startColumn": 3,
+            "direction": "vertical"
+          },
+          {
+            "wordId": "word_pot",
+            "startRow": 0,
+            "startColumn": 3,
+            "direction": "horizontal"
+          },
+          {
+            "wordId": "word_top",
+            "startRow": 0,
+            "startColumn": 1,
+            "direction": "vertical"
+          }
+        ]
+      },
+      "hints": {
+        "max": 2,
+        "types": [
+          "reveal_translation",
+          "reveal_letter"
+        ]
+      }
+    },
+    {
+      "id": "WF-005",
+      "level": 5,
+      "cefr": "A2",
+      "difficulty": 2,
+      "letters": [
+        "R",
+        "A",
+        "T",
+        "E"
+      ],
+      "requiredWordIds": [
+        "word_rate",
+        "word_tear",
+        "word_ear",
+        "word_art"
+      ],
+      "bonusWordIds": [
+        "word_tea",
+        "word_at"
+      ],
+      "board": {
+        "rows": 4,
+        "columns": 4,
+        "cells": [
+          [
+            "R",
+            "A",
+            "T",
+            "E"
+          ],
+          [
+            null,
+            "R",
+            "E",
+            "A"
+          ],
+          [
+            null,
+            "T",
+            "A",
+            "R"
+          ],
+          [
+            null,
+            null,
+            "R",
+            null
+          ]
+        ],
+        "placements": [
+          {
+            "wordId": "word_rate",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "horizontal"
+          },
+          {
+            "wordId": "word_tear",
+            "startRow": 0,
+            "startColumn": 2,
+            "direction": "vertical"
+          },
+          {
+            "wordId": "word_ear",
+            "startRow": 0,
+            "startColumn": 3,
+            "direction": "vertical"
+          },
+          {
+            "wordId": "word_art",
+            "startRow": 0,
+            "startColumn": 1,
+            "direction": "vertical"
+          }
+        ]
+      },
+      "hints": {
+        "max": 2,
+        "types": [
+          "reveal_translation",
+          "reveal_letter"
+        ]
+      }
+    },
+    {
+      "id": "WF-006",
+      "level": 6,
+      "cefr": "A2",
+      "difficulty": 2,
+      "letters": [
+        "L",
+        "I",
+        "S",
+        "T",
+        "E",
+        "N"
+      ],
+      "requiredWordIds": [
+        "word_listen",
+        "word_silent",
+        "word_list",
+        "word_line"
+      ],
+      "bonusWordIds": [],
+      "board": {
+        "rows": 6,
+        "columns": 6,
+        "cells": [
+          [
+            "L",
+            "I",
+            "S",
+            "T",
+            "E",
+            "N"
+          ],
+          [
+            "I",
+            null,
+            "I",
+            null,
+            null,
+            null
+          ],
+          [
+            "S",
+            null,
+            "L",
+            "I",
+            "N",
+            "E"
+          ],
+          [
+            "T",
+            null,
+            "E",
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            "N",
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            "T",
+            null,
+            null,
+            null
+          ]
+        ],
+        "placements": [
+          {
+            "wordId": "word_listen",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "horizontal"
+          },
+          {
+            "wordId": "word_silent",
+            "startRow": 0,
+            "startColumn": 2,
+            "direction": "vertical"
+          },
+          {
+            "wordId": "word_list",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "vertical"
+          },
+          {
+            "wordId": "word_line",
+            "startRow": 2,
+            "startColumn": 2,
+            "direction": "horizontal"
+          }
+        ]
+      },
+      "hints": {
+        "max": 2,
+        "types": [
+          "reveal_translation",
+          "reveal_letter"
+        ]
+      }
+    },
+    {
+      "id": "WF-007",
+      "level": 7,
+      "cefr": "A2",
+      "difficulty": 3,
+      "letters": [
+        "S",
+        "T",
+        "O",
+        "N",
+        "E"
+      ],
+      "requiredWordIds": [
+        "word_stone",
+        "word_tones",
+        "word_note",
+        "word_one"
+      ],
+      "bonusWordIds": [],
+      "board": {
+        "rows": 5,
+        "columns": 5,
+        "cells": [
+          [
+            "S",
+            "T",
+            "O",
+            "N",
+            "E"
+          ],
+          [
+            null,
+            "O",
+            "N",
+            "O",
+            null
+          ],
+          [
+            null,
+            "N",
+            "E",
+            "T",
+            null
+          ],
+          [
+            null,
+            "E",
+            null,
+            "E",
+            null
+          ],
+          [
+            null,
+            "S",
+            null,
+            null,
+            null
+          ]
+        ],
+        "placements": [
+          {
+            "wordId": "word_stone",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "horizontal"
+          },
+          {
+            "wordId": "word_tones",
+            "startRow": 0,
+            "startColumn": 1,
+            "direction": "vertical"
+          },
+          {
+            "wordId": "word_note",
+            "startRow": 0,
+            "startColumn": 3,
+            "direction": "vertical"
+          },
+          {
+            "wordId": "word_one",
+            "startRow": 0,
+            "startColumn": 2,
+            "direction": "vertical"
+          }
+        ]
+      },
+      "hints": {
+        "max": 2,
+        "types": [
+          "reveal_translation",
+          "reveal_letter"
+        ]
+      }
+    },
+    {
+      "id": "WF-008",
+      "level": 8,
+      "cefr": "A2",
+      "difficulty": 3,
+      "letters": [
+        "C",
+        "A",
+        "R",
+        "E"
+      ],
+      "requiredWordIds": [
+        "word_care",
+        "word_race",
+        "word_ear",
+        "word_car"
+      ],
+      "bonusWordIds": [],
+      "board": {
+        "rows": 4,
+        "columns": 4,
+        "cells": [
+          [
+            "C",
+            "A",
+            "R",
+            "E"
+          ],
+          [
+            "A",
+            null,
+            "A",
+            "A"
+          ],
+          [
+            "R",
+            null,
+            "C",
+            "R"
+          ],
+          [
+            null,
+            null,
+            "E",
+            null
+          ]
+        ],
+        "placements": [
+          {
+            "wordId": "word_care",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "horizontal"
+          },
+          {
+            "wordId": "word_race",
+            "startRow": 0,
+            "startColumn": 2,
+            "direction": "vertical"
+          },
+          {
+            "wordId": "word_ear",
+            "startRow": 0,
+            "startColumn": 3,
+            "direction": "vertical"
+          },
+          {
+            "wordId": "word_car",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "vertical"
+          }
+        ]
+      },
+      "hints": {
+        "max": 2,
+        "types": [
+          "reveal_translation",
+          "reveal_letter"
+        ]
+      }
+    },
+    {
+      "id": "WF-009",
+      "level": 9,
+      "cefr": "A2",
+      "difficulty": 3,
+      "letters": [
+        "P",
+        "L",
+        "A",
+        "N",
+        "E"
+      ],
+      "requiredWordIds": [
+        "word_plane",
+        "word_panel",
+        "word_plan",
+        "word_lean"
+      ],
+      "bonusWordIds": [],
+      "board": {
+        "rows": 5,
+        "columns": 5,
+        "cells": [
+          [
+            "P",
+            "L",
+            "A",
+            "N",
+            "E"
+          ],
+          [
+            "A",
+            "E",
+            null,
+            null,
+            null
+          ],
+          [
+            "N",
+            "A",
+            null,
+            null,
+            null
+          ],
+          [
+            "E",
+            "N",
+            null,
+            null,
+            null
+          ],
+          [
+            "L",
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "placements": [
+          {
+            "wordId": "word_plane",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "horizontal"
+          },
+          {
+            "wordId": "word_panel",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "vertical"
+          },
+          {
+            "wordId": "word_plan",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "horizontal"
+          },
+          {
+            "wordId": "word_lean",
+            "startRow": 0,
+            "startColumn": 1,
+            "direction": "vertical"
+          }
+        ]
+      },
+      "hints": {
+        "max": 2,
+        "types": [
+          "reveal_translation",
+          "reveal_letter"
+        ]
+      }
+    },
+    {
+      "id": "WF-010",
+      "level": 10,
+      "cefr": "A2",
+      "difficulty": 3,
+      "letters": [
+        "H",
+        "E",
+        "A",
+        "R",
+        "T"
+      ],
+      "requiredWordIds": [
+        "word_heart",
+        "word_earth",
+        "word_hear",
+        "word_heat"
+      ],
+      "bonusWordIds": [
+        "word_ear",
+        "word_tea"
+      ],
+      "board": {
+        "rows": 5,
+        "columns": 5,
+        "cells": [
+          [
+            "H",
+            "E",
+            "A",
+            "R",
+            "T"
+          ],
+          [
+            "E",
+            "A",
+            null,
+            null,
+            null
+          ],
+          [
+            "A",
+            "R",
+            null,
+            null,
+            null
+          ],
+          [
+            "R",
+            "T",
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            "H",
+            "E",
+            "A",
+            "T"
+          ]
+        ],
+        "placements": [
+          {
+            "wordId": "word_heart",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "horizontal"
+          },
+          {
+            "wordId": "word_earth",
+            "startRow": 0,
+            "startColumn": 1,
+            "direction": "vertical"
+          },
+          {
+            "wordId": "word_hear",
+            "startRow": 0,
+            "startColumn": 0,
+            "direction": "vertical"
+          },
+          {
+            "wordId": "word_heat",
+            "startRow": 4,
+            "startColumn": 1,
+            "direction": "horizontal"
+          }
+        ]
+      },
+      "hints": {
+        "max": 2,
+        "types": [
+          "reveal_translation",
+          "reveal_letter"
+        ]
+      }
+    }
+  ]
+}

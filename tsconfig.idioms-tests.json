@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "rootDir": "src/app",
+    "outDir": ".cache/idiom-tests",
+    "types": [],
+    "declaration": false
+  },
+  "include": ["src/app/idioms/idiom-models.ts", "src/app/idioms/idiom-learning.ts", "src/app/idioms/idiom-storage.ts", "src/app/core/models.ts"]
+}

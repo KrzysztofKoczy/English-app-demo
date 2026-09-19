@@ -1,0 +1,2053 @@
+{
+  "schemaVersion": "1.0.0",
+  "language": "en",
+  "interfaceLanguage": "pl",
+  "contentSource": {
+    "type": "original",
+    "description": "Original curated starter content prepared for this project."
+  },
+  "count": 92,
+  "words": [
+    {
+      "id": "word_cat",
+      "word": "cat",
+      "lemma": "cat",
+      "length": 3,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "animals"
+      ],
+      "translationsPl": [
+        "kot"
+      ],
+      "definitionEn": "A small animal often kept as a pet.",
+      "exampleEn": "The cat is sleeping on the sofa.",
+      "acceptedSpellings": [
+        "cat"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_dog",
+      "word": "dog",
+      "lemma": "dog",
+      "length": 3,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "animals"
+      ],
+      "translationsPl": [
+        "pies"
+      ],
+      "definitionEn": "An animal often kept as a pet that can bark.",
+      "exampleEn": "The dog is playing in the garden.",
+      "acceptedSpellings": [
+        "dog"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_horse",
+      "word": "horse",
+      "lemma": "horse",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "animals"
+      ],
+      "translationsPl": [
+        "koń"
+      ],
+      "definitionEn": "A large animal that people can ride.",
+      "exampleEn": "She learned to ride a horse.",
+      "acceptedSpellings": [
+        "horse"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_tiger",
+      "word": "tiger",
+      "lemma": "tiger",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "animals"
+      ],
+      "translationsPl": [
+        "tygrys"
+      ],
+      "definitionEn": "A large wild cat with dark stripes.",
+      "exampleEn": "The tiger moved quietly through the grass.",
+      "acceptedSpellings": [
+        "tiger"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_sheep",
+      "word": "sheep",
+      "lemma": "sheep",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "animals"
+      ],
+      "translationsPl": [
+        "owca"
+      ],
+      "definitionEn": "A farm animal with thick wool.",
+      "exampleEn": "The sheep are eating grass.",
+      "acceptedSpellings": [
+        "sheep"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_rabbit",
+      "word": "rabbit",
+      "lemma": "rabbit",
+      "length": 6,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "animals"
+      ],
+      "translationsPl": [
+        "królik"
+      ],
+      "definitionEn": "A small animal with long ears.",
+      "exampleEn": "The rabbit jumped across the field.",
+      "acceptedSpellings": [
+        "rabbit"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_monkey",
+      "word": "monkey",
+      "lemma": "monkey",
+      "length": 6,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "animals"
+      ],
+      "translationsPl": [
+        "małpa"
+      ],
+      "definitionEn": "An animal that can climb trees and has a long tail.",
+      "exampleEn": "The monkey reached for a banana.",
+      "acceptedSpellings": [
+        "monkey"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_dolphin",
+      "word": "dolphin",
+      "lemma": "dolphin",
+      "length": 7,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "animals"
+      ],
+      "translationsPl": [
+        "delfin"
+      ],
+      "definitionEn": "An intelligent sea animal that breathes air.",
+      "exampleEn": "We saw a dolphin near the boat.",
+      "acceptedSpellings": [
+        "dolphin"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_eagle",
+      "word": "eagle",
+      "lemma": "eagle",
+      "length": 5,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "animals"
+      ],
+      "translationsPl": [
+        "orzeł"
+      ],
+      "definitionEn": "A large bird with very good eyesight.",
+      "exampleEn": "An eagle was flying above the mountain.",
+      "acceptedSpellings": [
+        "eagle"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_panda",
+      "word": "panda",
+      "lemma": "panda",
+      "length": 5,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "animals"
+      ],
+      "translationsPl": [
+        "panda"
+      ],
+      "definitionEn": "A black-and-white animal that mainly eats bamboo.",
+      "exampleEn": "The panda was eating bamboo.",
+      "acceptedSpellings": [
+        "panda"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_apple",
+      "word": "apple",
+      "lemma": "apple",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "food"
+      ],
+      "translationsPl": [
+        "jabłko"
+      ],
+      "definitionEn": "A round fruit with red, green or yellow skin.",
+      "exampleEn": "She eats an apple every morning.",
+      "acceptedSpellings": [
+        "apple"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_bread",
+      "word": "bread",
+      "lemma": "bread",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "food"
+      ],
+      "translationsPl": [
+        "chleb"
+      ],
+      "definitionEn": "Food made from flour and baked in an oven.",
+      "exampleEn": "I bought fresh bread at the bakery.",
+      "acceptedSpellings": [
+        "bread"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_cheese",
+      "word": "cheese",
+      "lemma": "cheese",
+      "length": 6,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "food"
+      ],
+      "translationsPl": [
+        "ser"
+      ],
+      "definitionEn": "Food made from milk that can be soft or hard.",
+      "exampleEn": "Would you like cheese on your sandwich?",
+      "acceptedSpellings": [
+        "cheese"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_rice",
+      "word": "rice",
+      "lemma": "rice",
+      "length": 4,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "food"
+      ],
+      "translationsPl": [
+        "ryż"
+      ],
+      "definitionEn": "Small white or brown grains cooked as food.",
+      "exampleEn": "We had chicken with rice.",
+      "acceptedSpellings": [
+        "rice"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_soup",
+      "word": "soup",
+      "lemma": "soup",
+      "length": 4,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "food"
+      ],
+      "translationsPl": [
+        "zupa"
+      ],
+      "definitionEn": "Liquid food usually served hot in a bowl.",
+      "exampleEn": "The tomato soup smells wonderful.",
+      "acceptedSpellings": [
+        "soup"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_carrot",
+      "word": "carrot",
+      "lemma": "carrot",
+      "length": 6,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "food"
+      ],
+      "translationsPl": [
+        "marchewka"
+      ],
+      "definitionEn": "A long orange vegetable that grows underground.",
+      "exampleEn": "He added a carrot to the salad.",
+      "acceptedSpellings": [
+        "carrot"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_banana",
+      "word": "banana",
+      "lemma": "banana",
+      "length": 6,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "food"
+      ],
+      "translationsPl": [
+        "banan"
+      ],
+      "definitionEn": "A long curved yellow fruit.",
+      "exampleEn": "The banana is not ripe yet.",
+      "acceptedSpellings": [
+        "banana"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_lemon",
+      "word": "lemon",
+      "lemma": "lemon",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "food"
+      ],
+      "translationsPl": [
+        "cytryna"
+      ],
+      "definitionEn": "A yellow fruit with a very sour taste.",
+      "exampleEn": "Add some lemon to the tea.",
+      "acceptedSpellings": [
+        "lemon"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_honey",
+      "word": "honey",
+      "lemma": "honey",
+      "length": 5,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "food"
+      ],
+      "translationsPl": [
+        "miód"
+      ],
+      "definitionEn": "A sweet food made by bees.",
+      "exampleEn": "I put honey in my tea.",
+      "acceptedSpellings": [
+        "honey"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_pepper",
+      "word": "pepper",
+      "lemma": "pepper",
+      "length": 6,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "food"
+      ],
+      "translationsPl": [
+        "papryka",
+        "pieprz"
+      ],
+      "definitionEn": "A vegetable or spice used to add flavour to food.",
+      "exampleEn": "She added pepper to the dish.",
+      "acceptedSpellings": [
+        "pepper"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_chair",
+      "word": "chair",
+      "lemma": "chair",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "home"
+      ],
+      "translationsPl": [
+        "krzesło"
+      ],
+      "definitionEn": "A piece of furniture for one person to sit on.",
+      "exampleEn": "Please sit on this chair.",
+      "acceptedSpellings": [
+        "chair"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_table",
+      "word": "table",
+      "lemma": "table",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "home"
+      ],
+      "translationsPl": [
+        "stół"
+      ],
+      "definitionEn": "A piece of furniture with a flat top and legs.",
+      "exampleEn": "Dinner is on the table.",
+      "acceptedSpellings": [
+        "table"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_window",
+      "word": "window",
+      "lemma": "window",
+      "length": 6,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "home"
+      ],
+      "translationsPl": [
+        "okno"
+      ],
+      "definitionEn": "An opening with glass that lets light into a building.",
+      "exampleEn": "Please open the window.",
+      "acceptedSpellings": [
+        "window"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_door",
+      "word": "door",
+      "lemma": "door",
+      "length": 4,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "home"
+      ],
+      "translationsPl": [
+        "drzwi"
+      ],
+      "definitionEn": "A movable object used to enter or leave a room.",
+      "exampleEn": "Someone is standing at the door.",
+      "acceptedSpellings": [
+        "door"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_kitchen",
+      "word": "kitchen",
+      "lemma": "kitchen",
+      "length": 7,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "home"
+      ],
+      "translationsPl": [
+        "kuchnia"
+      ],
+      "definitionEn": "A room where food is prepared and cooked.",
+      "exampleEn": "Mum is cooking in the kitchen.",
+      "acceptedSpellings": [
+        "kitchen"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_bedroom",
+      "word": "bedroom",
+      "lemma": "bedroom",
+      "length": 7,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "home"
+      ],
+      "translationsPl": [
+        "sypialnia"
+      ],
+      "definitionEn": "A room used mainly for sleeping.",
+      "exampleEn": "My bedroom is upstairs.",
+      "acceptedSpellings": [
+        "bedroom"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_mirror",
+      "word": "mirror",
+      "lemma": "mirror",
+      "length": 6,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "home"
+      ],
+      "translationsPl": [
+        "lustro"
+      ],
+      "definitionEn": "A surface that shows your reflection.",
+      "exampleEn": "She looked at herself in the mirror.",
+      "acceptedSpellings": [
+        "mirror"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_blanket",
+      "word": "blanket",
+      "lemma": "blanket",
+      "length": 7,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "home"
+      ],
+      "translationsPl": [
+        "koc"
+      ],
+      "definitionEn": "A thick covering used to keep warm in bed.",
+      "exampleEn": "I need another blanket tonight.",
+      "acceptedSpellings": [
+        "blanket"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_shelf",
+      "word": "shelf",
+      "lemma": "shelf",
+      "length": 5,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "home"
+      ],
+      "translationsPl": [
+        "półka"
+      ],
+      "definitionEn": "A flat surface used for holding objects.",
+      "exampleEn": "The books are on the shelf.",
+      "acceptedSpellings": [
+        "shelf"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_pillow",
+      "word": "pillow",
+      "lemma": "pillow",
+      "length": 6,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "home"
+      ],
+      "translationsPl": [
+        "poduszka"
+      ],
+      "definitionEn": "A soft object that supports your head in bed.",
+      "exampleEn": "This pillow is very comfortable.",
+      "acceptedSpellings": [
+        "pillow"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_train",
+      "word": "train",
+      "lemma": "train",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "travel"
+      ],
+      "translationsPl": [
+        "pociąg"
+      ],
+      "definitionEn": "A vehicle that travels on railway tracks.",
+      "exampleEn": "The train leaves at eight.",
+      "acceptedSpellings": [
+        "train"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_hotel",
+      "word": "hotel",
+      "lemma": "hotel",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "travel"
+      ],
+      "translationsPl": [
+        "hotel"
+      ],
+      "definitionEn": "A place where travellers pay to sleep.",
+      "exampleEn": "We booked a hotel near the beach.",
+      "acceptedSpellings": [
+        "hotel"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_ticket",
+      "word": "ticket",
+      "lemma": "ticket",
+      "length": 6,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "travel"
+      ],
+      "translationsPl": [
+        "bilet"
+      ],
+      "definitionEn": "A document that allows you to travel or enter a place.",
+      "exampleEn": "Keep your train ticket with you.",
+      "acceptedSpellings": [
+        "ticket"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_airport",
+      "word": "airport",
+      "lemma": "airport",
+      "length": 7,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "travel"
+      ],
+      "translationsPl": [
+        "lotnisko"
+      ],
+      "definitionEn": "A place where planes take off and land.",
+      "exampleEn": "We arrived at the airport early.",
+      "acceptedSpellings": [
+        "airport"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_suitcase",
+      "word": "suitcase",
+      "lemma": "suitcase",
+      "length": 8,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "travel"
+      ],
+      "translationsPl": [
+        "walizka"
+      ],
+      "definitionEn": "A case used for carrying clothes while travelling.",
+      "exampleEn": "Her suitcase was very heavy.",
+      "acceptedSpellings": [
+        "suitcase"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_passport",
+      "word": "passport",
+      "lemma": "passport",
+      "length": 8,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "travel"
+      ],
+      "translationsPl": [
+        "paszport"
+      ],
+      "definitionEn": "An official document used for international travel.",
+      "exampleEn": "I showed my passport at the border.",
+      "acceptedSpellings": [
+        "passport"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_journey",
+      "word": "journey",
+      "lemma": "journey",
+      "length": 7,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "travel"
+      ],
+      "translationsPl": [
+        "podróż"
+      ],
+      "definitionEn": "The act of travelling from one place to another.",
+      "exampleEn": "The journey took three hours.",
+      "acceptedSpellings": [
+        "journey"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_station",
+      "word": "station",
+      "lemma": "station",
+      "length": 7,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "travel"
+      ],
+      "translationsPl": [
+        "stacja",
+        "dworzec"
+      ],
+      "definitionEn": "A place where trains or buses stop for passengers.",
+      "exampleEn": "Meet me outside the station.",
+      "acceptedSpellings": [
+        "station"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_beach",
+      "word": "beach",
+      "lemma": "beach",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "travel"
+      ],
+      "translationsPl": [
+        "plaża"
+      ],
+      "definitionEn": "A sandy or stony area beside the sea.",
+      "exampleEn": "We spent the afternoon on the beach.",
+      "acceptedSpellings": [
+        "beach"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_map",
+      "word": "map",
+      "lemma": "map",
+      "length": 3,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "travel"
+      ],
+      "translationsPl": [
+        "mapa"
+      ],
+      "definitionEn": "A drawing that shows where places are.",
+      "exampleEn": "Check the map before we leave.",
+      "acceptedSpellings": [
+        "map"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_nurse",
+      "word": "nurse",
+      "lemma": "nurse",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "work"
+      ],
+      "translationsPl": [
+        "pielęgniarka",
+        "pielęgniarz"
+      ],
+      "definitionEn": "A person trained to care for sick people.",
+      "exampleEn": "The nurse checked the patient.",
+      "acceptedSpellings": [
+        "nurse"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_teacher",
+      "word": "teacher",
+      "lemma": "teacher",
+      "length": 7,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "work"
+      ],
+      "translationsPl": [
+        "nauczyciel",
+        "nauczycielka"
+      ],
+      "definitionEn": "A person whose job is to help people learn.",
+      "exampleEn": "Our teacher explained the task.",
+      "acceptedSpellings": [
+        "teacher"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_driver",
+      "word": "driver",
+      "lemma": "driver",
+      "length": 6,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "work"
+      ],
+      "translationsPl": [
+        "kierowca"
+      ],
+      "definitionEn": "A person who drives a vehicle.",
+      "exampleEn": "The bus driver opened the doors.",
+      "acceptedSpellings": [
+        "driver"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_chef",
+      "word": "chef",
+      "lemma": "chef",
+      "length": 4,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "work"
+      ],
+      "translationsPl": [
+        "szef kuchni"
+      ],
+      "definitionEn": "A professional cook, especially in a restaurant.",
+      "exampleEn": "The chef prepared a special meal.",
+      "acceptedSpellings": [
+        "chef"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_farmer",
+      "word": "farmer",
+      "lemma": "farmer",
+      "length": 6,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "work"
+      ],
+      "translationsPl": [
+        "rolnik"
+      ],
+      "definitionEn": "A person who grows crops or keeps animals.",
+      "exampleEn": "The farmer works in the fields.",
+      "acceptedSpellings": [
+        "farmer"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_mechanic",
+      "word": "mechanic",
+      "lemma": "mechanic",
+      "length": 8,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "work"
+      ],
+      "translationsPl": [
+        "mechanik"
+      ],
+      "definitionEn": "A person who repairs machines or vehicles.",
+      "exampleEn": "The mechanic repaired my car.",
+      "acceptedSpellings": [
+        "mechanic"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_architect",
+      "word": "architect",
+      "lemma": "architect",
+      "length": 9,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "work"
+      ],
+      "translationsPl": [
+        "architekt"
+      ],
+      "definitionEn": "A person whose job is to design buildings.",
+      "exampleEn": "The architect showed us the plans.",
+      "acceptedSpellings": [
+        "architect"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_journalist",
+      "word": "journalist",
+      "lemma": "journalist",
+      "length": 10,
+      "cefr": "B1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "work"
+      ],
+      "translationsPl": [
+        "dziennikarz"
+      ],
+      "definitionEn": "A person who reports news for newspapers, television or websites.",
+      "exampleEn": "The journalist interviewed the actor.",
+      "acceptedSpellings": [
+        "journalist"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_accountant",
+      "word": "accountant",
+      "lemma": "accountant",
+      "length": 10,
+      "cefr": "B1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "work"
+      ],
+      "translationsPl": [
+        "księgowy",
+        "księgowa"
+      ],
+      "definitionEn": "A person whose job is to prepare financial records.",
+      "exampleEn": "The accountant checked the company accounts.",
+      "acceptedSpellings": [
+        "accountant"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_manager",
+      "word": "manager",
+      "lemma": "manager",
+      "length": 7,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "work"
+      ],
+      "translationsPl": [
+        "kierownik",
+        "menedżer"
+      ],
+      "definitionEn": "A person responsible for controlling a team or organisation.",
+      "exampleEn": "The manager called a team meeting.",
+      "acceptedSpellings": [
+        "manager"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_plant",
+      "word": "plant",
+      "lemma": "plant",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "nature"
+      ],
+      "translationsPl": [
+        "roślina"
+      ],
+      "definitionEn": "A living thing that grows in soil and usually has leaves.",
+      "exampleEn": "This plant needs more water.",
+      "acceptedSpellings": [
+        "plant"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_river",
+      "word": "river",
+      "lemma": "river",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "nature"
+      ],
+      "translationsPl": [
+        "rzeka"
+      ],
+      "definitionEn": "A natural flow of water moving towards a sea or lake.",
+      "exampleEn": "A wide river runs through the city.",
+      "acceptedSpellings": [
+        "river"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_forest",
+      "word": "forest",
+      "lemma": "forest",
+      "length": 6,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "nature"
+      ],
+      "translationsPl": [
+        "las"
+      ],
+      "definitionEn": "A large area covered mainly with trees.",
+      "exampleEn": "We walked through the forest.",
+      "acceptedSpellings": [
+        "forest"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_mountain",
+      "word": "mountain",
+      "lemma": "mountain",
+      "length": 8,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "nature"
+      ],
+      "translationsPl": [
+        "góra"
+      ],
+      "definitionEn": "A very high area of land with steep sides.",
+      "exampleEn": "Snow covered the mountain.",
+      "acceptedSpellings": [
+        "mountain"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_island",
+      "word": "island",
+      "lemma": "island",
+      "length": 6,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "nature"
+      ],
+      "translationsPl": [
+        "wyspa"
+      ],
+      "definitionEn": "An area of land completely surrounded by water.",
+      "exampleEn": "They live on a small island.",
+      "acceptedSpellings": [
+        "island"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_cloud",
+      "word": "cloud",
+      "lemma": "cloud",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "nature"
+      ],
+      "translationsPl": [
+        "chmura"
+      ],
+      "definitionEn": "A white or grey mass of small drops of water in the sky.",
+      "exampleEn": "A dark cloud covered the sun.",
+      "acceptedSpellings": [
+        "cloud"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_flower",
+      "word": "flower",
+      "lemma": "flower",
+      "length": 6,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "nature"
+      ],
+      "translationsPl": [
+        "kwiat"
+      ],
+      "definitionEn": "The colourful part of a plant that can produce seeds.",
+      "exampleEn": "This flower smells beautiful.",
+      "acceptedSpellings": [
+        "flower"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_stone",
+      "word": "stone",
+      "lemma": "stone",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "nature"
+      ],
+      "translationsPl": [
+        "kamień"
+      ],
+      "definitionEn": "A small hard piece of rock.",
+      "exampleEn": "He picked up a smooth stone.",
+      "acceptedSpellings": [
+        "stone"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_field",
+      "word": "field",
+      "lemma": "field",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "nature"
+      ],
+      "translationsPl": [
+        "pole"
+      ],
+      "definitionEn": "An area of land used for crops or animals.",
+      "exampleEn": "Cows were standing in the field.",
+      "acceptedSpellings": [
+        "field"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_ocean",
+      "word": "ocean",
+      "lemma": "ocean",
+      "length": 5,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "nature"
+      ],
+      "translationsPl": [
+        "ocean"
+      ],
+      "definitionEn": "A very large area of salt water.",
+      "exampleEn": "The island lies in the Pacific Ocean.",
+      "acceptedSpellings": [
+        "ocean"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_act",
+      "word": "act",
+      "lemma": "act",
+      "length": 3,
+      "cefr": "A2",
+      "partOfSpeech": "verb",
+      "topics": [
+        "actions"
+      ],
+      "translationsPl": [
+        "działać"
+      ],
+      "definitionEn": "To do something or behave in a particular way.",
+      "exampleEn": "We must act quickly.",
+      "acceptedSpellings": [
+        "act"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_at",
+      "word": "at",
+      "lemma": "at",
+      "length": 2,
+      "cefr": "A1",
+      "partOfSpeech": "preposition",
+      "topics": [
+        "basic"
+      ],
+      "translationsPl": [
+        "przy",
+        "w"
+      ],
+      "definitionEn": "Used to show a particular place or time.",
+      "exampleEn": "Meet me at the station.",
+      "acceptedSpellings": [
+        "at"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_go",
+      "word": "go",
+      "lemma": "go",
+      "length": 2,
+      "cefr": "A1",
+      "partOfSpeech": "verb",
+      "topics": [
+        "actions"
+      ],
+      "translationsPl": [
+        "iść",
+        "jechać"
+      ],
+      "definitionEn": "To move or travel to another place.",
+      "exampleEn": "I go to work by bus.",
+      "acceptedSpellings": [
+        "go"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_do",
+      "word": "do",
+      "lemma": "do",
+      "length": 2,
+      "cefr": "A1",
+      "partOfSpeech": "verb",
+      "topics": [
+        "actions"
+      ],
+      "translationsPl": [
+        "robić"
+      ],
+      "definitionEn": "To perform an action or activity.",
+      "exampleEn": "I do my homework after dinner.",
+      "acceptedSpellings": [
+        "do"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_eat",
+      "word": "eat",
+      "lemma": "eat",
+      "length": 3,
+      "cefr": "A1",
+      "partOfSpeech": "verb",
+      "topics": [
+        "food",
+        "actions"
+      ],
+      "translationsPl": [
+        "jeść"
+      ],
+      "definitionEn": "To put food in your mouth and swallow it.",
+      "exampleEn": "We eat lunch at noon.",
+      "acceptedSpellings": [
+        "eat"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_tea",
+      "word": "tea",
+      "lemma": "tea",
+      "length": 3,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "food"
+      ],
+      "translationsPl": [
+        "herbata"
+      ],
+      "definitionEn": "A hot drink made by pouring water over dried leaves.",
+      "exampleEn": "Would you like a cup of tea?",
+      "acceptedSpellings": [
+        "tea"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_stop",
+      "word": "stop",
+      "lemma": "stop",
+      "length": 4,
+      "cefr": "A1",
+      "partOfSpeech": "verb",
+      "topics": [
+        "actions"
+      ],
+      "translationsPl": [
+        "zatrzymać się"
+      ],
+      "definitionEn": "To finish moving or doing something.",
+      "exampleEn": "The bus will stop here.",
+      "acceptedSpellings": [
+        "stop"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_post",
+      "word": "post",
+      "lemma": "post",
+      "length": 4,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "communication"
+      ],
+      "translationsPl": [
+        "poczta",
+        "wpis"
+      ],
+      "definitionEn": "Letters and packages, or a message published online.",
+      "exampleEn": "I sent the document by post.",
+      "acceptedSpellings": [
+        "post"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_pot",
+      "word": "pot",
+      "lemma": "pot",
+      "length": 3,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "home"
+      ],
+      "translationsPl": [
+        "garnek"
+      ],
+      "definitionEn": "A deep container used for cooking.",
+      "exampleEn": "The soup is in the pot.",
+      "acceptedSpellings": [
+        "pot"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_top",
+      "word": "top",
+      "lemma": "top",
+      "length": 3,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "basic"
+      ],
+      "translationsPl": [
+        "góra",
+        "szczyt"
+      ],
+      "definitionEn": "The highest part of something.",
+      "exampleEn": "The keys are on top of the box.",
+      "acceptedSpellings": [
+        "top"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_rate",
+      "word": "rate",
+      "lemma": "rate",
+      "length": 4,
+      "cefr": "B1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "general"
+      ],
+      "translationsPl": [
+        "wskaźnik",
+        "tempo"
+      ],
+      "definitionEn": "A measurement of speed, frequency or value.",
+      "exampleEn": "The success rate is improving.",
+      "acceptedSpellings": [
+        "rate"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_tear",
+      "word": "tear",
+      "lemma": "tear",
+      "length": 4,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "body"
+      ],
+      "translationsPl": [
+        "łza"
+      ],
+      "definitionEn": "A drop of liquid that comes from your eye.",
+      "exampleEn": "A tear rolled down her cheek.",
+      "acceptedSpellings": [
+        "tear"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_ear",
+      "word": "ear",
+      "lemma": "ear",
+      "length": 3,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "body"
+      ],
+      "translationsPl": [
+        "ucho"
+      ],
+      "definitionEn": "The part of the body used for hearing.",
+      "exampleEn": "She whispered in my ear.",
+      "acceptedSpellings": [
+        "ear"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_art",
+      "word": "art",
+      "lemma": "art",
+      "length": 3,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "culture"
+      ],
+      "translationsPl": [
+        "sztuka"
+      ],
+      "definitionEn": "Creative work such as painting, music or sculpture.",
+      "exampleEn": "Modern art can be surprising.",
+      "acceptedSpellings": [
+        "art"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_listen",
+      "word": "listen",
+      "lemma": "listen",
+      "length": 6,
+      "cefr": "A1",
+      "partOfSpeech": "verb",
+      "topics": [
+        "communication"
+      ],
+      "translationsPl": [
+        "słuchać"
+      ],
+      "definitionEn": "To give attention to a sound.",
+      "exampleEn": "Please listen carefully.",
+      "acceptedSpellings": [
+        "listen"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_silent",
+      "word": "silent",
+      "lemma": "silent",
+      "length": 6,
+      "cefr": "A2",
+      "partOfSpeech": "adjective",
+      "topics": [
+        "general"
+      ],
+      "translationsPl": [
+        "cichy",
+        "bezgłośny"
+      ],
+      "definitionEn": "Making no sound.",
+      "exampleEn": "The room became silent.",
+      "acceptedSpellings": [
+        "silent"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_list",
+      "word": "list",
+      "lemma": "list",
+      "length": 4,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "general"
+      ],
+      "translationsPl": [
+        "lista"
+      ],
+      "definitionEn": "A set of written items arranged one after another.",
+      "exampleEn": "Write a shopping list.",
+      "acceptedSpellings": [
+        "list"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_line",
+      "word": "line",
+      "lemma": "line",
+      "length": 4,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "general"
+      ],
+      "translationsPl": [
+        "linia",
+        "kolejka"
+      ],
+      "definitionEn": "A long narrow mark or a row of people.",
+      "exampleEn": "Draw a straight line.",
+      "acceptedSpellings": [
+        "line"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_tones",
+      "word": "tones",
+      "lemma": "tones",
+      "length": 5,
+      "cefr": "B1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "general"
+      ],
+      "translationsPl": [
+        "tony"
+      ],
+      "definitionEn": "Different qualities or levels of sound or colour.",
+      "exampleEn": "The painting uses warm tones.",
+      "acceptedSpellings": [
+        "tones"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_note",
+      "word": "note",
+      "lemma": "note",
+      "length": 4,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "communication"
+      ],
+      "translationsPl": [
+        "notatka"
+      ],
+      "definitionEn": "A short written message or record.",
+      "exampleEn": "I left a note on the desk.",
+      "acceptedSpellings": [
+        "note"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_one",
+      "word": "one",
+      "lemma": "one",
+      "length": 3,
+      "cefr": "A1",
+      "partOfSpeech": "number",
+      "topics": [
+        "basic"
+      ],
+      "translationsPl": [
+        "jeden"
+      ],
+      "definitionEn": "The number 1.",
+      "exampleEn": "I only need one ticket.",
+      "acceptedSpellings": [
+        "one"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_care",
+      "word": "care",
+      "lemma": "care",
+      "length": 4,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "general"
+      ],
+      "translationsPl": [
+        "opieka",
+        "troska"
+      ],
+      "definitionEn": "Attention given to protect someone or something.",
+      "exampleEn": "The patient needs special care.",
+      "acceptedSpellings": [
+        "care"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_race",
+      "word": "race",
+      "lemma": "race",
+      "length": 4,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "sport"
+      ],
+      "translationsPl": [
+        "wyścig"
+      ],
+      "definitionEn": "A competition to find who is fastest.",
+      "exampleEn": "She won the race.",
+      "acceptedSpellings": [
+        "race"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_car",
+      "word": "car",
+      "lemma": "car",
+      "length": 3,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "travel"
+      ],
+      "translationsPl": [
+        "samochód"
+      ],
+      "definitionEn": "A road vehicle with four wheels.",
+      "exampleEn": "My car is outside.",
+      "acceptedSpellings": [
+        "car"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_plane",
+      "word": "plane",
+      "lemma": "plane",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "travel"
+      ],
+      "translationsPl": [
+        "samolot"
+      ],
+      "definitionEn": "A vehicle with wings that flies.",
+      "exampleEn": "The plane landed safely.",
+      "acceptedSpellings": [
+        "plane"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_panel",
+      "word": "panel",
+      "lemma": "panel",
+      "length": 5,
+      "cefr": "B1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "general"
+      ],
+      "translationsPl": [
+        "panel",
+        "komisja"
+      ],
+      "definitionEn": "A flat section or a group chosen to discuss something.",
+      "exampleEn": "A panel of experts answered questions.",
+      "acceptedSpellings": [
+        "panel"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_plan",
+      "word": "plan",
+      "lemma": "plan",
+      "length": 4,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "general"
+      ],
+      "translationsPl": [
+        "plan"
+      ],
+      "definitionEn": "A set of actions intended to achieve something.",
+      "exampleEn": "We made a plan for the weekend.",
+      "acceptedSpellings": [
+        "plan"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_lean",
+      "word": "lean",
+      "lemma": "lean",
+      "length": 4,
+      "cefr": "B1",
+      "partOfSpeech": "verb",
+      "topics": [
+        "actions"
+      ],
+      "translationsPl": [
+        "pochylać się"
+      ],
+      "definitionEn": "To move your body so it is not upright.",
+      "exampleEn": "Do not lean out of the window.",
+      "acceptedSpellings": [
+        "lean"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_heart",
+      "word": "heart",
+      "lemma": "heart",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "body"
+      ],
+      "translationsPl": [
+        "serce"
+      ],
+      "definitionEn": "The organ in your chest that pumps blood.",
+      "exampleEn": "Exercise is good for your heart.",
+      "acceptedSpellings": [
+        "heart"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_earth",
+      "word": "earth",
+      "lemma": "earth",
+      "length": 5,
+      "cefr": "A1",
+      "partOfSpeech": "noun",
+      "topics": [
+        "nature"
+      ],
+      "translationsPl": [
+        "Ziemia",
+        "ziemia"
+      ],
+      "definitionEn": "The planet we live on, or the soil on its surface.",
+      "exampleEn": "The Earth moves around the Sun.",
+      "acceptedSpellings": [
+        "earth"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_hear",
+      "word": "hear",
+      "lemma": "hear",
+      "length": 4,
+      "cefr": "A1",
+      "partOfSpeech": "verb",
+      "topics": [
+        "communication"
+      ],
+      "translationsPl": [
+        "słyszeć"
+      ],
+      "definitionEn": "To notice a sound with your ears.",
+      "exampleEn": "Can you hear the music?",
+      "acceptedSpellings": [
+        "hear"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    },
+    {
+      "id": "word_heat",
+      "word": "heat",
+      "lemma": "heat",
+      "length": 4,
+      "cefr": "A2",
+      "partOfSpeech": "noun",
+      "topics": [
+        "nature"
+      ],
+      "translationsPl": [
+        "ciepło"
+      ],
+      "definitionEn": "The quality of being hot or warm.",
+      "exampleEn": "The heat was difficult to tolerate.",
+      "acceptedSpellings": [
+        "heat"
+      ],
+      "allowedAsTarget": true,
+      "allowedAsGuess": true,
+      "contentSource": "original_curated_content"
+    }
+  ]
+}

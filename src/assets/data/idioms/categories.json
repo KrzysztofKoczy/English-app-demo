@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "mix",
+      "label": "Mix",
+      "selectable": true,
+      "description": "Automatyczny dobór idiomów z różnych kategorii."
+    },
+    {
+      "id": "daily-life",
+      "label": "Codzienne życie",
+      "selectable": true
+    },
+    {
+      "id": "work",
+      "label": "Praca",
+      "selectable": true
+    },
+    {
+      "id": "relationships",
+      "label": "Relacje",
+      "selectable": true
+    },
+    {
+      "id": "emotions",
+      "label": "Emocje",
+      "selectable": true
+    },
+    {
+      "id": "travel",
+      "label": "Podróże",
+      "selectable": true
+    },
+    {
+      "id": "sport",
+      "label": "Sport",
+      "selectable": true
+    },
+    {
+      "id": "money",
+      "label": "Pieniądze",
+      "selectable": true
+    },
+    {
+      "id": "communication",
+      "label": "Komunikacja",
+      "selectable": true
+    }
+  ]
+}

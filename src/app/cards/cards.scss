@@ -1,0 +1,5 @@
+.flash-card { width: 100%; padding: 32px 22px; min-height: 300px; border: 1px solid var(--line); background: var(--panel); color: var(--text); border-radius: var(--radius); text-align: center; margin-top: 24px; }
+.flash-card strong { display: block; font-size: clamp(26px, 6vw, 34px); letter-spacing: -.8px; margin: 34px 0 20px; }
+.flash-card .small { display: block; margin-top: 28px; }
+
+[aria-pressed='true'] { border-color: var(--gold); background: var(--soft); }

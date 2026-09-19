@@ -1,0 +1,26 @@
+<ion-content><main class="page game-page">
+  <app-word-game-header title="Definition Guess" (retry)="session.load()" />
+  @if (session.content(); as content) {
+    @if (session.round(); as round) {
+      <div class="row"><span class="eyebrow">POZIOM {{ round.level }} · {{ round.topic }}</span><button class="text-button" (click)="session.round.set(null)">Zmień poziom</button></div>
+      @if (session.result(); as result) { <app-word-game-result [result]="result" (again)="session.start(round)" (levels)="session.round.set(null)" /> }
+      @else if (session.question(); as question) {
+        <p>Pytanie {{ session.state().index + 1 }} / {{ round.questions.length }} · Punkty: {{ session.state().score }}</p>
+        <div class="progress" role="progressbar" aria-label="Postęp pytań" aria-valuemin="0" [attr.aria-valuemax]="round.questions.length" [attr.aria-valuenow]="session.state().index"><span [style.width.%]="session.state().index / round.questions.length * 100"></span></div>
+        <section class="panel definition"><span class="eyebrow">KTÓRE SŁOWO PASUJE?</span><h2 lang="en">{{ session.repository.word(question.wordId).definitionEn }}</h2></section>
+        <div class="options">@for (id of question.optionWordIds; track id) {
+          <button class="button secondary option" [disabled]="!!session.state().selected" [class.correct-answer]="!!session.state().selected && id === question.correctWordId" [class.wrong-answer]="session.state().selected === id && id !== question.correctWordId" (click)="session.answer(id)">
+            <span lang="en">{{ session.repository.word(id).word }}</span>
+            @if (session.state().selected && id === question.correctWordId) { <span>✓ Poprawna</span> }
+            @if (session.state().selected === id && id !== question.correctWordId) { <span>✕ Twój wybór</span> }
+          </button>
+        }</div>
+        @if (session.state().selected) {
+          <div class="feedback" role="status"><strong>{{ session.state().selected === question.correctWordId ? 'Dobra odpowiedź!' : 'Poprawna odpowiedź: ' + session.repository.word(question.correctWordId).word }}</strong><p lang="en">{{ session.repository.word(question.wordId).exampleEn }}</p></div>
+          <button class="button" (click)="session.next()">{{ session.state().index + 1 === round.questions.length ? 'Zobacz wynik' : 'Następne pytanie' }}</button>
+        } @else { <button class="button secondary" [disabled]="session.hints().length >= question.hints.length" (click)="session.hint()">Podpowiedź ({{ question.hints.length - session.hints().length }})</button> }
+        @for (hint of session.hints(); track $index) { <p class="hint">{{ hint }}</p> }
+      }
+    } @else { <p>Przeczytaj definicję i wybierz jedną z czterech odpowiedzi.</p><app-round-picker [rounds]="content.definitions" game="definition_guess" (choose)="start($event)" /> }
+  }
+</main></ion-content>

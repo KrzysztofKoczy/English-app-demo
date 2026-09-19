@@ -1,0 +1,48 @@
+:host { display: block; }
+.game-page { padding-top: 14px; }
+.game-list { display: grid; gap: 14px; }
+.game-number { font-size: 28px; font-weight: 700; color: var(--accent-text); }
+.rounds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.rounds .button { margin: 0; }
+.text-button { min-height: 44px; padding: 8px; background: transparent; border: 0; color: var(--accent-text); text-decoration: underline; }
+.stats { padding: 12px 16px; border-radius: 14px; background: var(--soft); }
+.feedback { min-height: 28px; text-align: center; color: var(--text); }
+.hint { border-left: 3px solid var(--gold); padding: 8px 12px; background: var(--panel); }
+.result { margin-top: 22px; }
+.result h2 { margin-top: 12px; }
+.result li { margin-bottom: 8px; }
+.definition { margin: 20px 0; }
+.definition h2 { font-size: 23px; margin-top: 16px; line-height: 1.5; }
+.option { justify-content: space-between; min-height: 56px; text-align: left; }
+.option span + span { font-size: 12px; }
+.option.correct-answer { border-color: var(--success); background: var(--success-surface); color: var(--text); opacity: 1; }
+.option.wrong-answer { border: 2px solid var(--danger); opacity: 1; }
+button:disabled { cursor: default; }
+.guess-board { display: grid; gap: 6px; max-width: 300px; margin: 18px auto; }
+.guess-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.guess-cell { aspect-ratio: 1; position: relative; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 9px; background: var(--panel); text-transform: uppercase; font-size: 24px; font-weight: 700; padding-bottom: 5px; }
+.guess-cell.correct::after, .guess-cell.present::after, .guess-cell.absent::after { position: absolute; bottom: 1px; font-size: 10px; }
+.guess-cell.correct::after { content: '✓'; }
+.guess-cell.present::after { content: '↔'; }
+.guess-cell.absent::after { content: '—'; }
+.legend { text-align: center; }
+.keyboard { margin: 16px auto; }
+.key-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin-bottom: 6px; }
+.key { width: 44px; min-width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 7px; background: var(--panel); color: var(--text); text-transform: uppercase; font-weight: 650; }
+.correct { background: var(--success-surface); border-color: var(--success); color: var(--text); }
+.present { background: var(--gold); border-color: var(--gold); color: var(--gold-ink); }
+.absent { background: var(--line); border-color: var(--muted); color: var(--text); }
+.crossword { display: grid; gap: 3px; width: 100%; margin: 20px auto; }
+.crossword-cell { aspect-ratio: 1; display: grid; place-items: center; background: var(--panel); border: 1px solid var(--line); border-radius: 5px; font-weight: 700; font-size: clamp(12px, 3.5vw, 20px); }
+.crossword-cell.empty { visibility: hidden; }
+.crossword-cell.revealed { background: var(--soft); border-color: var(--gold); }
+.wheel { position: relative; width: min(100%, 290px); aspect-ratio: 1; border-radius: 50%; margin: 14px auto; background: var(--soft); touch-action: none; user-select: none; }
+.wheel.tap-mode { touch-action: manipulation; }
+.wheel svg { position: absolute; width: 100%; height: 100%; pointer-events: none; overflow: hidden; border-radius: 50%; }
+.wheel polyline { stroke: var(--gold); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+.letter-tile { position: absolute; transform: translate(-50%, -50%); width: 48px; height: 48px; border: 1px solid var(--line); background: var(--panel); color: var(--text); border-radius: 50%; font-size: 23px; font-weight: 700; }
+.letter-tile.selected { background: var(--gold); color: var(--gold-ink); border-color: var(--accent-text); }
+.current-word { display: block; min-height: 32px; text-align: center; font-size: 24px; font-weight: 700; letter-spacing: 5px; }
+.instruction { margin-bottom: 0; }
+@media (max-width: 500px) { .key-row { max-width: 260px; margin-left: auto; margin-right: auto; } }
+@media (prefers-reduced-motion: no-preference) { .guess-cell.correct, .option.correct-answer, .crossword-cell.revealed { animation: reveal .18s ease-out; } @keyframes reveal { from { transform: scale(.95); } to { transform: scale(1); } } }

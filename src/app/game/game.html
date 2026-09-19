@@ -1,0 +1,27 @@
+<ion-content><main class="page">
+  @if (state.game(); as game) {
+    <div class="row"><button class="icon-button" (click)="exit()" aria-label="Zakończ i wróć do aktywności"><app-icon name="close-outline" /></button><span class="small muted">{{ game.title }}</span>@if (game.topic === 'battle') { <span class="lives" aria-label="Pozostałe życia"><app-icon name="heart-outline" /> {{ game.lives }} / 3</span> }</div>
+    @if (state.showResult()) {
+      @if (game.topic === 'battle') {
+        <section class="result"><span class="medallion large"><app-icon name="trophy-outline" /></span><h1>Koniec gry</h1><p>Dotarłeś do pytania {{ game.answered }}.</p><strong class="xp">Rekord: {{ state.record.best() }}</strong><p>{{ game.answered === game.total ? 'Ukończyłeś wszystkie 30 pytań tej próbki demo!' : 'Trzy życia wykorzystane. Spróbuj ponownie.' }}</p></section>
+        <a class="button" routerLink="/battle">Zagraj ponownie</a>
+      } @else {
+      <section class="result"><span class="medallion large"><app-icon name="trophy-outline" /></span><h1>Kolejna runda<br>za Tobą.</h1><p>Każda odpowiedź to okazja do nauki.</p><strong class="xp">Wynik: {{ game.xp / 10 }} / {{ game.total }}</strong><p>{{ game.xp / 10 }} z {{ game.total }} poprawnych odpowiedzi</p></section>
+      <button class="button" (click)="exit()">Wybierz kolejną aktywność</button><a class="button secondary" routerLink="/topics">Kolejna runda tematyczna</a>
+      }
+    } @else {
+      @if (game.topic !== 'battle') { <div class="progress" role="progressbar" aria-label="Postęp rundy" [attr.aria-valuenow]="game.answered" aria-valuemin="0" [attr.aria-valuemax]="game.total"><span [style.width.%]="state.progress()"></span></div> } @else { <p class="small muted">Poziom {{ state.displayedLevel() }} · Rekord: {{ state.record.best() }}</p> }
+      @if (state.question(); as question) {
+        <div class="row"><span class="eyebrow">WYBIERZ BRAKUJĄCE SŁOWO</span><span class="small muted">@if (game.topic === 'battle') { Pytanie {{ state.feedback() ? game.answered : game.answered + 1 }} } @else { {{ state.feedback() ? game.answered : game.answered + 1 }} / {{ game.total }} }</span></div>
+        <h1 class="question">{{ question.sentence }}</h1>
+        <div class="answers">@for (option of question.options; track option.id) {
+          <button class="answer" [class.correct]="state.feedback() && state.feedback()?.correctOption === option.id" [class.wrong]="state.feedback() && state.selected() === option.id && !state.feedback()?.correct" [disabled]="state.request.busy() || !!state.feedback()" (click)="state.answer(option.id)"><span>{{ option.id + 1 }}</span>{{ option.text }} @if (state.feedback()?.correctOption === option.id) { <app-icon name="checkmark-outline" /> }</button>
+        }</div>
+      }
+      @if (state.feedback(); as feedback) { <section class="feedback" aria-live="polite"><strong>{{ feedback.correct ? 'Dobra odpowiedź!' : 'Tym razem inna odpowiedź.' }}</strong><p>{{ feedback.explanation }}</p></section><button class="button" (click)="state.next()">{{ game.complete ? 'Zobacz wynik' : 'Następne pytanie' }}</button> }
+    }
+  }
+  @if (state.game()?.topic === 'battle' && state.record.storageUnavailable()) { <p class="error-message">Nie udało się zapisać rekordu. Wynik pozostanie tylko w pamięci aplikacji.</p> }
+  <app-request-notice [busy]="state.request.busy()" [error]="state.request.error()" />
+  @if (state.request.error()) { <button class="button secondary" (click)="reload()" [disabled]="state.request.busy()">Odśwież rundę</button><button class="button secondary" (click)="exit()">Wróć do aktywności</button> }
+</main></ion-content>
