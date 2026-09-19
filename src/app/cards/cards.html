@@ -2,7 +2,7 @@
   <div class="two" role="group" aria-label="Zestaw fiszek"><button class="button secondary" [attr.aria-pressed]="state.deck() === 'words'" [disabled]="state.request.busy()" (click)="state.selectDeck('words')">Słowa</button><button class="button secondary" [attr.aria-pressed]="state.deck() === 'idioms'" [disabled]="state.request.busy()" (click)="state.selectDeck('idioms')">Idiomy ({{ state.savedIdioms() }})</button></div>
   @if (state.deck() === 'idioms' && state.idiomProgress.storageWarning()) { <p class="error-message" role="status">{{ state.idiomProgress.storageWarning() }}</p> }
   @if (state.deck() === 'idioms' && state.done() && !state.items().length) { <section class="panel"><h2>Nie masz jeszcze fiszek z idiomami.</h2><p>Dodaj idiom podczas nauki, a pojawi się tutaj.</p><a class="button" routerLink="/idioms">Poznaj idiomy</a></section> }
-  @else if (state.done()) { <section class="panel"><h2>Powtórka zakończona.</h2><p>Możesz wrócić do słów lub wybrać kolejną aktywność.</p></section><button class="button" (click)="state.restart()">Powtórz zestaw</button><a class="button secondary" routerLink="/character">Zobacz postęp</a> }
+  @else if (state.done()) { <section class="panel"><h2>Powtórka zakończona.</h2><p>Możesz wrócić do słów lub wybrać kolejną aktywność.</p></section><button class="button" (click)="state.restart()">Powtórz zestaw</button><a class="button secondary" routerLink="/activities">Wybierz aktywność</a> }
   @else if (state.current(); as card) {
     <div class="row"><span class="eyebrow">{{ state.deck() === 'idioms' ? 'ZAPISANE IDIOMY' : 'PODSTAWOWE ZWROTY' }}</span><span class="small muted">{{ state.index() + 1 }} / {{ state.items().length }} w zestawie</span></div>
     <button class="flash-card" (click)="state.flipped.set(!state.flipped())" [disabled]="state.request.busy()" aria-label="Odwróć fiszkę"><span class="eyebrow">{{ state.flipped() ? 'ZNACZENIE' : 'JAK TO POWIESZ PO POLSKU?' }}</span><strong>{{ state.flipped() ? card.back : card.front }}</strong><p>{{ card.example }}</p><span class="small muted">Dotknij, aby odwrócić</span></button>
@@ -12,3 +12,4 @@
   <app-request-notice [busy]="state.request.busy()" [error]="state.request.error()" />
   @if (state.request.error()) { <button class="button secondary" (click)="state.retry()" [disabled]="state.request.busy()">Ponów pobieranie</button> }
 </main></ion-content>
+
