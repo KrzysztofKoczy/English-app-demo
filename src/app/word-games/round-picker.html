@@ -1,7 +1,10 @@
 <h2>Wybierz poziom</h2>
 <div class="rounds">
   @for (round of rounds(); track round.id) {
-    <button class="button secondary" (click)="choose.emit(round.id)">Poziom {{ round.level }} · {{ round.cefr }} @if (completed(round.id)) { <span aria-label="Ukończony">✓</span> }</button>
+    <button class="button secondary round-button" [class.round-completed]="completed(round.id)" (click)="choose.emit(round.id)">
+      <span>Poziom {{ round.level }}@if (game() === 'definition_guess') { · {{ round.cefr }} }</span>
+      @if (completed(round.id)) { <span class="completion-label"><span aria-hidden="true">✓</span> Ukończono</span> }
+    </button>
   }
 </div>
 @if (!rounds().length) { <p>Brak dostępnych rund.</p> }

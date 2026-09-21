@@ -1,9 +1,8 @@
 <ion-content><main class="page game-page">
-  <app-word-game-header title="Word Guess" (retry)="session.load()" />
-  <p class="stats">Seria: <strong>{{ session.progress.value().guess.currentStreak }}</strong> · Rekord: <strong>{{ session.progress.value().guess.bestStreak }}</strong><br><span class="small">Rozegrane: {{ session.progress.value().guess.played }} · Wygrane: {{ session.progress.value().guess.won }}</span></p>
+  <app-word-game-header title="Word Guess" [active]="!!session.round() && !session.result()" (retry)="session.load()" />
   @if (session.content(); as content) {
     @if (session.round(); as round) {
-      <div class="row"><span class="eyebrow">POZIOM {{ round.level }} · {{ round.cefr }}</span><button class="text-button" (click)="session.round.set(null)">Zmień poziom</button></div>
+      <div class="row"><span class="eyebrow">POZIOM {{ round.level }}</span><button class="text-button" (click)="session.round.set(null)">Zmień poziom</button></div>
       <p class="small">Odgadnij {{ round.wordLength }}-literowe słowo. Masz {{ round.maxAttempts }} prób.</p>
       <div class="guess-board" aria-label="Próby odgadnięcia słowa">
         @for (row of session.rows(); track $index) { <div class="guess-row">@for (cell of row; track $index) { <span class="guess-cell" [class.correct]="cell.mark === 'correct'" [class.present]="cell.mark === 'present'" [class.absent]="cell.mark === 'absent'" [attr.aria-label]="cell.letter ? cell.letter + ': ' + (cell.mark === 'correct' ? 'właściwe miejsce' : cell.mark === 'present' ? 'inne miejsce' : cell.mark === 'absent' ? 'brak w haśle' : 'wpisana') : 'puste pole'">{{ cell.letter }}</span> }</div> }
@@ -11,15 +10,32 @@
       <p class="small legend">✓ właściwe miejsce · ↔ inne miejsce · — brak w haśle</p>
       <p class="feedback" role="status">{{ session.state().message || 'Wpisz pierwsze słowo.' }}</p>
       <div class="keyboard" aria-label="Klawiatura ekranowa">
-        @for (row of keyboard; track row) { <div class="key-row">@for (letter of row; track letter) { <button class="key" [class.correct]="session.keys()[letter] === 'correct'" [class.present]="session.keys()[letter] === 'present'" [class.absent]="session.keys()[letter] === 'absent'" [disabled]="session.state().finished" (click)="session.key(letter)" [attr.aria-label]="letter.toUpperCase() + (session.keys()[letter] === 'correct' ? ': właściwe miejsce' : session.keys()[letter] === 'present' ? ': inne miejsce' : session.keys()[letter] === 'absent' ? ': brak w haśle' : '')">{{ letter }}</button> }</div> }
-        <div class="two"><button class="button secondary" [disabled]="session.state().finished" (click)="session.key('Backspace')">⌫ Usuń</button><button class="button" [disabled]="session.state().finished || session.draft().length !== round.wordLength" (click)="session.submit()">Sprawdź</button></div>
+        @for (row of keyboard; track $index) {
+          <div class="key-row" [class.key-row-actions]="$index === 2">
+            @for (key of row; track key) {
+              <button class="key" [class.key-action]="key === 'Enter' || key === 'Backspace'" [class.correct]="session.keys()[key] === 'correct'" [class.present]="session.keys()[key] === 'present'" [class.absent]="session.keys()[key] === 'absent'" [disabled]="session.state().finished || (key === 'Enter' && session.draft().length !== round.wordLength)" (click)="session.key(key)" [attr.aria-label]="key === 'Enter' ? 'Zatwierdź' : key === 'Backspace' ? 'Usuń literę' : key.toUpperCase() + (session.keys()[key] === 'correct' ? ': właściwe miejsce' : session.keys()[key] === 'present' ? ': inne miejsce' : session.keys()[key] === 'absent' ? ': brak w haśle' : '')">{{ key === 'Enter' ? '↵' : key === 'Backspace' ? '⌫' : key }}</button>
+            }
+          </div>
+        }
       </div>
       <button class="button secondary" [disabled]="session.state().finished || session.hints().length >= round.hintOrder.length" (click)="session.hint()">Podpowiedź ({{ round.hintOrder.length - session.hints().length }})</button>
       @for (hint of session.hints(); track $index) { <p class="hint">{{ hint }}</p> }
-      @if (session.result(); as result) {
-        <p role="status"><strong>{{ session.state().won ? 'Brawo!' : 'Koniec prób.' }} Hasło: {{ session.repository.word(round.targetWordId).word }}</strong><br>{{ session.repository.word(round.targetWordId).translationsPl.join(', ') }}</p>
-        <app-word-game-result [result]="result" (again)="session.start(round)" (levels)="session.round.set(null)" />
-      }
     } @else { <app-round-picker [rounds]="content.guess" game="word_guess" (choose)="start($event)" /> }
   }
 </main></ion-content>
+
+<ion-modal #resultModal class="guess-result-modal" [isOpen]="active() && !!session.result()" [backdropDismiss]="false" (didDismiss)="resultClosed($event.detail.role)" aria-labelledby="guess-result-title">
+  <ng-template>
+    @if (session.round(); as round) {
+      <section class="guess-summary">
+        <h2 id="guess-result-title">{{ session.state().won ? 'Wygrana!' : 'Koniec prób — przegrana' }}</h2>
+        <p>Prawidłowe hasło</p>
+        <strong class="guess-answer" lang="en">{{ session.repository.word(round.targetWordId).word }}</strong>
+        <p>{{ session.repository.word(round.targetWordId).translationsPl.join(', ') }}</p>
+        <p>Liczba prób: {{ session.state().attempts.length }} / {{ round.maxAttempts }}</p>
+        <button class="button" (click)="resultModal.dismiss(null, 'again')">Zagraj ponownie</button>
+        <button class="button secondary" (click)="resultModal.dismiss(null, 'back')">Wróć</button>
+      </section>
+    }
+  </ng-template>
+</ion-modal>

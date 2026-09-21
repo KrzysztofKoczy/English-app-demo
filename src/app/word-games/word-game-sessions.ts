@@ -2,7 +2,7 @@ import { Injectable, computed, inject, signal } from '@angular/core';
 import { WordGameContentRepository } from './word-game-content';
 import { WordGameProgressService } from './word-game-progress';
 import type { DefinitionHint, DefinitionRound, FinderHint, FinderPuzzle, GuessRound, WordGameContent, WordGameProgress } from './word-game-models';
-import { answerDefinition, finderHint, keyboardMarks, newDefinition, newFinder, newGuess, nextDefinition, placementCells, shuffleTiles, submitFinder, submitGuess, visibleFinderCells } from './word-game-engine';
+import { answerDefinition, finderHint, keyboardMarks, newDefinition, newFinder, newGuess, nextDefinition, placementCells, submitFinder, submitGuess, visibleFinderCells } from './word-game-engine';
 
 export abstract class WordGameSession {
   readonly repository = inject(WordGameContentRepository);
@@ -32,9 +32,7 @@ export class FinderSession extends WordGameSession {
     if (this.result() || !this.tiles().some(t => t.id === id)) return;
     this.selected.update(ids => ids.includes(id) ? ids : [...ids, id]);
   }
-  undo() { this.selected.update(ids => ids.slice(0, -1)); }
   clear() { this.selected.set([]); }
-  shuffle() { this.clear(); this.tiles.update(tiles => shuffleTiles(tiles)); }
   submit() {
     const round = this.round(); if (!round || this.result() || !this.currentWord()) return;
     this.state.update(state => submitFinder(state, this.currentWord(), round, this.repository.bySpelling)); this.clear();
@@ -69,9 +67,9 @@ export class GuessSession extends WordGameSession {
     if (/^[a-z]$/i.test(key) && this.draft().length < round.wordLength) this.draft.update(s => s + key.toLowerCase());
   }
   submit() {
-    const round = this.round(), content = this.content(); if (!round || !content || this.state().finished) return;
+    const round = this.round(); if (!round || this.state().finished) return;
     const count = this.state().attempts.length;
-    this.state.update(s => submitGuess(s, this.draft(), round, this.repository.word(round.targetWordId).word, content.accepted));
+    this.state.update(s => submitGuess(s, this.draft(), round, this.repository.word(round.targetWordId).word));
     const s = this.state(); if (s.attempts.length > count) this.draft.set('');
     if (s.finished) this.finish({ game: 'word_guess', roundId: round.id, score: s.won ? (round.maxAttempts - s.attempts.length + 1) * 10 : 0,
       hintsUsed: this.hints().length, mistakes: s.attempts.length - Number(s.won), difficultWordIds: !s.won || this.hints().length > 0 ? [round.targetWordId] : [] }, s.won);

@@ -43,5 +43,5 @@ export class GameService {
     const game = this.game();
     if (game?.topic === "battle") this.record.reach(game.answered + (game.complete ? 0 : 1));
   }
-  next() { this.displayedLevel.set(this.game()?.level ?? 0); this.saveRecord(); this.question.set(this.game()?.question ?? null); this.feedback.set(null); this.selected.set(null); }
+  next() { if (!this.feedback() || this.request.busy()) return; this.displayedLevel.set(this.game()?.level ?? 0); this.saveRecord(); this.question.set(this.game()?.question ?? null); this.feedback.set(null); this.selected.set(null); }
 }

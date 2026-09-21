@@ -4,14 +4,12 @@ export interface WordBankFile { schemaVersion: string; words: WordEntry[]; count
 export interface FinderFile { schemaVersion: string; puzzles: FinderPuzzle[]; puzzleCount: number; }
 export interface GuessFile { schemaVersion: string; rounds: GuessRound[]; roundCount: number; }
 export interface DefinitionFile { schemaVersion: string; rounds: DefinitionRound[]; roundCount: number; }
-export interface AcceptedFile { schemaVersion: string; id: string; length: number; words: string[]; }
-export function validateWordGameContent(bank: WordBankFile, finder: FinderFile, guess: GuessFile, definitions: DefinitionFile, accepted: AcceptedFile): void {
-  check([bank, finder, guess, definitions, accepted].every(f => f?.schemaVersion === '1.0.0'), 'schema version');
+export function validateWordGameContent(bank: WordBankFile, finder: FinderFile, guess: GuessFile, definitions: DefinitionFile): void {
+  check([bank, finder, guess, definitions].every(f => f?.schemaVersion === '1.0.0'), 'schema version');
   check(Array.isArray(bank.words) && bank.count === bank.words.length, 'word bank');
   check(Array.isArray(finder.puzzles) && finder.puzzleCount === finder.puzzles.length, 'Finder rounds');
   check(Array.isArray(guess.rounds) && guess.roundCount === guess.rounds.length, 'Guess rounds');
   check(Array.isArray(definitions.rounds) && definitions.roundCount === definitions.rounds.length, 'Definition rounds');
-  check(strings(accepted.words) && distinct(accepted.words) && accepted.length === 5 && nonempty(accepted.id) && accepted.words.every(w => /^[a-z]{5}$/.test(w)), 'accepted words');
   check(distinct(bank.words.map(w => w.id)), 'duplicate word IDs');
   const byId = new Map(bank.words.map(w => [w.id, w]));
   const bySpelling = new Map<string, string>();
@@ -53,11 +51,10 @@ export function validateWordGameContent(bank: WordBankFile, finder: FinderFile, 
     check(puzzle.requiredWordIds.every(id => board.placements.some(p => p.wordId === id)), 'missing placement');
     check(board.cells.every((row, r) => row.every((letter: string | null, c: number) => letter === null || covered.has(r + ':' + c))), 'unreachable grid cell');
   }
-  const acceptedSet = new Set(accepted.words);
   for (const round of guess.rounds) {
     const word = byId.get(round.targetWordId);
-    check(word && round.wordLength === 5 && word.length === round.wordLength && acceptedSet.has(word.word), 'Guess target');
-    check(round.maxAttempts === 5 && round.acceptedWordsListId === accepted.id && Array.isArray(round.hintOrder) && distinct(round.hintOrder)
+    check(word && round.wordLength === 5 && word.length === round.wordLength, 'Guess target');
+    check(round.maxAttempts === 5 && Array.isArray(round.hintOrder) && distinct(round.hintOrder)
       && round.hintOrder.every(h => ['topic', 'part_of_speech', 'translation_pl'].includes(h)), 'Guess rules');
   }
   for (const round of definitions.rounds) {

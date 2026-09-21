@@ -64,8 +64,6 @@ test('Finder hints reveal distinct cells, respect budget and leave source data i
   translations = engine.finderHint(translations, 'reveal_translation', round, byId);
   assert.equal(new Set(translations.translated).size, 2);
   assert.equal(JSON.stringify(round), original);
-  const tiles = Object.freeze(['A','B','C']); const shuffled = engine.shuffleTiles(tiles, () => 0);
-  assert.deepEqual(tiles, ['A','B','C']); assert.notEqual(shuffled, tiles);
 });
 test('All Finder boards can be completed and every placement becomes visible', () => {
   for (const round of finder) {

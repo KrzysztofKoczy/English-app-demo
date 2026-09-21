@@ -87,8 +87,8 @@ const session=(Type)=>{
  const content={words:words[0].words,finder:words[1].puzzles,guess:words[2].rounds,definitions:words[3].rounds,accepted:new Set(words[4].words)};
  const state=make(Type,[{provide:WordGameContentRepository,useValue:{load:async()=>content,byId,bySpelling,word:id=>byId.get(id)}},{provide:WordGameProgressService,useValue:{finish:(result,won)=>saves.push({result,won})}}]);return {state,saves,content};
 };
-test('Finder session: same tile once, shuffle clears selection, full round records exactly once',async()=>{
- const {state,saves,content}=session(FinderSession);await state.load();state.start(content.finder[0]);state.select(0);state.select(0);assert.equal(state.selected().length,1);state.shuffle();assert.equal(state.selected().length,0);
+test('Finder session: same tile once, clear cancels selection, full round records exactly once',async()=>{
+ const {state,saves,content}=session(FinderSession);await state.load();state.start(content.finder[0]);state.select(0);state.select(0);assert.equal(state.selected().length,1);state.clear();assert.equal(state.selected().length,0);
  for(const id of state.round().requiredWordIds){for(const l of state.repository.word(id).word){const tile=state.tiles().find(t=>t.letter.toLowerCase()===l&&!state.selected().includes(t.id));state.select(tile.id);}state.submit();}
  state.submit();assert.equal(saves.length,1);assert.equal(saves[0].result.completed,true);
 });
@@ -100,4 +100,32 @@ test('Guess session: invalid word preserves attempts; hints, victory and input l
 test('Definition session: hints and mistakes reach summary and save once',async()=>{
  const {state,saves,content}=session(DefinitionSession);await state.load();state.start(content.definitions[0]);state.hint();state.answer(state.question().optionWordIds.find(id=>id!==state.question().correctWordId));state.next();
  while(!state.result()){state.answer(state.question().correctWordId);state.next();}state.next();assert.equal(saves.length,1);assert.equal(saves[0].result.score,5);assert.equal(saves[0].result.hintsUsed,1);assert.equal(saves[0].result.difficultWordIds.length,1);
+});
+
+test('Battle switches after tasks 5, 10, 15, 20, 25, retaining source levels across restarts', () => {
+ const {battleQuestions} = get('core/shuffle.js');
+ const levels = ['A1','A2','B1','B2','C1','C2'];
+ const pool = levels.flatMap(level => Array.from({length:10}, (_, i) => ({id:level+i,level})));
+ for (let run=0;run<3;run++) {
+  const round=battleQuestions([...pool].reverse());
+  assert.equal(round.length,30);
+  for(let i=0;i<30;i++) assert.equal(round[i].level,levels[Math.floor(i/5)]);
+  assert.equal(new Set(round.map(q=>q.id)).size,30);
+ }
+ assert.deepEqual(battleQuestions(load('demo/battle.json').questions).map(q=>q.level), [...Array(5).fill('1'),...Array(5).fill('2'),...Array(5).fill('4')]);
+});
+
+test('Back during a delayed start never navigates to the game when the response arrives', async () => {
+ // Ionic is a browser-only ESM package; substitute just its injected navigation port.
+ const Module=require('node:module'),loadModule=Module._load; class NavController {}
+ let StartGameService;
+ try { Module._load=function(id,...args){return id==='@ionic/angular'?{NavController}:loadModule.call(this,id,...args);}; ({StartGameService}=get('game/start-game.service.js')); }
+ finally { Module._load=loadModule; }
+ const {Router}=require('@angular/router');
+ const pending=deferred(),calls=[];
+ const router={lastSuccessfulNavigation:signal({id:1}),currentNavigation:()=>null};
+ const service=make(StartGameService,[{provide:LearningApi,useValue:{start:()=>pending.promise}}, {provide:Router,useValue:router}, {provide:NavController,useValue:{navigateForward:path=>calls.push(path)}}]);
+ const started=service.start('battle');router.lastSuccessfulNavigation.set({id:2});pending.resolve({id:'late'});await started;
+ assert.deepEqual(calls,[]);assert.equal(service.request.busy(),false);
+ await service.start('battle');assert.deepEqual(calls,[['/game','late']]);
 });

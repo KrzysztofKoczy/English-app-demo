@@ -13,7 +13,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Po zaimku she używamy czasownika to be w trzeciej osobie liczby pojedynczej — is.",
-      "level": "1"
+      "level": "1",
+      "translationPl": "Ona jest z Polski."
     },
     {
       "id": "L01-002",
@@ -27,7 +28,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Po zaimku I zawsze używamy am.",
-      "level": "1"
+      "level": "1",
+      "translationPl": "Jestem studentem."
     },
     {
       "id": "L01-003",
@@ -41,7 +43,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Po zaimku he używamy is.",
-      "level": "1"
+      "level": "1",
+      "translationPl": "On jest nauczycielem."
     },
     {
       "id": "L01-004",
@@ -55,7 +58,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Po zaimku we używamy are.",
-      "level": "1"
+      "level": "1",
+      "translationPl": "Jesteśmy przyjaciółmi."
     },
     {
       "id": "L01-005",
@@ -69,7 +73,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Po zaimku they używamy are.",
-      "level": "1"
+      "level": "1",
+      "translationPl": "Oni są w Londynie."
     },
     {
       "id": "L01-006",
@@ -83,7 +88,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Po zaimku it używamy is.",
-      "level": "1"
+      "level": "1",
+      "translationPl": "To jest kot."
     },
     {
       "id": "L01-007",
@@ -97,7 +103,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "The book jest w liczbie pojedynczej, więc używamy is.",
-      "level": "1"
+      "level": "1",
+      "translationPl": "Książka jest na stole."
     },
     {
       "id": "L01-008",
@@ -111,7 +118,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Mother jest w trzeciej osobie liczby pojedynczej (she), więc używamy is.",
-      "level": "1"
+      "level": "1",
+      "translationPl": "Moja mama jest lekarką."
     },
     {
       "id": "L01-009",
@@ -125,7 +133,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Po zaimku you (ty, wy) używamy are.",
-      "level": "1"
+      "level": "1",
+      "translationPl": "Jesteś bardzo miły."
     },
     {
       "id": "L01-010",
@@ -139,7 +148,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Children (dzieci) to liczba mnoga, więc używamy are.",
-      "level": "1"
+      "level": "1",
+      "translationPl": "Dzieci są szczęśliwe."
     },
     {
       "id": "L02-001",
@@ -153,7 +163,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "W pytaniu z I używamy am przed podmiotem: Am I...?",
-      "level": "2"
+      "level": "2",
+      "translationPl": "Czy jestem spóźniony/spóźniona?"
     },
     {
       "id": "L02-002",
@@ -167,7 +178,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "W pytaniu z you używamy are: Are you...?",
-      "level": "2"
+      "level": "2",
+      "translationPl": "Czy jesteś gotowy/gotowa?"
     },
     {
       "id": "L02-003",
@@ -181,7 +193,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "W pytaniu z he używamy is: Is he...?",
-      "level": "2"
+      "level": "2",
+      "translationPl": "Czy on jest zmęczony?"
     },
     {
       "id": "L02-004",
@@ -195,7 +208,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "W pytaniu z she używamy is: Is she...?",
-      "level": "2"
+      "level": "2",
+      "translationPl": "Czy ona jest szczęśliwa?"
     },
     {
       "id": "L02-005",
@@ -209,7 +223,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "W pytaniu z it używamy is: Is it...?",
-      "level": "2"
+      "level": "2",
+      "translationPl": "Czy jest zimno?"
     },
     {
       "id": "L02-006",
@@ -223,7 +238,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "W pytaniu z we używamy are: Are we...?",
-      "level": "2"
+      "level": "2",
+      "translationPl": "Czy jesteśmy za wcześnie?"
     },
     {
       "id": "L02-007",
@@ -237,7 +253,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "W pytaniu z they używamy are: Are they...?",
-      "level": "2"
+      "level": "2",
+      "translationPl": "Czy oni są zajęci?"
     },
     {
       "id": "L02-008",
@@ -251,7 +268,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Po you w pytaniu używamy are.",
-      "level": "2"
+      "level": "2",
+      "translationPl": "Czy jesteś w domu?"
     },
     {
       "id": "L02-009",
@@ -265,7 +283,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Z I używamy tylko am, także w pytaniach.",
-      "level": "2"
+      "level": "2",
+      "translationPl": "Czy się mylę?"
     },
     {
       "id": "L02-010",
@@ -279,7 +298,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Po he w pytaniu używamy is.",
-      "level": "2"
+      "level": "2",
+      "translationPl": "Czy wszystko z nim w porządku?"
     },
     {
       "id": "L04-001",
@@ -293,7 +313,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Przed samogłoską (a, e, i, o, u) używamy an.",
-      "level": "4"
+      "level": "4",
+      "translationPl": "Mam jabłko."
     },
     {
       "id": "L04-002",
@@ -307,7 +328,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Przed spółgłoską używamy a.",
-      "level": "4"
+      "level": "4",
+      "translationPl": "Kupiła książkę."
     },
     {
       "id": "L04-003",
@@ -321,7 +343,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Engineer zaczyna się od samogłoski, więc używamy an.",
-      "level": "4"
+      "level": "4",
+      "translationPl": "On jest inżynierem."
     },
     {
       "id": "L04-004",
@@ -335,7 +358,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Dog zaczyna się od spółgłoski, więc używamy a.",
-      "level": "4"
+      "level": "4",
+      "translationPl": "Widzieliśmy psa w parku."
     },
     {
       "id": "L04-005",
@@ -349,7 +373,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Old zaczyna się od samogłoski, więc używamy an.",
-      "level": "4"
+      "level": "4",
+      "translationPl": "To jest stary dom."
     },
     {
       "id": "L04-006",
@@ -363,7 +388,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Umbrella zaczyna się od samogłoski, więc an.",
-      "level": "4"
+      "level": "4",
+      "translationPl": "Ona ma parasol."
     },
     {
       "id": "L04-007",
@@ -377,7 +403,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Teacher zaczyna się od spółgłoski, więc a.",
-      "level": "4"
+      "level": "4",
+      "translationPl": "On jest nauczycielem."
     },
     {
       "id": "L04-008",
@@ -391,7 +418,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Hour wymawiamy z niemym h, więc zaczyna się od samogłoski → an.",
-      "level": "4"
+      "level": "4",
+      "translationPl": "Potrzebuję godziny."
     },
     {
       "id": "L04-009",
@@ -405,7 +433,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Orange zaczyna się od samogłoski, więc an.",
-      "level": "4"
+      "level": "4",
+      "translationPl": "Zjadła pomarańczę."
     },
     {
       "id": "L04-010",
@@ -419,7 +448,8 @@
       ],
       "correctOptionIndex": 0,
       "explanationPl": "Car zaczyna się od spółgłoski, więc a.",
-      "level": "4"
+      "level": "4",
+      "translationPl": "On jeździ samochodem."
     }
   ]
 }

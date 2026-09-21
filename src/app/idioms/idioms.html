@@ -1,4 +1,4 @@
-<ion-content><main class="page">
+<ion-content><main class="page" [class.choice-page]="state.session()?.stage === 'exercises'">
   <a class="back-link" routerLink="/activities"><app-icon name="arrow-back-outline" /> Aktywności</a>
   @if (state.progress.storageWarning()) { <p class="error-message" role="status">{{ state.progress.storageWarning() }}</p> }
   @if (state.busy()) { <p role="status">Wczytywanie idiomów…</p> }
@@ -48,8 +48,8 @@
             }</div>
             @if (state.feedback(); as feedback) {
               <section class="feedback" role="status"><strong>{{ feedback.correct ? 'Dobra odpowiedź!' : 'Tym razem inna odpowiedź.' }}</strong><p>Poprawna odpowiedź: <span lang="en">{{ exercise.options[exercise.correctOptionIndex] }}</span></p></section>
-              <button class="button" (click)="state.nextExercise()">{{ session.exerciseIndex + 1 === session.exerciseIds.length ? 'Zobacz podsumowanie' : 'Następne pytanie' }}</button>
             }
+
           }
         }
         @case ('summary') {
@@ -74,7 +74,9 @@
       }
     }
   }
-</main></ion-content>
+</main>
+@if (state.session()?.stage === 'exercises') { <div class="game-actions" slot="fixed"><button class="button" [disabled]="!state.feedback()" (click)="state.nextExercise()">{{ state.session()!.exerciseIndex + 1 === state.session()!.exerciseIds.length ? 'Zobacz podsumowanie' : 'Następne pytanie' }}</button></div> }
+</ion-content>
 <ion-modal [isOpen]="sourcesOpen()" (didDismiss)="sourcesOpen.set(false)" aria-labelledby="idiom-sources-title">
   <ng-template><ion-content><section class="page">
     <div class="row"><h2 id="idiom-sources-title">Źródła idiomu</h2><button class="icon-button" (click)="sourcesOpen.set(false)" aria-label="Zamknij źródła"><app-icon name="close-outline" /></button></div>

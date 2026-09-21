@@ -7,7 +7,7 @@ Interaktywna prezentacja aplikacji do nauki angielskiego. Angular 22 i Ionic 9, 
 - 20 idiomów, 40 przykładów i 60 ćwiczeń. Domyślna sesja: 3 idiomy i 9 ćwiczeń. Dostępne także dłuższe sesje.
 - Odpowiedzi idiomowe i tematyczne są tasowane raz na rundę z zachowaniem klucza odpowiedzi.
 - Word Finder, Word Guess, Definition Guess: po 10 zestawów.
-- Battle solo: 30 wybranych pytań w trzech etapach i 3 życia. Koniec po ukończeniu próbki lub utracie żyć.
+- Battle solo: po 5 losowych pytań z poziomów danych 1, 2 i 4 (łącznie 15) w trzech etapach i 3 życia. Koniec po ukończeniu próbki lub utracie żyć.
 - 15 zwykłych fiszek oraz idiomy dodane do własnej talii.
 - Postać: „Niedostępne w demo”. Brak wspólnego rozwoju postaci i globalnych XP.
 - Etykieta demo otwiera opis zakresu oraz reset wyników z potwierdzeniem.
@@ -50,3 +50,5 @@ Docelowy adres: https://krzysztofkoczy.github.io/English-app-demo/
 ## Pochodzenie
 Wersja demonstracyjna przygotowana na bazie istniejącego frontendu English App. Pełny katalog Battle pominięto; wybrano po 10 pytań z poprawnych plików poziomów 1, 2 i 4.
 Istniejące testy dostosowano do większego zestawu danych i odrębnych kluczy pamięci; zachowano ich scenariusze.
+
+Aplikacja jest projektowana przede wszystkim na małe ekrany telefonów. W widoku aktywnej gry wyświetlamy tylko informacje potrzebne do wykonania zadania. Każdy nowy nagłówek, opis, przycisk i odstęp należy ocenić pod kątem dostępnego miejsca oraz konieczności przewijania.

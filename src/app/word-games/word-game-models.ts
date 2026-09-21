@@ -18,7 +18,7 @@ export interface FinderPuzzle extends Round {
 export type GuessHint = 'topic' | 'part_of_speech' | 'translation_pl';
 export interface GuessRound extends Round {
   readonly targetWordId: string; readonly wordLength: number; readonly maxAttempts: number;
-  readonly hintOrder: readonly GuessHint[]; readonly acceptedWordsListId: string;
+  readonly hintOrder: readonly GuessHint[];
 }
 export type DefinitionHint = 'first_letter' | 'word_length' | 'translation_pl';
 export interface DefinitionQuestion {
@@ -29,7 +29,6 @@ export interface DefinitionRound extends Round { readonly topic: string; readonl
 export interface WordGameContent {
   readonly words: readonly WordEntry[]; readonly finder: readonly FinderPuzzle[];
   readonly guess: readonly GuessRound[]; readonly definitions: readonly DefinitionRound[];
-  readonly accepted: ReadonlySet<string>;
 }
 export interface WordGameProgress {
   game: WordGame; roundId: string; completed: boolean; score: number; hintsUsed: number;

@@ -1,5 +1,5 @@
 <ion-content><main class="page game-page">
-  <app-word-game-header title="Word Finder" (retry)="session.load()" />
+  <app-word-game-header title="Word Finder" [active]="!!session.round() && !session.result()" (retry)="session.load()" />
   @if (session.content(); as content) {
     @if (session.round(); as round) {
       <div class="row"><span class="eyebrow">POZIOM {{ round.level }} · {{ session.state().found.length }} / {{ round.requiredWordIds.length }} SŁÓW</span><button class="text-button" (click)="cancel(); session.round.set(null)">Zmień poziom</button></div>
@@ -10,24 +10,25 @@
           }
         }
       </div>
-      <p class="feedback" role="status">{{ session.state().message || 'Połącz litery, aby odkryć słowo.' }}</p>
       @if (session.result(); as result) { <app-word-game-result [result]="result" (again)="session.start(round)" (levels)="session.round.set(null)" /> }
       @else {
-        <div class="two"><button class="button secondary" (click)="cancel(); session.shuffle()">⇄ Pomieszaj</button><button class="button secondary" [attr.aria-pressed]="tapMode()" (click)="mode()">{{ tapMode() ? 'Tryb: kafelki' : 'Tryb: gest' }}</button></div>
-        <p class="small instruction">{{ tapMode() ? 'Dotykaj kolejnych liter i naciśnij Sprawdź.' : 'Przeciągnij palcem lub myszą po literach i puść. Możesz też wybrać tryb kafelków.' }}</p>
-        <div class="wheel" [class.tap-mode]="tapMode()" (pointerdown)="down($event)" (pointermove)="move($event)" (pointerup)="up($event)" (pointercancel)="cancelPointer($event)" (lostpointercapture)="cancelPointer($event)">
+        <p class="small instruction">Przeciągnij palcem po literach i puść, aby sprawdzić słowo.</p>
+        <div class="wheel" (keydown.enter)="keyboardSubmit($event)" (keydown.escape)="cancel()" (pointerdown)="down($event)" (pointermove)="move($event)" (pointerup)="up($event)" (pointercancel)="cancelPointer($event)" (lostpointercapture)="cancelPointer($event)">
           <svg viewBox="0 0 100 100" aria-hidden="true"><polyline [attr.points]="line()" /></svg>
           @for (tile of positions(); track tile.id) {
-            <button class="letter-tile" [attr.data-tile]="tile.id" [style.left.%]="tile.x" [style.top.%]="tile.y" [class.selected]="session.selected().includes(tile.id)" [attr.aria-pressed]="session.selected().includes(tile.id)" [attr.aria-label]="'Litera ' + tile.letter + ', kafelek ' + (tile.id + 1)" (click)="tileClick(tile.id, $event)">{{ tile.letter }}</button>
+            <button class="letter-tile" (click)="keyboardSelect(tile.id, $event)" [attr.aria-description]="'Klawiatura: Spacja wybiera literę, Enter sprawdza słowo, Escape czyści wybór.'" [attr.data-tile]="tile.id" [style.left.%]="tile.x" [style.top.%]="tile.y" [class.selected]="session.selected().includes(tile.id)" [attr.aria-pressed]="session.selected().includes(tile.id)" [attr.aria-label]="'Litera ' + tile.letter + ', kafelek ' + (tile.id + 1)">{{ tile.letter }}</button>
           }
         </div>
         <output class="current-word" aria-live="polite">{{ session.currentWord() || '…' }}</output>
-        <div class="two"><button class="button secondary" [disabled]="!session.selected().length" (click)="session.undo()">⌫ Cofnij literę</button><button class="button" [disabled]="!session.selected().length" (click)="session.submit()">Sprawdź</button></div>
         <p class="small">Podpowiedzi: {{ round.hints.max - session.state().hintsUsed }}</p>
-        <div class="two">@for (type of round.hints.types; track type) { <button class="button secondary" [disabled]="session.state().hintsUsed >= round.hints.max" (click)="session.hint(type)">{{ type === 'reveal_letter' ? 'Odkryj literę' : 'Tłumaczenie' }}</button> }</div>
+        <div class="two">@for (type of round.hints.types; track type) { <button class="button secondary" [disabled]="session.state().hintsUsed >= round.hints.max" (click)="hint(type)">{{ type === 'reveal_letter' ? 'Odkryj literę' : 'Tłumaczenie' }}</button> }</div>
         @for (id of session.state().translated; track id) { <p class="hint">Szukaj: {{ session.repository.word(id).translationsPl.join(', ') }}</p> }
         <p class="small">Punkty: {{ session.state().score }} · Bonusy: {{ session.state().bonus.length }}</p>
       }
     } @else { <p>Znajdź wszystkie słowa na planszy. Każdego kafelka możesz użyć raz w jednym słowie.</p><app-round-picker [rounds]="content.finder" game="word_finder" (choose)="start($event)" /> }
   }
 </main></ion-content>
+
+@for (notice of notices(); track notice.id) {
+  <ion-toast [isOpen]="true" [message]="notice.message" [duration]="1800" position="bottom" (didDismiss)="dismissNotice(notice.id)" />
+}

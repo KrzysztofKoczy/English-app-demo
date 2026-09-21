@@ -1,14 +1,15 @@
 import { ChangeDetectionStrategy, Component, HostListener, computed, inject, signal } from '@angular/core';
-import { IonContent } from '@ionic/angular';
+import { IonContent, IonToast } from '@ionic/angular';
 import { FinderSession } from './word-game-sessions';
 import { GameHeader } from './game-header';
 import { RoundPicker } from './round-picker';
 import { GameResult } from './game-result';
-@Component({ imports: [IonContent, GameHeader, RoundPicker, GameResult], providers: [FinderSession], templateUrl: './word-finder.html', styleUrl: './word-games.scss', changeDetection: ChangeDetectionStrategy.OnPush })
+@Component({ imports: [IonContent, IonToast, GameHeader, RoundPicker, GameResult], providers: [FinderSession], templateUrl: './word-finder.html', styleUrl: './word-games.scss', changeDetection: ChangeDetectionStrategy.OnPush })
 export class WordFinder {
   protected readonly session = inject(FinderSession);
-  protected readonly tapMode = signal(false);
   protected readonly cursor = signal<{ x: number; y: number } | null>(null);
+  protected readonly notices = signal<{ id: number; message: string }[]>([]);
+  private noticeId = 0;
   private pointer: number | null = null;
   private wheel: HTMLElement | null = null;
   protected readonly positions = computed(() => this.session.tiles().map((tile, i, tiles) => ({ ...tile,
@@ -21,12 +22,11 @@ export class WordFinder {
     return points.join(' ');
   });
   ionViewWillEnter() { void this.session.load(); }
-  ionViewWillLeave() { this.cancel(); }
+  ionViewWillLeave() { this.cancel(); this.notices.set([]); }
   ngOnDestroy() { this.cancel(); }
-  protected start(id: string) { this.cancel(); const round = this.session.content()?.finder.find(r => r.id === id); if (round) this.session.start(round); }
-  protected mode() { this.cancel(); this.tapMode.update(v => !v); }
+  protected start(id: string) { this.cancel(); this.notices.set([]); const round = this.session.content()?.finder.find(r => r.id === id); if (round) this.session.start(round); }
   protected down(event: PointerEvent) {
-    if (this.tapMode() || this.session.result() || this.pointer !== null || !event.isPrimary || event.button !== 0) return;
+    if (this.session.result() || this.pointer !== null || !event.isPrimary || event.button !== 0) return;
     const wheel = event.currentTarget;
     if (!(wheel instanceof HTMLElement)) return;
     const id = this.hit(event, wheel); if (id === null) return;
@@ -41,13 +41,21 @@ export class WordFinder {
   }
   protected up(event: PointerEvent) {
     if (event.pointerId !== this.pointer) return;
-    this.move(event); this.release(); this.session.submit();
+    this.move(event); this.release(); this.submit();
   }
   protected cancelPointer(event: PointerEvent) { if (event.pointerId === this.pointer) this.cancel(); }
   protected cancel() { this.release(); this.session.clear(); }
-  protected tileClick(id: number, event: MouseEvent) {
-    // Keyboard activation (detail 0) also works without switching input mode.
-    if (this.tapMode() || event.detail === 0) this.session.select(id);
+  protected keyboardSelect(id: number, event: MouseEvent) { if (event.detail === 0) this.session.select(id); }
+  protected keyboardSubmit(event: Event) { event.preventDefault(); this.submit(); }
+  protected submit() {
+    if (!this.session.currentWord()) return;
+    this.session.submit(); this.notify();
+  }
+  protected hint(type: 'reveal_letter' | 'reveal_translation') { this.session.hint(type); this.notify(); }
+  protected dismissNotice(id: number) { this.notices.update(notices => notices.filter(notice => notice.id !== id)); }
+  private notify() {
+    const message = this.session.state().message;
+    this.notices.set(message && !this.session.result() ? [{ id: ++this.noticeId, message }] : []);
   }
   @HostListener('document:visibilitychange') protected visibility() { if (document.hidden) this.cancel(); }
   @HostListener('window:blur') protected blur() { this.cancel(); }

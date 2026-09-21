@@ -12,7 +12,7 @@ const load=p=>JSON.parse(fs.readFileSync(path.join(assets,p),'utf8'));
 const fail=(file,detail)=>errors.push({file,detail});
 for(const name of fs.readdirSync(assets,{recursive:true}).filter(p=>p.endsWith('.json'))){try{load(name);files.push({file:name,syntax:'pass'});}catch(e){fail(name,e.message);files.push({file:name,syntax:'fail'});}}
 try{validateIdiomContent(...['idioms.json','categories.json','exercises.json'].map(p=>load('data/idioms/'+p)));}catch(e){fail('idioms',e.message);}
-try{validateWordGameContent(...['word-bank.json','word-finder/puzzles.json','word-guess/rounds.json','definition-guess/rounds.json','word-guess/accepted-five-letter.json'].map(p=>load('game-data/word-games/'+p)));}catch(e){fail('word-games',e.message);}
+try{validateWordGameContent(...['word-bank.json','word-finder/puzzles.json','word-guess/rounds.json','definition-guess/rounds.json'].map(p=>load('game-data/word-games/'+p)));}catch(e){fail('word-games',e.message);}
 const {validateQuestions}=require('../.cache/audit-tests/core/demo-content.js');
 const topics=load('demo/topics.json'),battle=load('demo/battle.json');
 try {

@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { DemoContent, DemoQuestion } from './demo-content';
 import { AnswerResult, GameView, Profile } from './models';
-import { shuffleOptions, shuffled } from './shuffle';
+import { battleQuestions, shuffleOptions, shuffled } from './shuffle';
 
 interface Round {
   id: string; requestId: string; topic: string; title: string; questions: DemoQuestion[];
@@ -43,8 +43,7 @@ export class DemoLearningApi {
     let title = 'Battle of Words', questions: DemoQuestion[];
     if (topic === 'battle') {
       const pool = (await this.content.battle()).questions;
-      // Ten questions per difficulty band; preserve gradual progression.
-      questions = ['1', '2', '4'].flatMap(level => shuffled(pool.filter(q => q.level === level)));
+      questions = battleQuestions(pool);
     } else {
       const selected = (await this.content.topics()).topics.find(t => t.id === topic);
       if (!selected) throw new Error('Nie znaleziono tematu. Wybierz inną aktywność.');
@@ -80,7 +79,7 @@ export class DemoLearningApi {
   private view(round: Round): GameView {
     const complete = this.complete(round), question = round.questions[round.answered];
     return { id: round.id, topic: round.topic, title: round.title, total: round.questions.length, answered: round.answered,
-      lives: round.lives, xp: round.xp, complete, level: Math.min(3, Math.floor(round.answered / 10) + 1),
-      question: complete ? null : { id: question.id, sentence: question.sentence, options: question.options.map((text, id) => ({ id, text })) } };
+      lives: round.lives, xp: round.xp, complete, level: Number((question ?? round.questions.at(-1))?.level ?? 0),
+      question: complete ? null : { id: question.id, sentence: question.sentence, translationPl: question.translationPl, options: question.options.map((text, id) => ({ id, text })) } };
   }
 }

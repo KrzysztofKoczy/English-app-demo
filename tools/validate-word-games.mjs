@@ -6,7 +6,6 @@ const read = name => JSON.parse(fs.readFileSync(path.join(root, name), 'utf8'));
 const bank = read('word-bank.json');
 const finder = read('word-finder/puzzles.json');
 const guess = read('word-guess/rounds.json');
-const accepted = read('word-guess/accepted-five-letter.json');
 const definitions = read('definition-guess/rounds.json');
 const errors = [];
 const check = (condition, message) => { if (!condition) errors.push(message); };
@@ -51,15 +50,11 @@ for (const puzzle of finder.puzzles) {
   check(puzzle.requiredWordIds.every(id => puzzle.board.placements.some(p => p.wordId === id)), `${puzzle.id}: missing placement`);
   puzzle.board.cells.forEach((row,r) => row.forEach((letter,c) => check(letter === null || covered.has(`${r}:${c}`), `${puzzle.id}: uncovered cell`)));
 }
-unique(accepted.words, 'accepted word');
-const acceptedSet = new Set(accepted.words);
-check(accepted.length === 5 && accepted.words.every(w => /^[a-z]{5}$/.test(w)), 'Invalid accepted words');
 unique(guess.rounds.map(r => r.id), 'Guess round');
 for (const round of guess.rounds) {
   reference(round.targetWordId, round.id); const word = byId.get(round.targetWordId);
   check(round.wordLength === 5 && word?.length === round.wordLength, `${round.id}: invalid target length`);
-  check(acceptedSet.has(word?.word), `${round.id}: unaccepted target`);
-  check(round.acceptedWordsListId === accepted.id && round.maxAttempts === 5, `${round.id}: invalid rules`);
+  check(round.maxAttempts === 5, `${round.id}: invalid rules`);
 }
 unique(definitions.rounds.map(r => r.id), 'Definition round');
 for (const round of definitions.rounds) {

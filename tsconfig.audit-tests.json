@@ -17,6 +17,7 @@
     "src/app/word-games/word-game-sessions.ts",
     "src/app/word-games/word-game-validation.ts",
     "src/app/idioms/idiom-validation.ts",
-    "src/app/core/demo-learning-api.ts"
+    "src/app/core/demo-learning-api.ts",
+    "src/app/game/start-game.service.ts"
   ]
 }

@@ -65,3 +65,21 @@ p { color: var(--muted); line-height: 1.6; }
 
 @media (max-width: 380px) { .page { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); } }
 
+
+/* The action stays inside the active Ionic page, above the device safe area. */
+.choice-page { padding-bottom: calc(90px + env(safe-area-inset-bottom)); }
+.game-actions { position: absolute; z-index: 5; bottom: 0; left: 0; right: 0; padding: 10px max(16px, env(safe-area-inset-left)) calc(10px + env(safe-area-inset-bottom)); background: var(--surface); border-top: 1px solid var(--line); }
+.game-actions .button { max-width: 552px; margin: 0 auto; }
+.translation { font-size: 14px; line-height: 1.4; margin: 6px 0 12px; }
+@media (max-width: 600px) {
+  .choice-page { padding-top: 8px; }
+  .page.choice-page .question { font-size: 23px; line-height: 1.3; margin: 12px 0; }
+  .page.choice-page .progress { margin: 10px 0; }
+  .page.choice-page .answers { gap: 6px; }
+  .page.choice-page .answer { min-height: 44px; padding: 10px 12px; border-width: 2px; }
+  .page.choice-page .definition { padding: 12px; margin: 8px 0; }
+  .page.choice-page .definition h2 { margin: 6px 0 0; font-size: 19px; line-height: 1.3; }
+  .page.choice-page .option { min-height: 44px; margin-top: 6px; padding: 10px 12px; }
+  .page.choice-page .feedback { margin-top: 10px; padding: 10px; font-size: 14px; }
+  .page.choice-page .feedback p { margin: 4px 0 0; }
+}

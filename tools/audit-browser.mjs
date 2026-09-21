@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 const require=createRequire(import.meta.url);
 const {chromium}=require(process.env['PLAYWRIGHT_MODULE_PATH'] || 'playwright');
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const base=process.env['AUDIT_BASE_URL'] || 'http://localhost:4200';
+const base=process.env['AUDIT_BASE_URL'] || 'http://localhost:4201/English-app-demo/';
 const output=process.env['AUDIT_OUTPUT'] || path.join(root,'.cache/browser-audit');
 const localContent=process.argv.includes('--local-content');
 fs.mkdirSync(output,{recursive:true});
@@ -40,7 +40,7 @@ async function scenario(name,work,options){
  catch(e){report.checks.push({name,status:'fail',error:e.message});console.error('FAIL',name,e.message);await page.screenshot({path:path.join(output,name.replace(/[^a-z0-9]+/gi,'-')+'-failure.png')}).catch(()=>{});}
  finally{await c.close();}
 }
-async function go(page,route){await page.goto(base+route);await page.locator('ion-router-outlet .ion-page main').waitFor();}
+async function go(page,route){await page.goto(base+'#'+route);await page.locator('ion-router-outlet .ion-page main').waitFor();}
 async function level(page,game,n=1){await go(page,'/word-games/'+game);await page.getByRole('button',{name:new RegExp('^Poziom '+n+' ·')}).click();}
 async function layout(page){
  const overflow=await page.evaluate(()=>[...document.querySelectorAll('main, main *')].filter(el=>el.checkVisibility()).filter(el=>{const r=el.getBoundingClientRect();return r.width>0&&(r.right>innerWidth+2||r.left< -2)}).map(el=>el.tagName+'.'+el.className));
@@ -49,8 +49,34 @@ async function layout(page){
  assert.deepEqual(small,[],'touch targets <44px');
 }
 try{
- await scenario('menu-navigation-and-back',async p=>{await go(p,'/activities');await p.getByRole('link',{name:/Gry słowne/}).click();await p.waitForURL('**/word-games');await p.locator('a[href="/word-games/word-finder"]').click();await p.waitForURL('**/word-finder');await p.getByRole('button',{name:/^Poziom 1 ·/}).waitFor();await p.getByRole('link',{name:'← Gry słowne',exact:true}).click();await p.waitForURL('**/word-games');await p.getByRole('heading',{name:'Gry słowne',exact:true}).waitFor();});
- for(const size of [{width:320,height:740},{width:360,height:800},{width:390,height:844},{width:430,height:932},{width:844,height:390}]){
+ for(const viewport of [{width:360,height:800},{width:375,height:667},{width:390,height:844}]) {
+  await scenario('mobile-next-'+viewport.width+'x'+viewport.height,async p=>{
+   await level(p,'definition-guess');
+   const next=p.locator('.game-actions button');assert.equal(await next.isDisabled(),true);
+   const before=await next.boundingBox();await p.locator('.option').last().click();
+   const after=await next.boundingBox();assert.equal(after.y,before.y);assert.ok(after.y+after.height<=viewport.height);
+   assert.equal(await next.isDisabled(),false);await layout(p);await next.click();
+   await p.getByText('Pytanie 2 / 6 · Punkty:',{exact:false}).waitFor();
+  },{viewport,hasTouch:true,isMobile:true});
+  await scenario('mobile-finder-touch-'+viewport.width+'x'+viewport.height,async(p,c)=>{
+   await level(p,'word-finder');await layout(p);
+   const wheel=await p.locator('.wheel').boundingBox();assert.ok(wheel.width<=204);assert.ok(wheel.y+wheel.height<=viewport.height);
+   const path=await points(p,'cat'),cdp=await c.newCDPSession(p);
+   await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[path[0]]});
+   for(const point of path.slice(1))await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[point]});
+   await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+   await p.getByText('Dobrze! Słowo odkryte.',{exact:true}).waitFor();assert.equal((await p.locator('.current-word').innerText()).trim(),'…');
+  },{viewport,hasTouch:true,isMobile:true});
+ }
+ await scenario('history-back-one-return',async p=>{
+  await go(p,'/activities');await p.getByRole('link',{name:/Gry słowne/}).click();
+  await p.locator('a[href$="/word-games/word-finder"]').click();await p.getByRole('button',{name:/^Poziom 1 ·/}).waitFor();
+  await p.evaluate(()=>{window.__returns=0;window.__documentMarker=123;addEventListener('popstate',()=>window.__returns++);});
+  await p.goBack();await p.getByRole('heading',{name:'Gry słowne',exact:true}).waitFor();await p.waitForTimeout(1000);
+  assert.equal(await p.evaluate(()=>window.__returns),1);assert.equal(await p.evaluate(()=>window.__documentMarker),123);assert.ok(p.url().endsWith('/word-games'));
+ });
+ await scenario('menu-navigation-and-back',async p=>{await go(p,'/activities');await p.getByRole('link',{name:/Gry słowne/}).click();await p.waitForURL('**/word-games');await p.locator('a[href$="/word-games/word-finder"]').click();await p.waitForURL('**/word-finder');await p.getByRole('button',{name:/^Poziom 1 ·/}).waitFor();await p.getByRole('link',{name:'← Gry słowne',exact:true}).click();await p.waitForURL('**/word-games');await p.getByRole('heading',{name:'Gry słowne',exact:true}).waitFor();});
+ for(const size of [{width:320,height:740},{width:360,height:800},{width:375,height:667},{width:390,height:844},{width:430,height:932},{width:844,height:390}]){
   await scenario('mobile-layout-'+size.width+'x'+size.height,async p=>{
    for(const route of ['/activities','/topics','/cards','/character','/battle','/idioms','/word-games']){await go(p,route);await p.locator('main h1').waitFor();await layout(p);}
    for(const name of ['word-finder','word-guess','definition-guess']){await level(p,name);await layout(p);}
@@ -73,17 +99,18 @@ try{
  });
  async function points(p,letters){await p.locator('.wheel').scrollIntoViewIfNeeded();const used=new Set(),points=[];for(const l of letters){const buttons=p.getByRole('button',{name:new RegExp('^Litera '+l.toUpperCase()+',')});for(let i=0;i<await buttons.count();i++){const b=buttons.nth(i),id=await b.getAttribute('data-tile');if(used.has(id))continue;used.add(id);const r=await b.boundingBox();points.push({x:r.x+r.width/2,y:r.y+r.height/2});break;}}return points;}
  async function mouseWord(p,word){const ps=await points(p,word);await p.mouse.move(ps[0].x,ps[0].y);await p.mouse.down();for(const point of ps.slice(1))await p.mouse.move(point.x,point.y,{steps:8});await p.mouse.up();}
- await scenario('finder-mouse-duplicate-hints-shuffle-completion',async p=>{
+ await scenario('finder-mouse-duplicate-hints-completion',async p=>{
   await level(p,'word-finder');await mouseWord(p,'cat');await p.getByText('Dobrze! Słowo odkryte.',{exact:true}).waitFor();await mouseWord(p,'cat');await p.getByText('To słowo jest już znalezione.',{exact:true}).waitFor();
-  await p.getByRole('button',{name:'Tłumaczenie',exact:true}).click();await p.getByRole('button',{name:'Odkryj literę',exact:true}).click();await p.getByRole('button',{name:'⇄ Pomieszaj',exact:true}).click();
+  await p.getByRole('button',{name:'Tłumaczenie',exact:true}).click();await p.getByRole('button',{name:'Odkryj literę',exact:true}).click();
   await mouseWord(p,'act');await mouseWord(p,'at');await p.getByRole('region',{name:'Wynik rundy'}).waitFor();
  });
- await scenario('finder-touch-cancel-and-tap-alternative',async(p,c)=>{
+ await scenario('finder-touch-cancel-and-auto-submit',async(p,c)=>{
   await level(p,'word-finder');const ps=await points(p,'cat'),cdp=await c.newCDPSession(p);
   await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[ps[0]]});await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});assert.equal((await p.locator('.current-word').innerText()).trim(),'…');
   // Space touch samples like a real drag; zero-duration CDP gestures can suppress the following compatibility click.
   await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[ps[0]]});await p.waitForTimeout(80);for(const pos of ps.slice(1)){await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[pos]});await p.waitForTimeout(80);}await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await p.getByText('Dobrze! Słowo odkryte.',{exact:true}).waitFor();
-  await p.getByRole('button',{name:'Tryb: gest',exact:true}).tap();await p.getByRole('button',{name:'Tryb: kafelki',exact:true}).waitFor();for(const word of ['act','at']){for(const l of word)await p.getByRole('button',{name:new RegExp('^Litera '+l.toUpperCase()+',')}).tap();await p.getByRole('button',{name:'Sprawdź',exact:true}).tap();}await p.getByRole('region',{name:'Wynik rundy'}).waitFor();
+  assert.equal((await p.locator('.current-word').innerText()).trim(),'…');
+  for(const word of ['act','at']){const path=await points(p,word);await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[path[0]]});for(const pos of path.slice(1))await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[pos]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});}await p.getByRole('region',{name:'Wynik rundy'}).waitFor();
  },{hasTouch:true,isMobile:true});
  await scenario('idioms-source-flashcard-exercises-refresh',async p=>{
   await go(p,'/idioms');await p.getByRole('button',{name:'Rozpocznij naukę',exact:true}).click();await p.getByRole('button',{name:'Dodaj do fiszek',exact:true}).click();await p.getByRole('button',{name:'Informacje o źródłach',exact:true}).click();await p.getByRole('heading',{name:'Źródła idiomu',exact:true}).waitFor();await p.getByRole('button',{name:'Zamknij źródła',exact:true}).click();

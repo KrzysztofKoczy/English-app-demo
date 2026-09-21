@@ -1,0 +1,22 @@
+<a class="activity-tile wide game-card" [class.finder-card]="variant() === 'word-finder'" [class.guess-card]="variant() === 'word-guess'" [class.definition-card]="variant() === 'definition-guess'" [routerLink]="variant()">
+  <svg class="game-art" viewBox="0 0 120 120" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="4">
+    @switch (variant()) {
+      @case ('word-finder') {
+        <circle cx="60" cy="60" r="46" stroke-dasharray="4 6" />
+        <path d="M60 14 104 74 16 74Z" />
+        <circle cx="60" cy="14" r="13" /><circle cx="104" cy="74" r="13" /><circle cx="16" cy="74" r="13" />
+        <g fill="currentColor" stroke="none" font-size="14" font-weight="700" text-anchor="middle"><text x="60" y="19">A</text><text x="104" y="79">T</text><text x="16" y="79">C</text></g>
+      }
+      @case ('word-guess') {
+        <path d="M9 12h28v28H9z M46 12h28v28H46z M83 12h28v28H83z M9 49h28v28H9z M46 49h28v28H46z M83 49h28v28H83z M9 86h28v28H9z M46 86h28v28H46z M83 86h28v28H83z" />
+        <path d="m15 65 6 6 10-13 m21 43 6 6 10-13 m37-72 6 6 10-13" />
+      }
+      @case ('definition-guess') {
+        <path d="M60 29C43 18 22 18 9 24v76c18-6 34-4 51 5 17-9 33-11 51-5V24c-13-6-34-6-51 5v76" />
+        <path d="M76 46c0-13 22-13 22 0 0 9-11 8-11 18" /><circle cx="87" cy="74" r="2" />
+        <path d="M22 42h24 M22 55h24 M22 68h24 M22 81h18" />
+      }
+    }
+  </svg>
+  <div class="game-card-copy"><h2>{{ title() }}</h2><p>{{ description() }}</p><span class="small">{{ detail() }} →</span></div>
+</a>

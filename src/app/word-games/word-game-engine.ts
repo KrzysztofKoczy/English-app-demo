@@ -27,11 +27,10 @@ export function keyboardMarks(attempts: readonly GuessAttempt[]): Record<string,
 }
 export interface GuessState { attempts: GuessAttempt[]; finished: boolean; won: boolean; message: string; }
 export const newGuess = (): GuessState => ({ attempts: [], finished: false, won: false, message: '' });
-export function submitGuess(state: GuessState, value: string, round: GuessRound, target: string, accepted: ReadonlySet<string>): GuessState {
+export function submitGuess(state: GuessState, value: string, round: GuessRound, target: string): GuessState {
   if (state.finished) return state;
   const word = normalizeWord(value);
   if (word.length !== round.wordLength) return { ...state, message: `Wpisz ${round.wordLength} liter.` };
-  if (!accepted.has(word)) return { ...state, message: 'Not a word' };
   const attempts = [...state.attempts, { word, marks: evaluateGuess(word, target) }];
   const won = word === normalizeWord(target);
   return { attempts, won, finished: won || attempts.length >= round.maxAttempts, message: won ? 'Dobra odpowiedź!' : 'Próba zapisana.' };
@@ -76,9 +75,4 @@ export function answerDefinition(state: DefinitionState, answer: string, round: 
 export function nextDefinition(state: DefinitionState, round: DefinitionRound): DefinitionState {
   if (!state.selected || state.finished) return state;
   return state.index + 1 === round.questions.length ? { ...state, finished: true } : { ...state, index: state.index + 1, selected: null };
-}
-export function shuffleTiles<T>(tiles: readonly T[], random = Math.random): T[] {
-  const result = [...tiles];
-  for (let i = result.length - 1; i > 0; i--) { const j = Math.floor(random() * (i + 1)); [result[i], result[j]] = [result[j], result[i]]; }
-  return result;
 }
